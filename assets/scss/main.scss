@@ -1,0 +1,9 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+// @use 'utils';
+@use 'globals';
+
+@use 'components/header';
+@use 'components/main';
+@use 'components/footer'
