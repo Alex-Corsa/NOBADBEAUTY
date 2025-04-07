@@ -1,3 +1,5 @@
+@use 'helpers' as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,7 @@ html, body {
 }
 
 .container {
-    width: 1200px;
+    width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -28,7 +30,6 @@ html, body {
 .menu-list {
     display: flex;
     column-gap: 15px;
-    
 }
 
 .menu-link {
@@ -55,4 +56,18 @@ html, body {
     font-family: var(--font-family-Montserrat-Regular);
     font-size: 18px;
     color: var(--color-white);
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-mint);
+    border-radius: 5px;
+}
+
+.social-icon a{
+    display: contents;
 }

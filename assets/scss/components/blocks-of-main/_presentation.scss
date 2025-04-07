@@ -1,0 +1,59 @@
+.presentation {
+    &__box {
+        margin: 150px 0;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    &__box-text {
+        max-width: 625px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 146px;
+    }
+    &__box-slogans {
+        font-family: var(--font-family-TenorSans-Regular);
+        color: var(--color-black);
+        text-transform: uppercase;
+    }
+    &__hero-skill, &__hero-style, &__hero-nobadbeauty {
+        font-size: 70px;
+    }
+    // &__hero-style {
+
+    // }
+    &__hero-nobadbeauty {
+        color: var(--color-beige);
+    }
+    &__box-acquaintance {
+        max-width: 486px;
+        display: flex;
+        flex-direction: column;
+        // row-gap: 70px;
+        color: var(--color-black);
+    }
+    &__presented {
+        font-family: var(--font-family-TenorSans-Regular);
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__biography {
+        font-family: var(--font-family-Montserrat-Regular);
+        font-size: 18px;
+        margin-bottom: 68px;
+    }
+    &__about-me {
+        font-family: var(--font-family-Montserrat-Regular);
+        font-size: 18px;
+    }
+    &__more-details {
+        margin-top: 40px;
+        background: var(--color-black);
+        color: var(--color-white);
+        font-family: var(--font-family-Montserrat-Regular);
+        font-size: 20px;
+        padding: 18px 183px;
+        border-radius: 5px;
+    }
+}

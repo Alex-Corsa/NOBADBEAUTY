@@ -19,15 +19,6 @@ footer {
         display: flex;
         column-gap: 10px;
     }
-    &__social-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 36px;
-        height: 36px;
-        background: var(--color-mint);
-        border-radius: 5px;
-    }
     &__menu-list {
         display: flex;
         flex-direction: column;
@@ -70,14 +61,11 @@ footer {
         width: 44px;
         height: 44px;
     }
-    &__record {
-        width: 100%;
-        height: 50px;
+    &__record a {
+        padding: 11px 107px;
         border: 1px solid var(--color-mint);
         border-radius: 5px;
         color: var(--color-white);
-        text-align: center;
-        align-content: center;
     }
     &__developer-basement {
         display: flex;

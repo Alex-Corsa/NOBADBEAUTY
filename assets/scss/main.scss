@@ -1,8 +1,11 @@
 @use 'normalize';
 @use 'fonts';
+@use 'fonts-size';
 @use 'variables';
-// @use 'utils';
+@use 'utils';
 @use 'globals';
+
+@use 'helpers' as *;
 
 @use 'components/header';
 @use 'components/main';

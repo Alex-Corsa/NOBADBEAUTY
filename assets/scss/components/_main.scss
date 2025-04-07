@@ -1,3 +1,8 @@
+@use 'blocks-of-main/home-screen';
+@use 'blocks-of-main/navigation';
+@use 'blocks-of-main/presentation';
+@use 'blocks-of-main/portfolio';
+
 .main {
-    flex-grow: 1; /* Основний контент займе все доступне місце між header та footer */
+    flex-grow: 1; 
 }

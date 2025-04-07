@@ -1,0 +1,21 @@
+.navigation {
+    background: var(--color-black_light);
+    padding: 40px 0;
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__li {
+        text-align: center;
+        flex: 1;
+    }
+    &__li:not(:last-child) {
+        border-right: 1px solid var(--color-white);
+    }
+    &__li a {
+        font-family: var(--font-family-Montserrat-Light);
+        font-size: 18px;
+        color: var(--color-white);
+        text-transform: uppercase;
+    }
+}

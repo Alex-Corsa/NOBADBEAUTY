@@ -1,0 +1,86 @@
+@use '../../helpers' as *;
+
+.home-screen {
+    min-height: 792px;
+    background: url(../img/photos/photos-main/main_photo.jpg)
+    no-repeat center center / cover;
+    &__main-text {
+        padding-top: 146px;
+        max-width: 633px;
+        color: var(--color-white);
+    }
+    &__hero, &__slogan, &__slogan-small, &__record a, &__contact a {
+        line-height: 100%;
+    }
+    &__hero {
+        font-family: var(--font-family-TenorSans-Regular);
+        @include fluid-text(80, 40);
+        text-transform: uppercase;
+        padding: 7px 0;
+        margin-bottom: 12px;
+    }
+    &__slogan {
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        font-size: 36px;
+        padding: 8px 0;
+    }
+    &__invocation {
+        margin: 80px 0 110px;
+        max-width: 386px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__slogan-small {
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        font-size: 24px;
+        color: var(--color-white);
+        padding: 3px 0;
+    }
+    &__record a {
+        padding: 20px 132px;
+        font-family: var(--font-family-Montserrat-Regular);
+        font-size: 20px;
+        color: var(--color-white);
+        background: var(--color-black);
+        text-align: center;
+        border-radius: 5px;
+    }
+    &__contact a {
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        font-size: 24px;
+        color: var(--color-white);
+    }
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    &__contact {
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__social {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 10px;
+    }
+    &__contact-item.contact--phone{
+        align-items: center;
+    }
+    &__contact-item.contact--phone::before {
+        content: url(../img/svg/icon_phone.svg);
+        width: 30px;
+        height: 30px;
+    }
+    &__contact .contact--address {
+        padding: 5px 0;
+    }
+    &__contact-item.contact--address::before {
+        content: url(../img/svg/icon_map.svg);
+        width: 44px;
+        height: 44px;
+    }
+}
