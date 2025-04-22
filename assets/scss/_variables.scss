@@ -17,12 +17,12 @@
     --color-gradient_dark: linear-gradient(90deg, #131312 0%, #70A2F6 100%);
 
     // Fonts
-    --font-family-Montserrat-ExtraLight: 'Montserrat-ExtraLight', sans-serif;
-    --font-family-Montserrat-Light: 'Montserrat-Light', sans-serif;
-    --font-family-Montserrat-Regular: 'Montserrat-Regular', sans-serif;
-    --font-family-Montserrat-Medium: 'Montserrat-Medium', sans-serif;
-    --font-family-Roboto-ExtraLight: 'Roboto-ExtraLight', sans-serif;
-    --font-family-TenorSans-Regular: 'TenorSans-Regular', sans-serif;
+    --font-family-Montserrat-ExtraLight: 'Montserrat-ExtraLight', sans-serif; // 200
+    --font-family-Montserrat-Light: 'Montserrat-Light', sans-serif; // 300
+    --font-family-Montserrat-Regular: 'Montserrat-Regular', sans-serif; // 400
+    --font-family-Montserrat-Medium: 'Montserrat-Medium', sans-serif; // 500
+    --font-family-Roboto-ExtraLight: 'Roboto-ExtraLight', sans-serif; // 200
+    --font-family-TenorSans-Regular: 'TenorSans-Regular', sans-serif; // 400
 
     --font-size-h1-laptop: 80px;
     --font-size-h1-tablet: 40px; // tablet
@@ -44,7 +44,7 @@
     --font-size-subtittle-laptop: 36px;
     --font-size-subtittle-tablet: 22px; // tablet
 
-    --font-size-discriptor-laptop: 18px;
+    --font-size-discriptor-laptop: 24px;
 
     --font-size-button: 20px;
 

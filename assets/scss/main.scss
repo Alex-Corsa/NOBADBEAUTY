@@ -9,4 +9,20 @@
 
 @use 'components/header';
 @use 'components/main';
-@use 'components/footer'
+@use 'components/footer';
+
+
+
+// Адаптування під мобільний екран
+.not-for-mobile-version {
+    @include mobile {
+        display: none;
+    }
+}
+.for-mobile-version {
+    display: none;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/faviconblack.jpg">
     <title>NOBADBEAUTY</title>
     <link rel="stylesheet" href="./assets/scss/main.css">
     <script src="./assets/js/main.js" type="module" defer></script>
@@ -11,92 +12,143 @@
 
     <div class="page">
 
-        <header>
+        <header data-header-main>
 
-            <div class="header container">
+            <div class="header container" data-header>
 
-                <div class="header__box-logo">
+                <div class="header__box-logo" data-box-logo>
                     <img src="./assets/img/svg/logo.svg" alt="NOBADBEAUTY">
                 </div>
 
                 <div class="header__body">
 
-                    <div class="header__menu menu">
-                        <nav class="header__nav nav">
-                            <ul class="header__menu-list menu-list">
-                                <li class="header__menu-item menu-item">
-                                    <a href="#" class="header__menu-link menu-link">Про мене</a>
-                                </li>
-                                <li class="header__menu-item menu-item">
-                                    <a href="#" class="header__menu-link menu-link item-portfolio">Портфоліо</a>
-                                </li>
-                                <li class="header__menu-item menu-item">
-                                    <a href="#" class="header__menu-link menu-link">Прайс</a>
-                                </li>
-                                <li class="header__menu-item menu-item">
-                                    <a href="#" class="header__menu-link menu-link">Навчання</a>
-                                </li>
-                                <li class="header__menu-item menu-item">
-                                    <a href="#" class="header__menu-link menu-link">Контакти</a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <nav class="header__nav" data-burger-nav>
+                        <ul class="header__menu-list menu-list" data-menu-list>
+                            <li class="header__menu-item menu-item">
+                                <a href="#" class="header__menu-link menu-link">Про мене</a>
+                            </li>
+                            <li class="header__menu-item menu-item">
+                                <a href="#" class="header__menu-link menu-link item-portfolio">Портфоліо</a>
+                            </li>
+                            <li class="header__menu-item menu-item">
+                                <a href="#" class="header__menu-link menu-link">Прайс</a>
+                            </li>
+                            <li class="header__menu-item menu-item">
+                                <a href="#" class="header__menu-link menu-link">Навчання</a>
+                            </li>
+                            <li class="header__menu-item menu-item">
+                                <a href="#" class="header__menu-link menu-link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__burger" data-burger>
+                        <div class="header__burger-title" data-burger-title>
+                            <p class="header__burger-text">Меню</p>
+                        </div>
+        
+                        <div class="header__burger-box">
+                            <span class="header__burger-span"></span>
+                            <span class="header__burger-span"></span>
+                            <span class="header__burger-span"></span>
+                        </div>
                     </div>
 
-                    <div class="header__language language">
+                    <div class="header__language" data-header-language>
                         <a href="#" class="lang lang--ua active">UA</a>
                         <a href="#" class="lang lang--pl">PL</a>
                     </div>
+
                     <div class="header__record">
                         <a href="#" target="_blank" class="record-link">Записатися</a>
                     </div>
+
+                </div>
+
+            </div>
+
+            <div class="header-only-burger container" data-only-burger>
+                <div class="header-only-burger__language" data-burger-language>
+                    <a href="#" class="lang lang--ua active">UA</a>
+                    <a href="#" class="lang lang--pl">PL</a>
+                </div>
+                <div class="header-only-burger__down">
+                    <div class="header-only-burger__contacts">
+                        <a 
+                        href="tel:" 
+                        class="header-only-burger__contact-item contact--phone">+48570790975
+                        </a>
+                        <a 
+                            href="#" target="_blank" 
+                            class="header-only-burger__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
+                        </a>
+                    </div>
+                    <div class="header-only-burger__social not-for-mobile-version" data-burger-social>
+                        <div class="social-icon social--instagram">
+                            <a href="#">
+                                <img class="header-only-burger__social--svg" src="./assets/img/svg/instagram.svg" alt="instagram">
+                            </a>
+                        </div>
+                        <div class="social-icon social--facebook">
+                            <a href="#">
+                                <img class="header-only-burger__social--svg" src="./assets/img/svg/facebook.svg" alt="facebook">
+                            </a>
+                        </div>
+                        <div class="social-icon social--tik-tok">
+                            <a href="#">
+                                <img class="header-only-burger__social--svg" src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </header>
 
         <main>
-            
+
             <section class="home-screen">
                 <div class="home-screen__main-block container">
                     <div class="home-screen__main-text">
                         <h1 class="home-screen__hero">Nobadbeauty</h1>
-                        <p class="home-screen__slogan">Не важливо, який образ. 
+                        <p class="home-screen__slogan font-size-subtittle-laptop">Не важливо, який образ. 
                             <br>Важливо, що це - ти.</p>
                     </div>
                     <div class="home-screen__invocation">
                         <p class="home-screen__slogan-small">Натурально чи сміливо? 
                             <br>Вибір за тобою.</p>
-                        <div class="home-screen__record">
-                            <a href="#" target="_blank" class="">Записатися</a>
+                        <div class="home-screen__record not-for-mobile-version">
+                            <a href="#" target="_blank" class="font-size-button">Записатися</a>
                         </div>
                     </div>
                     <div class="home-screen__link">
                         <div class="home-screen__contacts">
-                            <div class="home-screen__contact">
-                                <a 
-                                    href="tel:" 
-                                    class="home-screen__contact-item contact--phone">+48570790975
-                                </a>
-                                <a 
-                                    href="#" target="_blank" 
-                                    class="home-screen__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
-                                </a>
-                            </div>
+                            <a 
+                            href="tel:" 
+                            class="home-screen__contact-item contact--phone">+48570790975
+                            </a>
+                            <a 
+                                href="#" target="_blank" 
+                                class="home-screen__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
+                            </a>
                         </div>
-                        <div class="home-screen__social">
+                        <div class="home-screen__record-mobile for-mobile-version">
+                            <a href="#">Записатися</a>
+                        </div>
+                        <div class="home-screen__social not-for-mobile-version">
                             <div class="social-icon social--instagram">
                                 <a href="#">
-                                    <img src="./assets/img/svg/instagram.svg" alt="instagram">
+                                    <img class="home-screen__social--svg" src="./assets/img/svg/instagram.svg" alt="instagram">
                                 </a>
                             </div>
                             <div class="social-icon social--facebook">
                                 <a href="#">
-                                    <img src="./assets/img/svg/facebook.svg" alt="facebook">
+                                    <img class="home-screen__social--svg" src="./assets/img/svg/facebook.svg" alt="facebook">
                                 </a>
                             </div>
                             <div class="social-icon social--tik-tok">
                                 <a href="#">
-                                    <img src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                    <img class="home-screen__social--svg" src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
                                 </a>
                             </div>
                         </div>
@@ -104,7 +156,7 @@
                 </div>
             </section>
 
-            <section class="navigation">
+            <section class="navigation not-for-mobile-version">
                 <div class="navigation__block container">
                     <nav class="navigation__nav">
                         <ul class="navigation__ul">
@@ -128,9 +180,9 @@
                     </nav>
                 </div>
             </section>
-
+            
             <section class="presentation">
-                <div class="presentation__box">
+                <div class="presentation__box container">
                     <div class="presentation__box-photo">
                         <img src="./assets/img/photos/photos-main/photo_2.jpg" alt="my photo">
                     </div>
@@ -151,41 +203,46 @@
             </section>
 
             <section class="portfolio">
-                <img src="./assets/img/Texturelabs.png" alt="Texturelabs" class="portfolio__bg">
+                <!-- <img src="./assets/img/Texturelabs.png" alt="Texturelabs" class="portfolio__bg"> -->
                 <div class="portfolio__wrap container">
                     <div class="portfolio__main-text">
-                        <h2>Все, що потрібно </h2>
-                        <h3>для ідеального образу</h3>
+                        <h2 class="portfolio__main-heading">Все, що потрібно </h2>
+                        <h3 class="portfolio__secondary-heading">для ідеального образу</h3>
                     </div>
-                    <p>Ти створюєш правила. Я створюю ідеальний образ. 
+                    <p class="portfolio__text-slogan">Ти створюєш правила. Я створюю ідеальний образ. 
                         Обирай, що підкреслить твою бездоганність.</p>
                     <div class="portfolio__box-photo">
                         <div class="portfolio__main-photo">
                             <img src="./assets/img/photos/photos-main/wedding.jpg" alt="wedding">
-                            <p>Весільна
+                            <p class="portfolio__text-category">Весільна
                             <br> пропозиція</p>
                         </div>
                         <div class="portfolio__photos">
                             <div class="portfolio__small-photo">
                                 <img src="./assets/img/photos/photos-main/hairs.jpg" alt="hairs">
-                                <p>Зачіски на будь-яку подію</p>
+                                <p class="portfolio__text-category">Зачіски на будь-яку 
+                                    <br> подію</p>
                             </div>
                             <div class="portfolio__small-photo">
                                 <img src="./assets/img/photos/photos-main/make_up.jpg" alt="make_up">
-                                <p>Професійний макіяж</p>
+                                <p class="portfolio__text-category">Професійний 
+                                    <br> макіяж</p>
                             </div>
                             <div class="portfolio__small-photo">
                                 <img src="./assets/img/photos/photos-main/brows.jpg" alt="brows">
-                                <p>Оформлення брів</p>
+                                <p class="portfolio__text-category">Оформлення 
+                                    <br> брів</p>
                             </div>
                             <div class="portfolio__small-photo">
                                 <img src="./assets/img/photos/photos-main/eyes.jpg" alt="eyes">
-                                <p>Ламінування вій</p>
+                                <p class="portfolio__text-category">Ламінування 
+                                    <br> вій</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="reviews"></section>
             <section class="recording"></section>
         </main>
@@ -196,71 +253,98 @@
 
                 <div class="footer__body">
 
-                    <div class="footer__content">
+                    <div class="footer__content ">
                         <div class="footer__box-logo box-logo">
                             <img src="./assets/img/svg/logo.svg" alt="NOBADBEAUTY">
                         </div>
-                        <div class="footer__language language">
-                            <a href="#" class="lang active">UA</a>
-                            <a href="#" class="lang">PL</a>
-                        </div>
-                        <div class="footer__social">
-                            <div class="social-icon social--instagram">
-                                <a href="#">
-                                    <img src="./assets/img/svg/instagram.svg" alt="instagram">
-                                </a>
+                        // For large screens 
+                        <div class="not-for-mobile-version">
+                            <div class="footer__language language ">
+                                <a href="#" class="lang active">UA</a>
+                                <a href="#" class="lang">PL</a>
                             </div>
-                            <div class="social-icon social--facebook">
-                                <a href="#">
-                                    <img src="./assets/img/svg/facebook.svg" alt="facebook">
-                                </a>
-                            </div>
-                            <div class="social-icon social--tik-tok">
-                                <a href="#">
-                                    <img src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
-                                </a>
+                            <div class="footer__social">
+                                <div class="social-icon social--instagram">
+                                    <a href="#">
+                                        <img class="footer__social--svg" src="./assets/img/svg/instagram.svg" alt="instagram">
+                                    </a>
+                                </div>
+                                <div class="social-icon social--facebook">
+                                    <a href="#">
+                                        <img class="footer__social--svg" src="./assets/img/svg/facebook.svg" alt="facebook">
+                                    </a>
+                                </div>
+                                <div class="social-icon social--tik-tok">
+                                    <a href="#">
+                                        <img class="footer__social--svg" src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="footer__wrapper">
-
-                        <div class="footer__menu menu">
-                            <nav class="footer__nav nav">
-                                <ul class="footer__menu-list menu-list">
-                                    <li class="footer__menu-item menu-item">
-                                        <a href="#" class="footer__menu-link menu-link">Про мене</a>
-                                    </li>
-                                    <li class="footer__menu-item menu-item">
-                                        <a href="#" class="footer__menu-link menu-link item-portfolio">Портфоліо</a>
-                                    </li>
-                                    <li class="footer__menu-item menu-item">
-                                        <a href="#" class="footer__menu-link menu-link">Прайс</a>
-                                    </li>
-                                    <li class="footer__menu-item menu-item">
-                                        <a href="#" class="footer__menu-link menu-link">Навчання</a>
-                                    </li>
-                                    <li class="footer__menu-item menu-item">
-                                        <a href="#" class="footer__menu-link menu-link">Контакти</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div class="footer__wrepper--mobile">
+                            <div class="footer__menu menu">
+                                <nav class="footer__nav nav">
+                                    <ul class="footer__menu-list menu-list">
+                                        <li class="footer__menu-item menu-item">
+                                            <a href="#" class="footer__menu-link menu-link">Про мене</a>
+                                        </li>
+                                        <li class="footer__menu-item menu-item">
+                                            <a href="#" class="footer__menu-link menu-link item-portfolio">Портфоліо</a>
+                                        </li>
+                                        <li class="footer__menu-item menu-item">
+                                            <a href="#" class="footer__menu-link menu-link">Прайс</a>
+                                        </li>
+                                        <li class="footer__menu-item menu-item">
+                                            <a href="#" class="footer__menu-link menu-link">Навчання</a>
+                                        </li>
+                                        <li class="footer__menu-item menu-item">
+                                            <a href="#" class="footer__menu-link menu-link">Контакти</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            // For small screens. 
+                            <div class="for-mobile-version">
+                                <div class="footer__language language ">
+                                    <a href="#" class="lang active">UA</a>
+                                    <a href="#" class="lang">PL</a>
+                                </div>
+                                <div class="footer__social">
+                                    <div class="social-icon social--instagram">
+                                        <a href="#">
+                                            <img src="./assets/img/svg/instagram.svg" alt="instagram">
+                                        </a>
+                                    </div>
+                                    <div class="social-icon social--facebook">
+                                        <a href="#">
+                                            <img src="./assets/img/svg/facebook.svg" alt="facebook">
+                                        </a>
+                                    </div>
+                                    <div class="social-icon social--tik-tok">
+                                        <a href="#">
+                                            <img src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
 
                         <div class="footer__contact-info">
                             
                             <div class="footer__contact">
 
-                                <div class="footer__contact">
-                                    <a 
-                                        href="tel:" 
-                                        class="footer__contact-item contact--phone">+48570790975
-                                    </a>
-                                    <a 
-                                        href="#" target="_blank" 
-                                        class="footer__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
-                                    </a>
-                                </div>
+                                <a 
+                                href="tel:" 
+                                class="footer__contact-item contact--phone">+48570790975
+                                </a>
+                                <a 
+                                    href="#" target="_blank" 
+                                    class="footer__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
+                                </a>
                             </div>
     
                             <div class="footer__record">
@@ -283,6 +367,7 @@
                 </div>
             </div>
         </footer>
+        
     </div>    
 </body>
 </html>

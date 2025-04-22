@@ -1,0 +1,96 @@
+@use '../helpers' as *;
+
+.header-only-burger {
+    display: none;
+    &.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 640px 0 80px;
+        @include mobile {
+            margin: 560px 0 45px;
+        }
+    }
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid var(--color-white);
+        @include mobile {
+            justify-content: flex-end;
+        }
+    }
+    &__contacts {
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        @include laptop {
+            max-width: 400px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__contacts a {
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        color: var(--color-white);
+        @include font-fluid-full (24, 18, 14);
+    }
+    
+    &__contact-item.contact--phone{
+        align-items: center;
+    }
+    &__contact-item.contact--phone::before {
+        content: "";
+        display: inline-block;
+        background: url(../img/svg/icon_phone.svg) no-repeat center;
+        background-size: contain;
+        margin-right: 5px;
+        @include square (16px);
+    }
+    &__contacts .contact--address {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        @include mobile {
+            // min-width: 320px;
+            padding: 0;
+        }
+    }
+    &__contact-item.contact--address::before {
+        content: "";
+        background: url(../img/svg/icon_map.svg) no-repeat center;
+        background-size: contain;
+        margin-right: 5px;
+        @include square(16px);
+        flex-shrink: 0;
+    }
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        @include tablet {
+            padding-bottom: 15px;
+        }
+        @include mobile {
+            padding: 0;
+            flex-direction: column;
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: start;
+        column-gap: 10px;
+        @include mobile {
+            &.active {
+                display: flex;
+            }
+        }
+    }
+    &__social--svg {
+        padding: 10px;
+    }
+}

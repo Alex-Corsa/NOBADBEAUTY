@@ -1,54 +1,64 @@
-@use './functions' as *;
+@use 'sass:math';
+@use 'functions' as *;
 
-$laptop: 1440.98;
-$tablet: 1023.98;
-$mobile: 767.98;
-$mobile-s: 480.98;
+$desktop: 1199.98; // все, що більше ніж 1200рх
+$laptop: 1023.98; // від 1024рх до 1200рх
+$tablet: 767.98; // від 768рх до 1024рх
+$mobile: 359.98; // від 360рх до 768рх
+// $mobile: 359.98; // до 360рх 
 
+// більше 1200рх
+@mixin desktop {
+    @media (width > rem($desktop)) {
+        @content;
+    }
+}
+
+// до 1200рх
+@mixin laptop {
+    @media (width <= rem($desktop)) {
+        @content;
+    }
+}
+
+// більше 1024рх
 @mixin laptop-above {
     @media (width > rem($laptop)) {
         @content;
     }
 }
 
-@mixin laptop {
+// до 1024рх
+@mixin tablet {
     @media (width <= rem($laptop)) {
         @content;
     }
 }
 
+// більше 768рх
 @mixin tablet-above {
     @media (width > rem($tablet)) {
         @content;
     }
 }
 
-@mixin tablet {
+// до 768рх
+@mixin mobile {
     @media (width <= rem($tablet)) {
         @content;
     }
 }
 
-@mixin mobile-above {
+// Більше ніж 359рх. Наприклад: 360px, 375px, 400px, 768px, 1024px і т.д.
+@mixin mobile-s-above {
     @media (width > rem($mobile)) {
         @content;
     }
 }
 
-@mixin mobile {
-    @media (width <= rem($mobile)) {
-        @content;
-    }
-}
-
-@mixin mobile-s-above {
-    @media (width > rem($mobile-s)) {
-        @content;
-    }
-}
-
+// до 360рх. Наприклад: 320px, 340px, 359px
 @mixin mobile-s {
-    @media (width <= rem($mobile-s)) {
+    @media (width <= rem($mobile)) {
         @content;
     }
 }

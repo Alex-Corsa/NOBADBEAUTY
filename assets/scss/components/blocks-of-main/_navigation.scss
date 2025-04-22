@@ -1,3 +1,5 @@
+@use '../../helpers' as *;
+
 .navigation {
     background: var(--color-black_light);
     padding: 40px 0;
@@ -14,8 +16,8 @@
     }
     &__li a {
         font-family: var(--font-family-Montserrat-Light);
-        font-size: 18px;
         color: var(--color-white);
         text-transform: uppercase;
+        @include font-fluid-full (18, 14)
     }
 }

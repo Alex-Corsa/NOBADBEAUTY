@@ -1,3 +1,5 @@
+@use '../../helpers' as *;
+
 .portfolio {
     background-color: var(--color-beige);
     position: relative;
@@ -10,14 +12,91 @@
     &__wrap {
         display: flex;
         flex-direction: column;
-        padding: 100px 0;
+        // padding: 100px 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         row-gap: 50px;
+        @include laptop {
+            row-gap: 35px;
+        }
+        @include tablet {
+            padding: 70px 20px;
+            row-gap: 20px;
+        }
     }
     &__box-photo {
         display: flex;
+        column-gap: 20px;
+        @include laptop {
+            margin-top: 15px;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    &__main-photo {
+        flex: 1;
+        min-width: 355px;
+        @include mobile {
+            min-width: 320px;
+        }
+    }
+    &__main-photo img {
+        width: 100%;
+        padding: 10px;
+        border-radius: 25px;
+        @include laptop {
+            padding: 0 0 10px;
+        }
     }
     &__photos {
-        display: flex;
-        flex-wrap: wrap;
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 17px;
+        row-gap: 10px;
+        @include mobile {
+            column-gap: 10px;
+        }
+    }
+    &__small-photo {
+        min-width: 155px;
+    }
+    &__small-photo img {
+        width: 100%;
+        padding: 10px;
+        border-radius: 25px;
+        @include laptop {
+            padding: 0 0 10px;
+        }
+    }
+    &__main-heading {
+        font-family: var(--font-family-TenorSans-Regular);
+        color: var(--color-black);
+        @include font-fluid-full (70, 40, 26);
+    }
+    &__secondary-heading {
+        font-family: var(--font-family-TenorSans-Regular);
+        color: var(--color-black);
+        @include font-fluid-full (40, 22, 18);
+    }
+    &__text-slogan {
+        font-family: var(--font-family-Montserrat-Regular);
+        color: var(--color-black);
+        @include font-fluid-full (24, 18, 14);
+        @include laptop {
+            width: 75%;
+        }
+        @include tablet {
+            width: 75%;
+        }
+    }
+
+    &__text-category {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font-family-TenorSans-Regular);
+        color: var(--color-black);
+        @include font-fluid-full (22, 13, 13);
     }
 }

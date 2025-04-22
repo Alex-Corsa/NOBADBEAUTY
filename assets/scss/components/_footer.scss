@@ -1,6 +1,9 @@
+@use '../helpers' as *;
+
 footer {
     background: var(--color-black);
     margin-top: auto;
+    // height: 100%;
 }
 
 .footer {
@@ -8,16 +11,38 @@ footer {
         margin-top: 95px;
         display: flex;
         justify-content: space-between;
+        column-gap: 40px;
+        @include tablet {
+            margin-top: 60px;
+        }
+        @include mobile {
+            flex-direction: column;
+            margin-top: 50px;
+            
+        }
     }
     &__box-logo {
         margin-bottom: 95px;
+        @include tablet {
+            width: 152px;
+            margin-bottom: 0;
+        }
+    }
+    &__box-logo img {
+        width: 100%;
     }
     &__language {
         margin-bottom: 30px;
+        @include mobile {
+            text-align: end;
+        }
     }
     &__social {
         display: flex;
         column-gap: 10px;
+    }
+    &__social--svg {
+        padding: 11px;
     }
     &__menu-list {
         display: flex;
@@ -27,17 +52,43 @@ footer {
     &__wrapper {
         display: flex;
         column-gap: 140px;
+        // @include laptop {
+        //     column-gap: 100px;
+        // }
+        @include mobile {
+            flex-direction: column;
+            column-gap: 60px;
+        }
+    }
+    &__wrepper--mobile {
+        @include mobile {
+            margin: 65px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include mobile {
+            margin: 50px 0;
+        }
     }
     &__contact {
         display: flex;
         flex-direction: column;
         max-width: 323px;
         max-height: 174px;
+        @include tablet {
+            max-width: 262px;
+        }
+        @include mobile {
+            max-width: none;
+        }
     }
     &__contact-info {
         display: flex;
         flex-direction: column;
         row-gap: 40px;
+        @include mobile {
+            row-gap: 20px;
+        }
     }
     &__contact-item {
         font-family: var(--font-family-Montserrat-Regular);
@@ -45,27 +96,29 @@ footer {
     }
     &__contact-item.contact--phone {
         margin-bottom: 10px;
+        font-size: 18px;
     }
     &__contact-item.contact--phone::before {
         content: url(../img/svg/icon_phone.svg);
-        width: 30px;
-        height: 30px;
+        @include square (30px)
     }
     &__contact-item.contact--address {
         font-size: 18px;
-        line-height: 100%;
-        letter-spacing: 0;
     }
     &__contact-item.contact--address::before {
         content: url(../img/svg/icon_map.svg);
-        width: 44px;
-        height: 44px;
+        @include square (44px)
     }
     &__record a {
         padding: 11px 107px;
         border: 1px solid var(--color-mint);
         border-radius: 5px;
         color: var(--color-white);
+        @include tablet {
+            width: 100%;
+            padding: 14px 76px;
+            justify-content: center;
+        }
     }
     &__developer-basement {
         display: flex;
@@ -73,6 +126,15 @@ footer {
         margin-top: 70px;
         padding-top: 40px;
         border-top: 1px solid white;
+        @include tablet {
+            margin-top: 40px;
+        }
+        @include mobile {
+            flex-direction: column-reverse;
+            align-items: center;
+            row-gap: 30px;
+            padding-top: 15px;
+        }
     }
     
     &__developer-basement p {
@@ -85,6 +147,27 @@ footer {
         margin-bottom: 20px;
     }
     &__basement-link a {
+        display: flex;
+        align-items: center;
         color: var(--color-white);
     }
+}
+
+.design--link::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/svg/design-instagram.svg) no-repeat center;
+    background-size: contain;
+    margin-left: 10px;
+}
+.developed--link::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/svg/developed-telegram.svg) no-repeat center;
+    background-size: contain;
+    margin-left: 8px;
 }
