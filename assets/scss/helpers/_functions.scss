@@ -28,15 +28,16 @@
 // };
 
 @function rem($px, $base: 16) {
-    @return #{$px / $base}rem;
-  }
+  @return #{math.div($px, $base)}rem;
+}
 
 @function fluid($max, $min, $max-vw: 1200, $min-vw: 360) {
-    $slope: ($max - $min) / ($max-vw - $min-vw);
-    $y-intercept: $min - $slope * $min-vw;
-    @return clamp(
-      #{rem($min)},
-      #{$slope * 100}vw + #{rem($y-intercept)},
-      #{rem($max)}
-    );
-  }
+  $slope: math.div(($max - $min), ($max-vw - $min-vw));
+  $y-intercept: $min - $slope * $min-vw;
+
+  @return clamp(
+    #{rem($min)},
+    #{$slope * 100}vw + #{rem($y-intercept)},
+    #{rem($max)}
+  );
+}

@@ -18,6 +18,10 @@
         font-family: var(--font-family-Montserrat-Light);
         color: var(--color-white);
         text-transform: uppercase;
-        @include font-fluid-full (18, 14)
+        transition: color 0.3s ease;
+        @include font-fluid-full (18, 14);
+    }
+    &__li a:hover {
+        color: var(--color-mint);
     }
 }

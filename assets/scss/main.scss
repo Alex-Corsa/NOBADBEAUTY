@@ -8,10 +8,17 @@
 @use 'helpers' as *;
 
 @use 'components/header';
-@use 'components/main';
+@use 'components/main-home-page';
+@use 'components/main-about-me';
+@use 'components/main-portfolio';
+@use 'components/main-price';
+@use 'components/main-training';
 @use 'components/footer';
 
 
+.main {
+    flex-grow: 1; 
+}
 
 // Адаптування під мобільний екран
 .not-for-mobile-version {

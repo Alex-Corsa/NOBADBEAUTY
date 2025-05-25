@@ -1,0 +1,83 @@
+@use '../../helpers' as *;
+
+.about-me {
+    &__wrap {
+        margin-top: 70px;
+        margin-bottom: 150px;
+        display: flex;
+        gap: 20px;
+        @include tablet {
+            margin-top: 60px;
+            margin-bottom: 90px;
+        }
+        @include mobile {
+            flex-direction: column-reverse;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    }
+    &__box-photo {
+        // min-width: 260px;
+        flex: 1 0 260px;
+    }
+    &__box-photo img {
+        width: 100%;
+        height: 100%;
+    }
+    &__box-text {
+        flex: 0 1 587px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @include mobile {
+            gap: 0;
+            flex: none;
+        }
+    }
+    &__box-slogans {
+        margin-bottom: 103px;
+        @include tablet {
+            margin-bottom: 40px;
+        }
+        @include tablet {
+            margin-bottom: 35px;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        color: var(--color-beige);
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (40, 32, 26);
+        @include mobile {
+            margin-bottom: 10px;
+        }
+    }
+    &__name {
+        text-transform: uppercase;
+        color: var(--color-beige);
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (70, 50, 40);
+    }
+    &__description {
+        color: var(--color-black);
+        font-family: var(--font-family-Montserrat-Regular);
+        @include font-fluid-full (24, 22, 20);
+    }
+    &__box-acquaintance {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        @include tablet {
+            gap: 15px;
+        }
+
+    }
+    &__box-acquaintance p {
+        color: var(--color-black);
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        @include font-fluid-full (24, 20, 18);
+        @include laptop {
+            font-family: var(--font-family-Montserrat-Light);
+        }
+    }
+}

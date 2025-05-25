@@ -6,18 +6,23 @@
     <link rel="icon" href="./assets/img/faviconblack.jpg">
     <title>NOBADBEAUTY</title>
     <link rel="stylesheet" href="./assets/scss/main.css">
+    <script src="./assets/js/burger.js" defer></script>
+    <script src="./assets/js/dropdown-menu.js" defer></script>
+    <script src="./assets/js/accordion-menu.js" defer></script>
     <script src="./assets/js/main.js" type="module" defer></script>
 </head>
 <body>
 
     <div class="page">
 
-        <header data-header-main>
+        <header data-header>
 
-            <div class="header container" data-header>
+            <div class="header container" data-header-div>
 
-                <div class="header__box-logo" data-box-logo>
-                    <img src="./assets/img/svg/logo.svg" alt="NOBADBEAUTY">
+                <div class="header__box-logo box-logo" data-box-logo>
+                    <a href="./index.html">
+                        <img src="./assets/img/svg/logo.svg" alt="NOBADBEAUTY">
+                    </a>
                 </div>
 
                 <div class="header__body">
@@ -25,19 +30,38 @@
                     <nav class="header__nav" data-burger-nav>
                         <ul class="header__menu-list menu-list" data-menu-list>
                             <li class="header__menu-item menu-item">
-                                <a href="#" class="header__menu-link menu-link">Про мене</a>
+                                <a href="./pages/about-me.html" class="header__menu-link menu-link">Про мене</a>
+                            </li>
+                            <li class="header__menu-item menu-item has-submenu" data-dropdown>
+                                <button type="button" class="header__submenu btn-submenu item-portfolio" data-dropdown-toggle>Портфоліо
+                                    <span class="btn-submenu-icon" data-dropdown-icon></span>
+                                </button>
+                                <ul class="submenu" data-dropdown-menu>
+                                    <li class="submenu__item">
+                                        <a href="./pages/portfolio-eyebrows.html" class="submenu__link">Оформлення брів</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./pages/portfolio-eyelashes.html" class="submenu__link">Ламінування вій</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./pages/portfolio-makeup.html" class="submenu__link">Макіяж</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./pages/portfolio-hairstyles.html" class="submenu__link">Зачіски</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./pages/portfolio-wedding-proposal.html" class="submenu__link">Весільна пропозиція</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="header__menu-item menu-item">
-                                <a href="#" class="header__menu-link menu-link item-portfolio">Портфоліо</a>
+                                <a href="./pages/price.html" class="header__menu-link menu-link">Прайс</a>
                             </li>
                             <li class="header__menu-item menu-item">
-                                <a href="#" class="header__menu-link menu-link">Прайс</a>
+                                <a href="./pages/training.html" class="header__menu-link menu-link">Навчання</a>
                             </li>
                             <li class="header__menu-item menu-item">
-                                <a href="#" class="header__menu-link menu-link">Навчання</a>
-                            </li>
-                            <li class="header__menu-item menu-item">
-                                <a href="#" class="header__menu-link menu-link">Контакти</a>
+                                <a href="./pages/contacts.html" class="header__menu-link menu-link">Контакти</a>
                             </li>
                         </ul>
                     </nav>
@@ -60,7 +84,7 @@
                     </div>
 
                     <div class="header__record">
-                        <a href="#" target="_blank" class="record-link">Записатися</a>
+                        <a href="#" target="_blank" class="record-link animated-bg-light-hover">Записатися</a>
                     </div>
 
                 </div>
@@ -105,7 +129,7 @@
 
         </header>
 
-        <main>
+        <main data-main>
 
             <section class="home-screen">
                 <div class="home-screen__main-block container">
@@ -118,7 +142,7 @@
                         <p class="home-screen__slogan-small">Натурально чи сміливо? 
                             <br>Вибір за тобою.</p>
                         <div class="home-screen__record not-for-mobile-version">
-                            <a href="#" target="_blank" class="font-size-button">Записатися</a>
+                            <a href="#" target="_blank" class="font-size-button animated-bg-dark-hover">Записатися</a>
                         </div>
                     </div>
                     <div class="home-screen__link">
@@ -128,7 +152,7 @@
                             class="home-screen__contact-item contact--phone">+48570790975
                             </a>
                             <a 
-                                href="#" target="_blank" 
+                                href="https://maps.app.goo.gl/ksM3zsmos2LTwcDo8" target="_blank" rel="noopener"
                                 class="home-screen__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
                             </a>
                         </div>
@@ -161,19 +185,19 @@
                     <nav class="navigation__nav">
                         <ul class="navigation__ul">
                             <li class="navigation__li">
-                                <a href="Професійний макіяж">Професійний
+                                <a href="./pages/portfolio-makeup.html">Професійний
                                     <br> макіяж</a>
                             </li>
                             <li class="navigation__li">
-                                <a href="Зачіски на будь-яку подію">Зачіски 
+                                <a href="./pages/portfolio-hairstyles.html">Зачіски 
                                     <br> на будь-яку подію</a>
                             </li>
                             <li class="navigation__li">
-                                <a href="Оформлення брів">Оформлення 
+                                <a href="./pages/portfolio-eyebrows.html">Оформлення 
                                     <br> брів</a>
                             </li>
                             <li class="navigation__li">
-                                <a href="Ламінування вій">Ламінування 
+                                <a href="./pages/portfolio-eyelashes.html">Ламінування 
                                     <br> вій</a>
                             </li>
                         </ul>
@@ -196,7 +220,7 @@
                             <h3 class="presentation__presented">Мене звати Олександра,</h3>
                             <p class="presentation__biography">Я бровист, візажист-стиліст і ламімейкер з досвідом у б'юті-індустрії з 2021 року. Мій стиль роботи — це гармонія між натуральністю та виразним характером.</p>
                             <p class="presentation__about-me">Я створюю образи, які підкреслюють вашу індивідуальність, адже кожна деталь важлива.</p>
-                            <a class="presentation__more-details" href="Детальніше">Детальніше</a>
+                            <a class="presentation__more-details animated-bg-dark-hover" href="Детальніше">Детальніше</a>
                         </div>
                     </div>
                 </div>
@@ -243,11 +267,66 @@
                 </div>
             </section>
 
-            <section class="reviews"></section>
-            <section class="recording"></section>
+            <section class="reviews">
+                <div class="reviews__wrap container">
+                    <h2 class="reviews__h2">Реальні історії краси</h2>
+                    <h3 class="reviews__h3">Жодних слів від мене – лише відгуки тих, хто вже спробував.</h3>
+                    <div class="reviews__box-reviews">
+                        <div class="reviews__set">
+                            <div class="reviews__set-text">
+                                <p>Хочете поділитися своїми враженнями або дізнатися більше про досвід інших клієнтів? </p>
+                                <p>Залишайте свій відгук або переглядайте ще більше історій тут.</p>
+                            </div>
+                            
+                            <a href="#" class="reviews__leave-a-review animated-bg-dark-hover">Залишити відгук</a>
+                        </div>
+                        <div class="reviews__get">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="recording">
+                <div class="recording__wrap container">
+
+                    <div class="recording__content">
+                        <h2 class="recording__title">Я створюю стиль,
+                            <br> що підкреслює тебе </h2>
+                        <h3 class="recording__text">Довірся професіоналу – я подбаю про кожну деталь, щоб усе було саме так, як треба</h3>
+                        <a href="#" class="recording__link animated-bg-light-hover">Записатися</a>
+                    </div>
+
+                    <div class="recording__image">
+                        <img src="./assets/img/photos/photos-main/photo_8.jpg" alt="" class="recording__photo">
+                    </div>
+
+                    <div class="recording__social">
+                        <h4 class="recording__subtitle">слідкуйте за мною в соцмережах</h4>
+                        <p class="recording__note">Секрети догляду, ідеї для образів і моя робота в реальному житті</p>
+                        <div class="recording__box-social">
+                            <div class="social-icon recording__social--instagram">
+                                <a href="#">
+                                    <img class="recording__social--svg recording__social-hover-instagram" src="./assets/img/svg/instagram_mint.svg" alt="instagram">
+                                </a>
+                            </div>
+                            <div class="social-icon recording__social--facebook">
+                                <a href="#">
+                                    <img class="recording__social--svg recording__social-hover-facebook" src="./assets/img/svg/facebook_mint.svg" alt="facebook">
+                                </a>
+                            </div>
+                            <div class="social-icon recording__social--tik-tok">
+                                <a href="#">
+                                    <img class="recording__social--svg recording__social-hover-tik-tok" src="./assets/img/svg/tik_tok_mint.svg" alt="tik_tok">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer>
+        <footer data-footer>
 
             <div class="footer container">
 
@@ -289,19 +368,37 @@
                                 <nav class="footer__nav nav">
                                     <ul class="footer__menu-list menu-list">
                                         <li class="footer__menu-item menu-item">
-                                            <a href="#" class="footer__menu-link menu-link">Про мене</a>
+                                            <a href="./pages/about-me.html" class="footer__menu-link menu-link">Про мене</a>
+                                        </li>
+                                        <li class="footer__menu-item menu-item has-submenu" data-dropdown> 
+                                            <button type="button" class="header__submenu btn-submenu item-portfolio" 
+                                            data-dropdown-toggle>Портфоліо</button>
+                                            <ul class="submenu" data-dropdown-menu>
+                                                <li class="submenu__item">
+                                                    <a href="./pages/portfolio-eyebrows.html" class="submenu__link">Оформлення брів</a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="./pages/portfolio-eyelashes.html" class="submenu__link">Ламінування вій</a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="./pages/portfolio-makeup.html" class="submenu__link">Макіяж</a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="./pages/portfolio-hairstyles.html" class="submenu__link">Зачіски</a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="./pages/portfolio-wedding-proposal.html" class="submenu__link">Весільна пропозиція</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li class="footer__menu-item menu-item">
-                                            <a href="#" class="footer__menu-link menu-link item-portfolio">Портфоліо</a>
+                                            <a href="./pages/price.html" class="footer__menu-link menu-link">Прайс</a>
                                         </li>
                                         <li class="footer__menu-item menu-item">
-                                            <a href="#" class="footer__menu-link menu-link">Прайс</a>
+                                            <a href="./pages/training.html" class="footer__menu-link menu-link">Навчання</a>
                                         </li>
                                         <li class="footer__menu-item menu-item">
-                                            <a href="#" class="footer__menu-link menu-link">Навчання</a>
-                                        </li>
-                                        <li class="footer__menu-item menu-item">
-                                            <a href="#" class="footer__menu-link menu-link">Контакти</a>
+                                            <a href="./pages/contacts.html" class="footer__menu-link menu-link">Контакти</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -351,7 +448,7 @@
                                 <a 
                                     href="#" 
                                     target="_blank" 
-                                    class="footer__contact-item record-link">Записатися
+                                    class="footer__contact-item record-link animated-bg-light-hover">Записатися
                                 </a>
                             </div>
                         </div>

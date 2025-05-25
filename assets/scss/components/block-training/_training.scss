@@ -1,0 +1,194 @@
+@use '../../helpers' as *;
+
+.training {
+    background-color: var(--color-beige_light);
+    // &__wrap {};
+    &__title {
+        padding: 80px 0 70px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (70, 40);
+    };
+    &__main-body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__box {
+        background: white;
+        padding: 0 20px;
+    };
+    
+    &__body {
+        margin: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        column-gap: 20px;
+        overflow: hidden;
+    };
+    &__header {
+        display: none
+    };
+    &__header.active {
+        display: block;
+        position: relative;
+        padding-top: 40px;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (40, 26, 18);
+    };
+    &__advertising {
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        @include font-fluid-full (24, 20, 18, 14);
+        @include tablet {
+            font-family: var(--font-family-Montserrat-Light);
+        }
+    };
+
+    &__body-closet {
+        display: none;
+    }
+    &__body-closet.active {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+    &__btn-open {
+        display: none;
+    };
+    &__btn-open.active {
+        display: flex        ;
+        justify-content: center;
+        border: none;
+        background: none;
+    }
+    &__icon-open {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        background-image: url('../img/svg/icon_nav_arrow_down_black.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease;
+    };
+    &__course-name {
+        text-transform: uppercase;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (70, 40, 26);
+    };
+    &__tariff {
+        text-transform: uppercase;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (40, 26);
+    };
+    &__box-img {
+        flex: 0 1 auto;
+        position: relative;
+    };
+    &__box-img.active {
+        width: 324px;
+        height: 195px;
+    }
+    &__img {
+        object-fit: cover;
+        transition: transform 0.8s ease;
+        transform-origin: left top;
+    }
+    &__img.active {
+        height: auto;
+        // transform: rotate(90deg) scale(0.3632, 0.3694) translate(0px, -100%);
+    }
+    &__body-open {
+        display: none
+    }
+    &__body-open.active {
+        display: block;
+        // max-width: 600px;
+    }
+    &__btn-closing {
+        display: none;
+    }
+    &__btn-closing.active {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        display: flex        ;
+        justify-content: center;
+        border: none;
+        background: none;
+    }
+    &__icon-closing {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        background-image: url('../img/svg/icon_close.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease;
+    }
+    &__box-text {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px
+    };
+    &__box-text p {
+        font-family: var(--font-family-Montserrat-Light);
+        @include font-fluid-full (18);
+    };
+    // &__course-program {};
+    &__presentation {
+        color: var(--color-beige);
+        margin-bottom: 30px;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (40, 40, 40, 26);
+    };
+    &__list-body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px
+    };
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--font-family-Montserrat-Regular);
+        @include font-fluid-full (18, 18, 18, 14);
+        @include mobile {
+            font-family: var(--font-family-Montserrat-Light);
+        }
+    };
+    &__list-footer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__list-footer li {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__duration, &__term, &__cost {
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (22);
+    };
+    // &__term {
+    //     font-family: var(--font-family-TenorSans-Regular);
+    //     @include font-fluid-full (22);
+    // };
+    // &__cost {
+    //     font-family: var(--font-family-TenorSans-Regular);
+    //     @include font-fluid-full (22);
+    // };
+    &__price {
+        font-family: var(--font-family-Montserrat-Regular);
+        @include font-fluid-full (24);
+    };
+}
+

@@ -1,0 +1,57 @@
+@use '../../helpers' as *;
+
+.my-goal {
+    position: relative;
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    &__wrap {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+        gap: 106px;
+        @include mobile {
+            padding-top: 50px;
+            padding-bottom: 55px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+    &__body {
+        flex: 0 1 606px;
+        h2 {
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-family: var(--font-family-TenorSans-Regular);
+            @include font-fluid-full (70, 40);
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            margin-bottom: 60px;
+            font-family: var(--font-family-Montserrat-ExtraLight);
+            @include font-fluid-full (24, 18);
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+        a {
+            font-family: var(--font-family-Montserrat-Regular);
+            @include font-fluid-full (20);
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__box-photo {
+        flex: 1 0 260px;
+        img {
+            width: 100%;
+        }
+    }
+}

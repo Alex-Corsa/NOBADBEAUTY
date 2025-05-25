@@ -1,0 +1,67 @@
+@use '../../helpers' as *;
+
+.principles {
+    &__wrap {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        @include tablet {
+            margin-top: 90px;
+            margin-bottom: 90px;
+        }
+        @include mobile {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    &__slogan {
+        margin-bottom: 20px;
+        max-width: 750px;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (40, 32, 26,);
+    }
+    &__body {
+        display: flex;
+        gap: 20px;
+        @include tablet {
+            gap: 20px;
+        }
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+    // &__principles
+    &__list {
+        flex: 0 1 665px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 40px;
+        @include tablet {
+            // flex: 1 0 370px;
+        }
+    }
+    &__title {
+        color: var(--color-beige);
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (22, 18);
+        @include tablet {
+        }
+
+    }
+    &__description {
+        margin-top: 20px;
+        font-family: var(--font-family-Montserrat-Regular);
+        line-height: 1.2;
+        @include font-fluid-full (24, 18);
+        @include tablet {
+            font-family: var(--font-family-Montserrat-Light);
+        }
+
+    }
+    &__box-photo {
+        flex: 1 0 264px;
+    } img  {
+        width: 100%;
+        height: 100%;
+    }
+}

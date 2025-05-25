@@ -1,0 +1,171 @@
+@use '../../helpers' as *;
+
+.recording {
+    background: var(--color-black_light);
+    color:var(--color-white);
+    &__wrap {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "content image"
+            "social image";
+        column-gap: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: white;
+        @include tablet {
+            // max-width: 640px;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "content image"
+                "social social";
+            column-gap: 66px;
+            row-gap: 40px;
+        }
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
+    }
+    &__content {
+        grid-area: content;
+        width: 620px;
+        @include laptop {
+            width: 540px;
+        }
+        @include tablet {
+            width: 368px;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 70px;
+        font-family: var(--font-family-TenorSans-Regular);
+        text-transform: uppercase;
+        @include font-fluid-full (40, 26, 26, 22);
+        @include tablet {
+            margin-bottom: 30px;
+        }
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+    &__text {
+        margin-bottom: 50px;
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        @include font-fluid-full (36, 18);
+        @include tablet {
+            margin-bottom: 40px;
+        }
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+    &__link {
+        margin-bottom: 135px;
+        background: var(--color-white);
+        color: var(--color-black);
+        padding: 18px 183px;
+        border-radius: 5px;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (20);
+        @include laptop {
+            margin-bottom: 100px;
+        }
+        @include tablet {
+            padding: 18px 97px;
+        }
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    &__image {
+        grid-area: image;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__social {
+        position: absolute;
+        bottom: 0;
+        grid-area: social;
+        @include tablet {
+            position: relative;
+            text-align: center;
+        }
+        @include mobile {
+            margin-top: 18px;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+        font-family: var(--font-family-TenorSans-Regular);
+        text-transform: uppercase;
+        @include font-fluid-full (22, 18);
+        @include mobile {
+            text-align: left;
+            margin-top: 10px;
+        }
+    }
+    &__note {
+        margin-bottom: 40px;
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        @include font-fluid-full (24, 18);
+        @include mobile {
+            text-align: left;
+            margin-top: 30px;
+        }
+    }
+    &__box-social {
+        display: flex;
+        gap: 10px;
+        @include tablet {
+            justify-content: center;
+        }
+        @include mobile {
+            justify-content: start;
+        }
+    }
+    &__box-social {
+        .social-icon {
+            background: transparent;
+            border: 2px solid var(--color-mint);
+            &:hover {
+                & img {
+                    display: none
+                }
+            }
+        }
+    }
+    &__social--instagram:hover {
+        background: var(--color-mint) center / auto no-repeat url('../img/svg/instagram.svg');
+    }
+    &__social--facebook:hover {
+        background: var(--color-mint) center / auto no-repeat url('../img/svg/facebook.svg');
+    }
+    &__social--tik-tok:hover {
+        background: var(--color-mint) center / auto no-repeat url('../img/svg/tik_tok.svg');
+    }
+    &__social--svg {
+        @include square (40px);
+        padding: 11px;
+    }
+}

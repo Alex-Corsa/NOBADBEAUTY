@@ -52,12 +52,14 @@ footer {
     &__wrapper {
         display: flex;
         column-gap: 140px;
-        // @include laptop {
-        //     column-gap: 100px;
-        // }
+        @include laptop {
+            column-gap: 100px;
+        }
+        @include tablet {
+            column-gap: 60px;
+        }
         @include mobile {
             flex-direction: column;
-            column-gap: 60px;
         }
     }
     &__wrepper--mobile {
@@ -110,6 +112,7 @@ footer {
         @include square (44px)
     }
     &__record a {
+        text-align: center;
         padding: 11px 107px;
         border: 1px solid var(--color-mint);
         border-radius: 5px;

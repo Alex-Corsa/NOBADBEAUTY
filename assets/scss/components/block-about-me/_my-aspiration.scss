@@ -1,0 +1,121 @@
+@use '../../helpers' as *;
+
+.my-aspiration {
+    background-color: var(--color-beige);
+    position: relative;
+    &__wrap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 20px;
+        @include tablet {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            column-gap: 10px;
+        }
+    }
+    &__box-photo {
+        flex: 1 0 450px;
+        position: relative;
+        @include laptop {
+            // flex: 1 0 450px;
+        }
+        @include tablet {
+            flex: 1 0 261px;
+        }
+    }
+    &__box-photo img {
+        width: 699px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        @include laptop {
+            width: 100%;
+            height: auto;
+            position: static;
+        }
+    }
+    &__body {
+        margin-bottom: 70px;
+        padding-left: 10px;
+        flex: 1 0 690px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end;
+        @include laptop {
+            flex: 0 0 420px;
+        }
+        @include tablet {
+            flex: 1 1 367px;
+            margin-bottom: 30px;
+        }
+        @include mobile {
+            order: -1;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-family: var(--font-family-TenorSans-Regular);
+            @include font-fluid-full (40, 32, 26);
+            @include tablet {
+                margin-bottom: 10px;
+            }
+        }
+        h3 {
+            margin-bottom: 60px;
+            font-family: var(--font-family-Montserrat-ExtraLight);
+            @include font-fluid-full (24, 20, 16);
+            @include laptop {
+                margin-bottom: 30px;
+            }
+        }
+        p { 
+            margin-bottom: 30px;
+            font-family: var(--font-family-Montserrat-Light);
+            @include font-fluid-full (18, 16);
+            @include tablet {
+                margin-bottom: 15px;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style-type: disc;
+            padding-left: 20px;
+            @include laptop {
+                gap: 5px;
+            }
+            @include tablet {
+                gap: 2px;
+            }
+        }
+        li { 
+            font-family: var(--font-family-Montserrat-Light);
+            @include font-fluid-full (16, 14);
+        }
+    }
+    &__box-photos {
+        // flex: 0 1 710px;
+        display: flex;
+        column-gap: 20px;
+        @include laptop {
+            flex: none;
+            width: 100%;
+            margin-top: 15px;
+        }
+        @include tablet {
+            margin-top: 0;
+            column-gap: 10px;
+        }
+        img {
+            width: 100%;
+            min-width: 206px;
+            @include mobile {
+                min-width: 107px;
+            }
+        }
+    }
+}

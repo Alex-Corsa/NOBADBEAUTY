@@ -1,10 +1,10 @@
 @use '../helpers' as *;
-@use '_header-only-burger';
+@use 'header-only-burger';
 
 header {
     background: var(--color-black);
     &.active {
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2 )), 
                     url(../img/photos/photos-main/background-menu.jpg) no-repeat center center / cover;
     }
 }
@@ -12,7 +12,7 @@ header {
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0 30px;
+    margin: 40px auto 30px;
     @include mobile {
         margin: 20px 0 13px;
     }
@@ -33,6 +33,10 @@ header {
         border: 1px solid var(--color-mint);
         border-radius: 5px;
         color: var(--color-white);
+        transition: color 0.3s ease;
+    }
+    &__record a:hover {
+        color: var(--color-black);
     }
     &__nav, &__record {
         @include laptop {
@@ -43,11 +47,6 @@ header {
         @include mobile {
             display: none;
         }
-    }
-
-    // menu-burger
-    &__header-burger {
-        
     }
     &__burger {
         display: flex;
@@ -68,9 +67,6 @@ header {
             width: 100%;
         }
         &-language {
-            // position: absolute;
-            // z-index: 2;
-            // bottom: 0;
             a {
                 font-size: 40px;
             }
@@ -133,7 +129,7 @@ header {
             flex-direction: column;
 
             li {
-                a {
+                a, .btn-submenu  {
                     font-size: 36px;
                     @include mobile {
                         font-size: 24px;
@@ -142,4 +138,5 @@ header {
             }
         }
     }
+    
 }

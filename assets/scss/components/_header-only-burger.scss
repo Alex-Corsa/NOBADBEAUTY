@@ -20,6 +20,8 @@
         border-top: 1px solid var(--color-white);
         @include mobile {
             justify-content: flex-end;
+            margin-top: 20px;
+            padding-top: 15px;
         }
     }
     &__contacts {
@@ -92,5 +94,10 @@
     }
     &__social--svg {
         padding: 10px;
+    }
+    .social-icon {
+        @include mobile {
+            @include square (48px);
+        }
     }
 }
