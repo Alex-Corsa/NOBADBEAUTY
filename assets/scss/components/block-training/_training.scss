@@ -18,6 +18,9 @@
     &__box {
         background: white;
         padding: 0 20px;
+        @include laptop {
+            padding: 0 10px;
+        }
     };
     
     &__body {
@@ -27,6 +30,9 @@
         align-items: flex-end;
         column-gap: 20px;
         overflow: hidden;
+        @include laptop {
+            column-gap: 10px;
+        }
     };
     &__header {
         display: none
@@ -39,7 +45,7 @@
     &__subtitle {
         text-transform: uppercase;
         font-family: var(--font-family-TenorSans-Regular);
-        @include font-fluid-full (40, 26, 18);
+        @include font-fluid-full (40, 26, 26, 18);
     };
     &__advertising {
         font-family: var(--font-family-Montserrat-ExtraLight);
@@ -57,6 +63,9 @@
         flex-direction: column;
         row-gap: 20px;
         text-align: center;
+        @include laptop {
+            row-gap: 20px;
+        }
     }
     &__btn-open {
         display: none;
@@ -86,22 +95,58 @@
         font-family: var(--font-family-TenorSans-Regular);
         @include font-fluid-full (40, 26);
     };
+    &__box-img--nobad-brows {
+        background: url('../img/photos/teaching/nobad_brows_basic_small.jpg') center center / cover no-repeat;
+    }
+    &__box-img--nobad-brows-pro {
+        background: url('../img/photos/teaching/nobad_brows_pro_small.jpg') center center / cover no-repeat;
+    }
+    &__box-img--nobad-lamilashes {
+        background: url('../img/photos/teaching/nobad_lamilashes_small.jpg') center center / cover no-repeat;
+    }
+    &__box-img--nobad-lamilashes-pro {
+        background: url('../img/photos/teaching/nobad_lamilashes_pro_small.jpg') center center / cover no-repeat;
+    }
+    &__box-img--self-makeup {
+        background: url('../img/photos/teaching/self_makeup_small.jpg') center center / cover no-repeat;
+    }
     &__box-img {
         flex: 0 1 auto;
-        position: relative;
+        @include desktop {
+            background: none;
+        }
+        @include laptop {
+            display: none;
+        }
     };
     &__box-img.active {
+        display: block;
         width: 324px;
         height: 195px;
+        @include laptop {
+            height: 216px;
+            flex: 1 0 196px;
+        }
     }
     &__img {
+        position: relative;
+        opacity: 0;
         object-fit: cover;
-        transition: transform 0.8s ease;
         transform-origin: left top;
+        @include laptop {
+            display: none;
+        }
+    }
+    &__img.transition-enabled {
+        opacity: 1;
+        transition: transform 0.8s ease;
     }
     &__img.active {
         height: auto;
-        // transform: rotate(90deg) scale(0.3632, 0.3694) translate(0px, -100%);
+        transform: 
+                rotate(90deg)
+                scale(var(--scale-x, 1), var(--scale-y, 1))
+                translate(0px, -100%);
     }
     &__body-open {
         display: none

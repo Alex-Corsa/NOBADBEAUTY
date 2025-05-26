@@ -18,79 +18,86 @@ accordionButtons.forEach((button, index) => {
 
 // for page training
 
-const trainingHeader = document.querySelectorAll('[data-training-header]');
-const trainingButtonClosing = document.querySelectorAll('[data-training-btn-closing]');
-const trainingButtonOpen = document.querySelectorAll('[data-training-btn-open]');
-const trainingBodyCloset = document.querySelectorAll('[data-training-body-closet]');
-const trainingBodyOpen = document.querySelectorAll('[data-training-body-open]');
-const trainingBoxImg = document.querySelectorAll('[data-training-box-img]');
-const trainingImg = document.querySelectorAll('[data-training-img]');
+// ===================== DOM-збірники =====================
+const trainingHeader      = document.querySelectorAll('[data-training-header]');
+const trainingBtnClose    = document.querySelectorAll('[data-training-btn-closing]');
+const trainingBtnOpen     = document.querySelectorAll('[data-training-btn-open]');
+const trainingBodyClosed  = document.querySelectorAll('[data-training-body-closet]');
+const trainingBodyOpen    = document.querySelectorAll('[data-training-body-open]');
+const trainingBoxImg      = document.querySelectorAll('[data-training-box-img]');
+const trainingImg         = document.querySelectorAll('[data-training-img]');
 
+// ===================== початковий розрахунок масштабу =====================
+window.addEventListener('load', () => {
+    trainingImg.forEach((_, i) => {
+        setScaleVars(i);
 
-// Відкриття
-trainingButtonOpen.forEach((btn, index) => {
+      // Додаємо клас transition-enabled пізніше — після стартового стилю
+        requestAnimationFrame(() => {
+            trainingImg[i].classList.add('transition-enabled');
+        });
+    });
+
+    window.addEventListener('resize', throttle(() => {
+        trainingImg.forEach((_, i) => setScaleVars(i, true));
+    }, 150));
+});
+
+// ===================== логіка відкриття / закриття =====================
+trainingBtnOpen.forEach((btn, i) => {
     btn.addEventListener('click', () => {
-        trainingBodyCloset[index].classList.remove('active');
-        trainingBoxImg[index].classList.remove('active');
-        trainingImg[index].classList.remove('active'); // зображення повне
-        resetImageTransform(index); // Скинути transform
-        trainingHeader[index].classList.add('active');
-        trainingBodyOpen[index].classList.add('active');
+        trainingBodyClosed[i].classList.remove('active');
+        trainingBoxImg[i].classList.remove('active');
+        trainingImg[i].classList.remove('active'); // показуємо повне фото
+        trainingHeader[i].classList.add('active');
+        trainingBodyOpen[i].classList.add('active');
     });
 });
 
-// Закриття
-trainingButtonClosing.forEach((btn, index) => {
+trainingBtnClose.forEach((btn, i) => {
     btn.addEventListener('click', () => {
-        trainingHeader[index].classList.remove('active');
-        trainingBodyOpen[index].classList.remove('active');
-        trainingImg[index].classList.add('active'); // додали клас -> буде згорнуте
-        trainingBodyCloset[index].classList.add('active');
-        trainingBoxImg[index].classList.add('active');
-
-        adjustImageTransform(index); // застосовуємо transform
+        trainingHeader[i].classList.remove('active');
+        trainingBodyOpen[i].classList.remove('active');
+        trainingImg[i].classList.add('active'); // додаємо  клас active
+        trainingBodyClosed[i].classList.add('active');
+        trainingBoxImg[i].classList.add('active');
+        /* тут вже не треба нічого рахувати – scale-змінні задані */
     });
 });
 
+// ===================== встановлення CSS-змінних =====================
+function setScaleVars(index, force = false) {
+    const img = trainingImg[index];
+    if (!force && img.dataset.scaleReady === 'true') return;
 
+    const ready = () => {
+        const boxRect = trainingBoxImg[index].getBoundingClientRect();
+        const nW = img.naturalWidth;
+        const nH = img.naturalHeight;
 
-function adjustImageTransform(index) {
-    const container = trainingBoxImg[index];
-    const image = trainingImg[index];
+        const scaleX = boxRect.width / nH;
+        const scaleY = boxRect.height / nW;
 
-    // Якщо вже обчислено — використовуємо кеш
-    if (image.dataset.transformed === 'true') {
-        image.style.transform = image.dataset.transform;
-        return;
+        // Візьмемо максимальне, щоб покрити контейнер повністю
+        const scale = Math.max(scaleX, scaleY);
+
+        img.style.setProperty('--scale-x', scale);
+        img.style.setProperty('--scale-y', scale);
+        img.dataset.scaleReady = 'true';
+    };
+
+    if (img.complete) {
+        ready();
+    } else {
+        img.addEventListener('load', ready, { once: true });
     }
-
-    image.style.transform = 'none';
-
-    requestAnimationFrame(() => {
-        const containerRect = container.getBoundingClientRect();
-        const imageRect = image.getBoundingClientRect();
-
-        const scaleX = containerRect.height / imageRect.width;
-        const scaleY = containerRect.width / imageRect.height;
-        const translateY = -imageRect.height;
-
-        const transformString = `rotate(90deg) scale(${scaleX}, ${scaleY}) translate(0px, ${translateY}px)`;
-
-        image.style.transformOrigin = 'left top';
-        image.style.transform = transformString;
-
-        image.dataset.transformed = 'true';
-        image.dataset.transform = transformString;
-    });
 }
 
-
-function resetImageTransform(index) {
-    const image = trainingImg[index];
-    image.style.transform = 'none';
-
-    // Скидаємо кешовані значення, щоб при наступному відкритті обчислювалось заново
-    delete image.dataset.transformed;
-    delete image.dataset.transform;
-}
-
+// ===================== маленький throttle, щоб не сипати перерахунки =====================
+// function throttle(fn, delay) {
+//     let id;
+//     return (...args) => {
+//         if (id) return;
+//         id = setTimeout(() => { id = null; fn(...args); }, delay);
+//     };
+// };
