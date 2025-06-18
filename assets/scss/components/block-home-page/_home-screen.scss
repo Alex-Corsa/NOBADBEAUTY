@@ -1,6 +1,9 @@
 @use '../../helpers' as *;
 
 .home-screen {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     background-color: #625952;
     min-height: 792px;
     background-image: url(../img/photos/photos-main/main_photo.jpg);
@@ -23,14 +26,14 @@
     // &__main-block {
     // }
     &__main-text {
-        padding-top: 146px;
+        margin-top: 146px;
         max-width: 633px;
         color: var(--color-white);
         @include tablet {
-            padding-top: 60px;
+            margin-top: 60px;
         }
         @include mobile {
-            padding-top: 30px;
+            margin-top: 30px;
         }
     }
     &__hero, &__slogan, &__slogan-small, &__record a, &__contact a {
@@ -45,6 +48,9 @@
         @include mobile {
             margin-bottom: 10px;
         }
+    }
+    &__hero span {
+        display: inline-block;
     }
     &__slogan {
         font-family: var(--font-family-Montserrat-ExtraLight);
@@ -70,18 +76,15 @@
         padding: 3px 0;
         @include font-fluid-full (24, 20, 18, 14);
     }
-    &__record a {
-        padding: 20px 132px;
-        font-family: var(--font-family-Montserrat-Regular);
-        color: var(--color-white);
-        background: var(--color-black);
-        text-align: center;
-        border-radius: 5px;
+    &__btn-link {
         @include laptop {
-            padding: 20px 120px;
+            width: 320px;
         }
         @include tablet {
-            padding: 9px 70px;
+            width: 232px;
+        }
+        @include mobile {
+            display: none;
         }
     }
     &__record-mobile {
@@ -103,7 +106,7 @@
             max-width: 400px;
         }
         @include tablet {
-            max-width: 251px;
+            max-width: 330px;
         }
     }
     &__contacts a {
@@ -114,6 +117,9 @@
     
     &__contact-item.contact--phone{
         align-items: center;
+        &:hover {
+            color: var(--color-mint);
+        }
     }
     &__contact-item.contact--phone::before {
         content: "";
@@ -121,15 +127,17 @@
         background: url(../img/svg/icon_phone.svg) no-repeat center;
         background-size: contain;
         margin-right: 5px;
-        @include square (16px);
+        @include square (30px);
     }
     &__contacts .contact--address {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding: 5px 0;
         @include mobile {
-            // min-width: 320px;
             padding: 0;
+        }
+        &:hover {
+            color: var(--color-mint);
         }
     }
     &__contact-item.contact--address::before {
@@ -137,18 +145,18 @@
         background: url(../img/svg/icon_map.svg) no-repeat center;
         background-size: contain;
         margin-right: 5px;
-        @include square(16px);
+        @include square(30px);
         flex-shrink: 0;
     }
     &__link {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
         @include tablet {
-            padding-bottom: 15px;
+            margin-bottom: 15px;
         }
         @include mobile {
-            padding: 0;
+            margin: 0;
             flex-direction: column;
         }
     }

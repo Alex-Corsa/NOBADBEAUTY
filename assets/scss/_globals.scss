@@ -3,21 +3,14 @@
     margin: 0;
     padding: 0;
 }
-
-// body {
-//     line-height: 1.12;
-// }
-
-// p, li, h1, h2, h3, h4, h5, h6, span {
-//     line-height: inherit;
-// }
-
+body {
+    overflow-x: hidden;
+}
 .page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
 .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -29,11 +22,9 @@
         padding: 0 10px;
     }
 }
-
 .not-burger {
     display: none;
 }
-
 .box-logo {
     max-width: 183px;
     min-height: 54px;
@@ -42,7 +33,6 @@
 .box-logo:hover {
     transform: scale(0.8);
 }
-
 .menu-list {
     display: flex;
     gap: 15px;
@@ -55,6 +45,89 @@
     background-size: auto;
     background-position: center;
 }
+// Посилання у вигляді кнопок
+.btn-link--dark, .btn-link--light, .btn-link--dark-light, .btn-link--light-dark {
+    position: relative;
+    z-index: 1;
+    height: 60px;
+    font-family: var(--font-family-Montserrat-Regular);
+    font-size: 20px;
+    display: flex    ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;    
+    transition: color 0.8s ease;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.8s ease;
+        border-radius: inherit;
+    }
+}
+.btn-link--dark {
+    background: var(--color-black);
+    color: var(--color-white);
+    &::before {
+        content: "";
+        background: var(--color-gradient_dark); 
+    }
+    &:hover {
+        color: var(--color-white);
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+.btn-link--light {
+    background: var(--color-white);
+    color: var(--color-black);
+    &::before {
+        content: "";
+        background: var(--color-gradient_light);
+    }
+    &:hover {
+        color: var(--color-black);
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+.btn-link--dark-light{
+    background: var(--color-black);
+    color: var(--color-white);
+    &::before {
+        content: "";
+        background: var(--color-gradient_light);
+    }
+    &:hover {
+        color: var(--color-black);
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+.btn-link--light-dark{
+    background: var(--color-white);
+    color: var(--color-black);
+    &::before {
+        content: "";
+        background: var(--color-gradient_dark); 
+    }
+    &:hover {
+        color: var(--color-white);
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+// Меню аккордеон
 .btn-submenu {
     display: flex;
     align-items: center;
@@ -65,9 +138,6 @@
     color: var(--color-white);
     transition: color 0.3s ease;
 }
-// .btn-submenu:hover {
-//     color: var(--color-mint);
-// }
 .btn-submenu:active {
     font-family: var(--font-family-Montserrat-Medium);
 }
@@ -79,11 +149,6 @@
     transition: transform 0.3s ease;
     @include square (24px);
 }
-// .btn-submenu-icon {
-//     background-image: url('../img/svg/icon_nav_arrow_down_mint.svg');
-//     background-size: auto;
-//     background-position: center;
-// }
 .btn-submenu-icon.active {
     transform: rotate(180deg);
 }
@@ -100,11 +165,9 @@
 .menu-link:active {
     font-family: var(--font-family-Montserrat-Medium);
 }
-
 .item-portfolio.open::after {
     transform: rotate(180deg); /* обертання на 180 градусів */
 }
-
 .has-submenu {
     position: relative;
 
@@ -113,7 +176,10 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background: #AFA6A1;
+        // background: #AFA6A1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* для Safari */
+        background: rgba(175, 166, 161, 0.5); /* прозорий білий */
         padding: 25px 30px;
         border-radius: 5px;
         z-index: 100;
@@ -143,7 +209,6 @@
         display: block;
     }
 }
-
 .lang {
     font-family: var(--font-family-Montserrat-Light);
     font-size: 18px;
@@ -160,13 +225,6 @@
 .lang:active {
     font-family: var(--font-family-Montserrat-Regular);
 }
-
-.record-link {
-    font-family: var(--font-family-Montserrat-Regular);
-    font-size: 18px;
-    color: var(--color-white);
-}
-
 .social-icon {
     display: flex;
     justify-content: center;
@@ -182,67 +240,14 @@
         background: var(--color-white);
     }
 }
-
 .social-icon a{
     display: contents;
 }
-
-.animated-bg-light-hover {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    z-index: 1;
-    transition: color 0.3s ease;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--color-gradient_light); // або будь-який інший колір/градієнт
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 0.3s ease;
-        border-radius: inherit; // успадковує бордер-радіус від елемента
-    }
-
+// еффект авторських фото
+.boxing-with-photo-effect {
+    transition: transform 0.3s ease;
     &:hover {
-      color: var(--color-black); // змінює текст на чорний при наведенні
-
-        &::before {
-            opacity: 1;
-        }
+        transform: scale(1.05);
     }
 }
-.animated-bg-dark-hover {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    z-index: 1;
-    transition: color 0.3s ease;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--color-gradient_dark); // або будь-який інший колір/градієнт
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 0.3s ease;
-        border-radius: inherit; // успадковує бордер-радіус від елемента
-    }
-
-    &:hover {
-      color: var(--color-white); // змінює текст на чорний при наведенні
-
-        &::before {
-            opacity: 1;
-        }
-    }
-}
-
+// скруглення фото

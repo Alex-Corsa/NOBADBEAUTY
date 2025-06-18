@@ -111,16 +111,10 @@ footer {
         content: url(../img/svg/icon_map.svg);
         @include square (44px)
     }
-    &__record a {
-        text-align: center;
-        padding: 11px 107px;
+    &__record-link {
         border: 1px solid var(--color-mint);
-        border-radius: 5px;
-        color: var(--color-white);
         @include tablet {
             width: 100%;
-            padding: 14px 76px;
-            justify-content: center;
         }
     }
     &__developer-basement {

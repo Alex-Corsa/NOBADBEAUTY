@@ -3,6 +3,7 @@
 .recording {
     background: var(--color-black_light);
     color:var(--color-white);
+    overflow: hidden;
     &__wrap {
         position: relative;
         display: grid;
@@ -12,10 +13,8 @@
             "content image"
             "social image";
         column-gap: 20px;
-        padding-top: 100px;
-        padding-bottom: 100px;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 100px auto;
         color: white;
         @include tablet {
             // max-width: 640px;
@@ -31,8 +30,7 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
-            padding-top: 50px;
-            padding-bottom: 60px;
+            margin: 50px auto 60px;
         }
     }
     &__content {
@@ -72,23 +70,13 @@
         }
     }
     &__link {
+        max-width: 486px;
         margin-bottom: 135px;
-        background: var(--color-white);
-        color: var(--color-black);
-        padding: 18px 183px;
-        border-radius: 5px;
-        font-family: var(--font-family-TenorSans-Regular);
-        @include font-fluid-full (20);
         @include laptop {
             margin-bottom: 100px;
         }
-        @include tablet {
-            padding: 18px 97px;
-        }
         @include mobile {
-            display: flex;
-            justify-content: center;
-            width: 100%;
+            max-width: 100%;
             margin-bottom: 30px;
         }
     }
@@ -97,6 +85,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
     &__image img {
         width: 100%;
@@ -150,7 +139,7 @@
             border: 2px solid var(--color-mint);
             &:hover {
                 & img {
-                    display: none
+                    opacity: 0;
                 }
             }
         }

@@ -92,12 +92,3 @@ function setScaleVars(index, force = false) {
         img.addEventListener('load', ready, { once: true });
     }
 }
-
-// ===================== маленький throttle, щоб не сипати перерахунки =====================
-// function throttle(fn, delay) {
-//     let id;
-//     return (...args) => {
-//         if (id) return;
-//         id = setTimeout(() => { id = null; fn(...args); }, delay);
-//     };
-// };

@@ -9,14 +9,12 @@
         z-index: -1;
     }
     &__wrap {
-        padding-top: 150px;
-        padding-bottom: 150px;
+        margin: 100px auto;
         display: flex;
         justify-content: space-between;
         gap: 106px;
         @include mobile {
-            padding-top: 50px;
-            padding-bottom: 55px;
+            margin: 50px auto 55px;
             gap: 10px;
             flex-wrap: wrap;
         }
@@ -50,6 +48,7 @@
     }
     &__box-photo {
         flex: 1 0 260px;
+        overflow: hidden;
         img {
             width: 100%;
         }

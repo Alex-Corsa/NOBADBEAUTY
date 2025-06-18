@@ -1,16 +1,17 @@
 @use '../../helpers' as *;
 
 .price {
-    padding: 100px 0;
+    overflow: hidden;
     background: var(--color-gray_light);
     @include tablet {
-        padding: 40px 0 70px;
+        margin: 40px 0 70px;
     }
     @include mobile {
-        padding: 30px 0 50px;
+        margin: 30px 0 50px;
     }
-    // &__wrap {
-    // }
+    &__wrap {
+        margin: 100px auto;
+    }
     &__box {
         margin-bottom: 20px;
         background: var(--color-white);

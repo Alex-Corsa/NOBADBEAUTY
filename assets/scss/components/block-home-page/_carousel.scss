@@ -1,0 +1,100 @@
+@use '../../helpers' as *;
+
+.carousel {
+    min-height: 444px;
+    &__track-container {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        @include mobile {
+            width: 285px;
+            margin: auto;
+            position: relative;
+        }
+    }
+    &__track {
+        display: flex;
+        column-gap: 20px;
+        transition: transform 0.5s ease;
+    }
+    &__card {
+        height: 363px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 35px 20px;
+        flex: 0 0 300px;
+        background: white;
+        border-radius: 8px;
+        transition: box-shadow 0.5s ease;
+        @include mobile {
+            flex: 0 0 285px;
+        }
+        &:hover {
+            border: 1px solid var(--color-beige);
+        }
+    }
+    &__card-header {
+        position: relative;
+    }
+    &__booksy {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__card-h4 {
+        font-family: var(--font-family-TenorSans-Regular);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        @include font-fluid-full (24);
+    }
+    &__card-raiting {
+        margin-bottom: 5px;
+    }
+    &__card-h6 {
+        height: 29px;
+        font-family: var(--font-family-TenorSans-Regular);
+        @include font-fluid-full (12)
+    }
+    &__card-text {
+        height: 160px;
+        margin-bottom: 20px;
+        line-height: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        line-clamp: 6;
+        font-family: var(--font-family-Roboto-ExtraLight);
+        @include font-fluid-full (16)
+    }
+    &__card-btn {
+        width: 93px;
+        color: var(--color-beige);
+        font-family: var(--font-family-TenorSans-Regular);
+        border: none;
+        background: inherit;
+        text-align: start;
+        border-bottom: 2px solid var(--color-beige);
+        transition: all 0.8s ease;
+        cursor: pointer;
+        @include font-fluid-full (15);
+        &:hover {
+            color: var(--color-black);
+            border-bottom: 2px solid var(--color-black);
+        }
+    }
+    &__box-btn {
+        position: relative;
+        top: 100%;
+        display: flex;
+        column-gap: 20px;
+    }
+    &__btn {
+        border: none;
+        cursor: pointer;
+    }
+}

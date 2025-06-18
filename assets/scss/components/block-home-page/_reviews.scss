@@ -1,11 +1,13 @@
 @use '../../helpers' as *;
 
 .reviews {
+    background: var(--color-gray_light);
+    position: relative;
+    overflow: hidden;
     &__wrap {
-        max-width: 935px;
         margin: 150px auto;
         @include laptop {
-            max-width: 85s0px;
+            max-width: 850px;
         }
         @include tablet {
             max-width: 640px;
@@ -16,10 +18,11 @@
         }
     }
     &__h2 {
+        text-transform: uppercase;
         margin-bottom: 20px;
         font-family: var(--font-family-TenorSans-Regular);
         color: var(--color-black);
-        @include font-fluid-full (70, 40);
+        @include font-fluid-full (70, 40, 36, 26);
         @include tablet {
             margin-bottom: 15px;
         }
@@ -34,7 +37,18 @@
             margin-bottom: 60px;
         }
     }
+    &__box-reviews {
+        display: flex;
+        column-gap: 20px;
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+    }
     &__set {
+        min-width: 387px;
+        @include tablet {
+            min-width: 261px;
+        }
         &-text {
             margin-bottom: 30px;
             max-width: 390px;
@@ -54,21 +68,8 @@
                 @include font-fluid-full (18, 14)
             }
         }
-        a {
-            color: var(--color-white);
-            padding: 18px 106px;
-            background-color: var(--color-black_light);
-            font-family: var(--font-family-Montserrat-Regular);
-            font-size: var(--font-size-button);
-            border-radius: 5px;
-            @include tablet {
-                padding: 18px 43px;
-            }
-            @include mobile {
-                display: flex;
-                justify-content: center;
-                padding: 18px 82px;
-            }
-        }
+    }
+    &__get {
+        // overflow: hidden;
     }
 }

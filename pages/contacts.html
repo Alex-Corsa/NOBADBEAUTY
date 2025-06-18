@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/scss/main.css">
     <script src="../assets/js/burger.js" defer></script>
     <script src="../assets/js/dropdown-menu.js" defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script> -->
     <script src="../assets/js/main.js" type="module" defer></script>
 </head>
 <body>
@@ -82,7 +83,12 @@
                     </div>
 
                     <div class="header__record">
-                        <a href="#" target="_blank" class="record-link animated-bg-light-hover">Записатися</a>
+                        <a 
+                            href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1" 
+                            target="_blank"
+                            rel="noopener noreferrer" class="header__record-link btn-link--dark-light">
+                            Записатися
+                    </a>
                     </div>
 
                 </div>
@@ -97,27 +103,40 @@
                 <div class="header-only-burger__down">
                     <div class="header-only-burger__contacts">
                         <a 
-                        href="tel:" 
-                        class="header-only-burger__contact-item contact--phone">+48570790975
+                            href="tel:+48570790975"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="header-only-burger__contact-item contact--phone">+48570790975
                         </a>
                         <a 
-                            href="#" target="_blank" 
+                            href="https://maps.app.goo.gl/ksM3zsmos2LTwcDo8" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             class="header-only-burger__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
                         </a>
                     </div>
                     <div class="header-only-burger__social not-for-mobile-version" data-burger-social>
                         <div class="social-icon social--instagram">
-                            <a href="#">
-                                <img class="header-only-burger__social--svg" src="../assets/img/svg/instagram.svg" alt="instagram">
+                            <a 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.instagram.com/nobadbeauty">
+                                    <img class="header-only-burger__social--svg" src="../assets/img/svg/instagram.svg" alt="instagram">
                             </a>
                         </div>
                         <div class="social-icon social--facebook">
-                            <a href="#">
-                                <img class="header-only-burger__social--svg" src="../assets/img/svg/facebook.svg" alt="facebook">
+                            <a 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.facebook.com/nobadbeautyx">
+                                    <img class="header-only-burger__social--svg" src="../assets/img/svg/facebook.svg" alt="facebook">
                             </a>
                         </div>
                         <div class="social-icon social--tik-tok">
-                            <a href="#">
+                            <a 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.tiktok.com/@nobadbeauty">
                                 <img class="header-only-burger__social--svg" src="../assets/img/svg/tik_tok.svg" alt="tik_tok">
                             </a>
                         </div>
@@ -130,24 +149,75 @@
         <main>
             <section class="contacts">
                 <div class="contacts__wrap container">
-                    <div class="contacts__box-info">
-                        <p>телефон</p>
-                        <a href="">+48570790975</a>
-                        <p>Адреса</p>
-                        <a href="">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)</a>
-                        <p>Відео, щоб легко мене знайти</p>
-                        <a href="">Подивитись відео</a>
+                    <h1 class="contacts__title">Контакти</h1>
+                    <div class="contacts__body">
+                        <div class="contacts__box-info">
+                            <div class="contacts__item">
+                                <p class="contacts__label">Телефон</p>
+                                <a class="contacts__link" href="tel:+48570790975">+48 570 790 975</a>
+                            </div>
+                            <div class="contacts__item">
+                                <p class="contacts__label">Адреса</p>
+                                <a 
+                                    class="contacts__link" 
+                                    href="https://maps.google.com/?q=Wojska Polskiego 58/U6, 05-500, Piaseczno"
+                                    target="_blank" 
+                                    rel="noopener noreferrer">
+                                    Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
+                                </a>
+                            </div>
+                            <div class="contacts__item">
+                                <p class="contacts__label contacts__label--video">Відео, щоб легко мене знайти</p>
+                                <a 
+                                    class="btn-link--dark" 
+                                    href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDg1OTU2MzM3NDU4MzU4?story_media_id=3390982073254331765&igsh=MWRwZmNyZXBybm4zNw==" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
+                                    Подивитись відео
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contacts__box-map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1762.815411372674!2d21.0234559!3d52.0685733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192e488084bd91%3A0x3c875266e9a447c6!2zV29qc2thIFBvbHNraWVnbyA1OC9VNiwgMDUtNTAwIFBpYXNlY3pubywg0J_QvtC70YzRidCw!5e1!3m2!1suk!2sua!4v1746298998130!5m2!1suk!2sua"
+                                class="map-iframe"
+                                title="Салон краси на карті"
+                                allowfullscreen
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="contacts__box-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1762.815411372674!2d21.0234559!3d52.0685733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192e488084bd91%3A0x3c875266e9a447c6!2zV29qc2thIFBvbHNraWVnbyA1OC9VNiwgMDUtNTAwIFBpYXNlY3pubywg0J_QvtC70YzRidCw!5e1!3m2!1suk!2sua!4v1746298998130!5m2!1suk!2sua" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                    <div class="contacts__footer">
+                        <h4 class="contacts__subtitle">слідкуйте за мною в соцмережах</h4>
+                        <p class="contacts__text">Секрети догляду, ідеї для образів і моя робота в реальному житті</p>
+                        <div class="contacts__social">
+                            <div class="social-icon social--instagram">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.instagram.com/nobadbeauty">
+                                        <img class="footer__social--svg" src="../assets/img/svg/instagram.svg" alt="instagram">
+                                </a>
+                            </div>
+                            <div class="social-icon social--facebook">
+                                <a 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.facebook.com/nobadbeautyx">
+                                        <img class="footer__social--svg" src="../assets/img/svg/facebook.svg" alt="facebook">
+                                </a>
+                            </div>
+                            <div class="social-icon social--tik-tok">
+                                <a 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.tiktok.com/@nobadbeauty">
+                                        <img class="footer__social--svg" src="../assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -165,7 +235,7 @@
                                 <img src="../assets/img/svg/logo.svg" alt="NOBADBEAUTY">
                             </a>
                         </div>
-                        // For large screens 
+                        <!-- For large screens  -->
                         <div class="not-for-mobile-version">
                             <div class="footer__language language ">
                                 <a href="#" class="lang active">UA</a>
@@ -173,18 +243,27 @@
                             </div>
                             <div class="footer__social">
                                 <div class="social-icon social--instagram">
-                                    <a href="#">
-                                        <img class="footer__social--svg" src="../assets/img/svg/instagram.svg" alt="instagram">
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://www.instagram.com/nobadbeauty">
+                                            <img class="footer__social--svg" src="../assets/img/svg/instagram.svg" alt="instagram">
                                     </a>
                                 </div>
                                 <div class="social-icon social--facebook">
-                                    <a href="#">
-                                        <img class="footer__social--svg" src="../assets/img/svg/facebook.svg" alt="facebook">
+                                    <a 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://www.facebook.com/nobadbeautyx">
+                                            <img class="footer__social--svg" src="../assets/img/svg/facebook.svg" alt="facebook">
                                     </a>
                                 </div>
                                 <div class="social-icon social--tik-tok">
-                                    <a href="#">
-                                        <img class="footer__social--svg" src="../assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                    <a 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://www.tiktok.com/@nobadbeauty">
+                                            <img class="footer__social--svg" src="../assets/img/svg/tik_tok.svg" alt="tik_tok">
                                     </a>
                                 </div>
                             </div>
@@ -199,8 +278,9 @@
                                         <li class="footer__menu-item menu-item">
                                             <a href="./about-me.html" class="footer__menu-link menu-link">Про мене</a>
                                         </li>
-                                        <li class="footer__menu-item menu-item has-submenu" data-dropdown> 
-                                            <button type="button" class="header__submenu btn-submenu item-portfolio" 
+                                        <li class="footer__menu-item menu-item has-submenu" data-dropdown>
+                                            <a href="#portfolio" class="footer__menu-link menu-link">Портфоліо</a>
+                                            <!-- <button type="button" class="header__submenu btn-submenu item-portfolio" 
                                             data-dropdown-toggle>Портфоліо</button>
                                             <ul class="submenu" data-dropdown-menu>
                                                 <li class="submenu__item">
@@ -218,7 +298,7 @@
                                                 <li class="submenu__item">
                                                     <a href="./portfolio-wedding-proposal.html" class="submenu__link">Весільна пропозиція</a>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                         <li class="footer__menu-item menu-item">
                                             <a href="./price.html" class="footer__menu-link menu-link">Прайс</a>
@@ -240,17 +320,26 @@
                                 </div>
                                 <div class="footer__social">
                                     <div class="social-icon social--instagram">
-                                        <a href="#">
+                                        <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://www.instagram.com/nobadbeauty">
                                             <img src="../assets/img/svg/instagram.svg" alt="instagram">
                                         </a>
                                     </div>
                                     <div class="social-icon social--facebook">
-                                        <a href="#">
-                                            <img src="../assets/img/svg/facebook.svg" alt="facebook">
+                                        <a
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            href="https://www.facebook.com/nobadbeautyx">
+                                                <img src="../assets/img/svg/facebook.svg" alt="facebook">
                                         </a>
                                     </div>
                                     <div class="social-icon social--tik-tok">
-                                        <a href="#">
+                                        <a
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            href="https://www.tiktok.com/@nobadbeauty">
                                             <img src="../assets/img/svg/tik_tok.svg" alt="tik_tok">
                                         </a>
                                     </div>
@@ -264,20 +353,23 @@
                             <div class="footer__contact">
 
                                 <a 
-                                href="tel:" 
-                                class="footer__contact-item contact--phone">+48570790975
+                                    href="tel:+48570790975" 
+                                    class="footer__contact-item contact--phone">+48570790975
                                 </a>
                                 <a 
-                                    href="#" target="_blank" 
+                                    href="https://maps.app.goo.gl/ksM3zsmos2LTwcDo8" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     class="footer__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
                                 </a>
                             </div>
     
                             <div class="footer__record">
                                 <a 
-                                    href="#" 
-                                    target="_blank" 
-                                    class="footer__contact-item record-link animated-bg-light-hover">Записатися
+                                    href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 " 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="footer__record-link btn-link--dark-light">Записатися
                                 </a>
                             </div>
                         </div>
@@ -286,8 +378,16 @@
                 </div>
                 <div class="footer__developer-basement">
                     <div class="footer__basement-link">
-                        <a class="design--link" href="#">Design by Yulia Tarna</a>
-                        <a class="developed--link" href="#">Developed by Alex Corsa</a>
+                        <a
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        class="design--link" 
+                        href="https://www.instagram.com/tarna.design/">Design by Yulia Tarna</a>
+                        <a
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        class="developed--link" 
+                        href="https://t.me/Corsa91">Developed by Alex Corsa</a>
                     </div>
                     <p>© 2025. All rights reserved.</p>
                 </div>

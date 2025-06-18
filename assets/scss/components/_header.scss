@@ -4,7 +4,7 @@
 header {
     background: var(--color-black);
     &.active {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2 )), 
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5 )), 
                     url(../img/photos/photos-main/background-menu.jpg) no-repeat center center / cover;
     }
 }
@@ -28,15 +28,9 @@ header {
             flex-direction: row-reverse;
         }
     }
-    &__record a {
-        padding: 11px 36px;
+    &__record-link {
+        width: 181px;
         border: 1px solid var(--color-mint);
-        border-radius: 5px;
-        color: var(--color-white);
-        transition: color 0.3s ease;
-    }
-    &__record a:hover {
-        color: var(--color-black);
     }
     &__nav, &__record {
         @include laptop {

@@ -13,8 +13,11 @@
 @use 'components/main-portfolio';
 @use 'components/main-price';
 @use 'components/main-training';
+@use 'components/main-contacts';
 @use 'components/footer';
 
+
+@use 'error';
 
 .main {
     flex-grow: 1; 

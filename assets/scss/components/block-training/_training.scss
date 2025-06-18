@@ -2,13 +2,17 @@
 
 .training {
     background-color: var(--color-beige_light);
+    overflow: hidden;
     // &__wrap {};
     &__title {
-        padding: 80px 0 70px;
+        margin: 80px auto 70px;
         text-align: center;
         text-transform: uppercase;
         font-family: var(--font-family-TenorSans-Regular);
         @include font-fluid-full (70, 40);
+        @include mobile {
+            margin: 30px auto;
+        }
     };
     &__main-body {
         display: flex;
@@ -32,6 +36,9 @@
         overflow: hidden;
         @include laptop {
             column-gap: 10px;
+        }
+        @include mobile {
+            margin: 15px 0 5px;
         }
     };
     &__header {
@@ -127,6 +134,9 @@
             height: 216px;
             flex: 1 0 196px;
         }
+        @include mobile {
+            display: none;
+        }
     }
     &__img {
         position: relative;
@@ -153,7 +163,6 @@
     }
     &__body-open.active {
         display: block;
-        // max-width: 600px;
     }
     &__btn-closing {
         display: none;
@@ -186,7 +195,6 @@
         font-family: var(--font-family-Montserrat-Light);
         @include font-fluid-full (18);
     };
-    // &__course-program {};
     &__presentation {
         color: var(--color-beige);
         margin-bottom: 30px;
@@ -214,6 +222,9 @@
         display: flex;
         flex-direction: column;
         row-gap: 10px;
+        @include mobile {
+            margin-bottom: 15px;
+        }
     }
     &__list-footer li {
         display: flex;
@@ -223,17 +234,37 @@
         font-family: var(--font-family-TenorSans-Regular);
         @include font-fluid-full (22);
     };
-    // &__term {
-    //     font-family: var(--font-family-TenorSans-Regular);
-    //     @include font-fluid-full (22);
-    // };
-    // &__cost {
-    //     font-family: var(--font-family-TenorSans-Regular);
-    //     @include font-fluid-full (22);
-    // };
     &__price {
         font-family: var(--font-family-Montserrat-Regular);
         @include font-fluid-full (24);
     };
+    &__record {
+        margin: 70px 0 80px;
+        display: flex;
+        justify-content: space-between;
+        @include tablet {
+            text-align: center;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+        @include mobile {
+            margin: 30px 0 50px;
+        }
+    }
+    &__record-text {
+        width: 590px;
+        font-family: var(--font-family-Montserrat-ExtraLight);
+        @include font-fluid-full (24, 20, 18);
+        @include tablet {
+            font-family: var(--font-family-Montserrat-Light);
+            width: 100%;
+        }
+    }
+    &__record-link {
+        width: 388px;
+        @include tablet {
+            width: 100%;
+        }
+    }
 }
 

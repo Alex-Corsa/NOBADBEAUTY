@@ -17,8 +17,12 @@
         }
     }
     &__box-photo {
-        // min-width: 260px;
         flex: 1 0 260px;
+        max-width: 488px;
+        overflow: hidden;
+        @include mobile {
+            max-width: 100%;
+        }
     }
     &__box-photo img {
         width: 100%;
