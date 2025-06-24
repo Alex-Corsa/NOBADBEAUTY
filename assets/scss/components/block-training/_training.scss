@@ -103,19 +103,19 @@
         @include font-fluid-full (40, 26);
     };
     &__box-img--nobad-brows {
-        background: url('../img/photos/teaching/nobad_brows_basic_small.jpg') center center / cover no-repeat;
+        background: url('assets/img/photos/teaching/nobad_brows_basic_small.jpg') center center / cover no-repeat;
     }
     &__box-img--nobad-brows-pro {
-        background: url('../img/photos/teaching/nobad_brows_pro_small.jpg') center center / cover no-repeat;
+        background: url('assets/img/photos/teaching/nobad_brows_pro_small.jpg') center center / cover no-repeat;
     }
     &__box-img--nobad-lamilashes {
-        background: url('../img/photos/teaching/nobad_lamilashes_small.jpg') center center / cover no-repeat;
+        background: url('assets/img/photos/teaching/nobad_lamilashes_small.jpg') center center / cover no-repeat;
     }
     &__box-img--nobad-lamilashes-pro {
-        background: url('../img/photos/teaching/nobad_lamilashes_pro_small.jpg') center center / cover no-repeat;
+        background: url('assets/img/photos/teaching/nobad_lamilashes_pro_small.jpg') center center / cover no-repeat;
     }
     &__box-img--self-makeup {
-        background: url('../img/photos/teaching/self_makeup_small.jpg') center center / cover no-repeat;
+        background: url('assets/img/photos/teaching/self_makeup_small.jpg') center center / cover no-repeat;
     }
     &__box-img {
         flex: 0 1 auto;
@@ -183,7 +183,10 @@
         background-image: url('../img/svg/icon_close.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        transition: transform 0.3s ease;
+        transition: transform 0.8s ease;
+        &:hover {
+            background-image: url('../img/svg/icon_close_hover.svg');
+        }
     }
     &__box-text {
         margin-bottom: 25px;

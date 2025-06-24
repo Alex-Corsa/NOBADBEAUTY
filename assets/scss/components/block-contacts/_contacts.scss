@@ -68,6 +68,10 @@
         @include tablet {
             font-family: var(--font-family-Montserrat-Light);
         }
+        &:hover {
+            font-weight: 800;
+            color: var(--color-mint);
+        }
     }
     &__box-map {
         width: 100%;

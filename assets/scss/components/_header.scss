@@ -2,10 +2,12 @@
 @use 'header-only-burger';
 
 header {
+    position: relative;
+    z-index: 100;
     background: var(--color-black);
     &.active {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5 )), 
-                    url(../img/photos/photos-main/background-menu.jpg) no-repeat center center / cover;
+                    url("assets/img/photos/photos-main/background-menu.jpg") no-repeat center center / cover;
     }
 }
 

@@ -145,13 +145,13 @@
         }
     }
     &__social--instagram:hover {
-        background: var(--color-mint) center / auto no-repeat url('../img/svg/instagram.svg');
+        background: var(--color-mint) center / auto no-repeat url('/assets/img/svg/instagram.svg');
     }
     &__social--facebook:hover {
-        background: var(--color-mint) center / auto no-repeat url('../img/svg/facebook.svg');
+        background: var(--color-mint) center / auto no-repeat url('/assets/img/svg/facebook.svg');
     }
     &__social--tik-tok:hover {
-        background: var(--color-mint) center / auto no-repeat url('../img/svg/tik_tok.svg');
+        background: var(--color-mint) center / auto no-repeat url('/assets/img/svg/tik_tok.svg');
     }
     &__social--svg {
         @include square (40px);

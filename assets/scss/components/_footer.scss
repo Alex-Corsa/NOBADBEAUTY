@@ -95,21 +95,30 @@ footer {
     &__contact-item {
         font-family: var(--font-family-Montserrat-Regular);
         color: var(--color-white);
+            &:hover {
+                color: var(--color-mint);
+        }
     }
     &__contact-item.contact--phone {
         margin-bottom: 10px;
         font-size: 18px;
-    }
-    &__contact-item.contact--phone::before {
-        content: url(../img/svg/icon_phone.svg);
+        &::before {
+        content: url("/assets/img/svg/icon_phone.svg");
         @include square (30px)
+        }
+        &:hover::before {
+        content: url("/assets/img/svg/icon_phone_mint.svg");
+        }
     }
     &__contact-item.contact--address {
         font-size: 18px;
-    }
-    &__contact-item.contact--address::before {
-        content: url(../img/svg/icon_map.svg);
+        &::before {
+        content: url("/assets/img/svg/icon_map.svg");
         @include square (44px)
+        }
+        &:hover::before {
+        content: url("/assets/img/svg/icon_map_mint.svg");
+        }
     }
     &__record-link {
         border: 1px solid var(--color-mint);
@@ -147,24 +156,37 @@ footer {
         display: flex;
         align-items: center;
         color: var(--color-white);
+        &:hover {
+                color: var(--color-mint);
+        }
     }
 }
 
-.design--link::after {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background: url(../img/svg/design-instagram.svg) no-repeat center;
-    background-size: contain;
-    margin-left: 10px;
+.design--link {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url("/assets/img/svg/design_instagram.svg") no-repeat center;
+        background-size: contain;
+        margin-left: 10px;
+    }
+    &:hover::after {
+        content: url("/assets/img/svg/design_instagram_mint.svg");
+    }
 }
-.developed--link::after {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url(../img/svg/developed-telegram.svg) no-repeat center;
-    background-size: contain;
-    margin-left: 8px;
+.developed--link {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url("/assets/img/svg/developed_telegram.svg") no-repeat center;
+        background-size: contain;
+        margin-left: 8px;
+    }
+    &:hover::after {
+        content: url("/assets/img/svg/developed_telegram_mint.svg");
+    }
 }

@@ -1,6 +1,7 @@
 @use '../../helpers' as *;
 
 .my-goal {
+    overflow: hidden;
     position: relative;
     &__bg {
         position: absolute;
@@ -51,6 +52,7 @@
         overflow: hidden;
         img {
             width: 100%;
+            height: 100%;
         }
     }
 }

@@ -5,8 +5,8 @@ gsap.fromTo(".home-screen",
     { scale: 1.3 },     // початковий стан: збільшене
     {
     scale: 1,         // повернення до нормального
-    duration: 1,
-    delay: 1.2,
+    duration: 1.5,
+    delay: 0.4,
     ease: "power3.out"
     }
 );
@@ -25,8 +25,8 @@ gsap.from([
     },
     x: -100,           // рух зліва направо
     opacity: 0,
-    duration: 1,
-    delay: 2.5,
+    duration: 1.5,
+    delay: 0.4,
     ease: "power3.out",
     stagger: 0.3       // плавна по черзі поява
 }
@@ -45,8 +45,8 @@ gsap.from([
     },
     y: 100,           // рух зліва направо
     opacity: 0,
-    duration: 1,
-    delay: 2.5,
+    duration: 1.5,
+    delay: 0.4,
     ease: "power3.out",
     stagger: 0.3       // плавна по черзі поява
 }
@@ -62,8 +62,8 @@ gsap.from(".home-screen__hero span", {
     },
     y: -100,             // падіння зверху
     opacity: 0,
-    duration: 0.8,
-    delay: 3.5,
+    duration: 1.5,
+    delay: 0.8,
     // ease: "bounce.out",  // ефект "відскоку"
     stagger: 0.1         // з’являються одна за одною
 });

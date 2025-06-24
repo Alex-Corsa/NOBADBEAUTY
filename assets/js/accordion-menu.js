@@ -1,9 +1,21 @@
+// ===== throttle-функція =====
+function throttle(func, limit) {
+    let inThrottle;
+    return function (...args) {
+        if (!inThrottle) {
+        func.apply(this, args);
+        inThrottle = true;
+        setTimeout(() => (inThrottle = false), limit);
+        }
+    };
+}
+
+// ===== DOM-збірники =====
 const accordionButtons = document.querySelectorAll('[data-btn-accordion]');
 const accordionIcons = document.querySelectorAll('[data-icon-accordion]');
 const accordionLists = document.querySelectorAll('[data-list-accordion]');
 
-// for page price
-
+// ===== for page price =====
 accordionButtons.forEach((button, index) => {
     const icon = accordionIcons[index];
     const list = accordionLists[index];
@@ -16,9 +28,7 @@ accordionButtons.forEach((button, index) => {
     });
 });
 
-// for page training
-
-// ===================== DOM-збірники =====================
+// ===== for page training =====
 const trainingHeader      = document.querySelectorAll('[data-training-header]');
 const trainingBtnClose    = document.querySelectorAll('[data-training-btn-closing]');
 const trainingBtnOpen     = document.querySelectorAll('[data-training-btn-open]');
@@ -27,28 +37,30 @@ const trainingBodyOpen    = document.querySelectorAll('[data-training-body-open]
 const trainingBoxImg      = document.querySelectorAll('[data-training-box-img]');
 const trainingImg         = document.querySelectorAll('[data-training-img]');
 
-// ===================== початковий розрахунок масштабу =====================
+// ===== початковий розрахунок масштабу =====
 window.addEventListener('load', () => {
     trainingImg.forEach((_, i) => {
         setScaleVars(i);
 
-      // Додаємо клас transition-enabled пізніше — після стартового стилю
         requestAnimationFrame(() => {
-            trainingImg[i].classList.add('transition-enabled');
+        trainingImg[i].classList.add('transition-enabled');
         });
     });
 
-    window.addEventListener('resize', throttle(() => {
+    window.addEventListener(
+        'resize',
+        throttle(() => {
         trainingImg.forEach((_, i) => setScaleVars(i, true));
-    }, 150));
+        }, 150)
+    );
 });
 
-// ===================== логіка відкриття / закриття =====================
+// ===== логіка відкриття / закриття =====
 trainingBtnOpen.forEach((btn, i) => {
     btn.addEventListener('click', () => {
         trainingBodyClosed[i].classList.remove('active');
         trainingBoxImg[i].classList.remove('active');
-        trainingImg[i].classList.remove('active'); // показуємо повне фото
+        trainingImg[i].classList.remove('active');
         trainingHeader[i].classList.add('active');
         trainingBodyOpen[i].classList.add('active');
     });
@@ -58,14 +70,13 @@ trainingBtnClose.forEach((btn, i) => {
     btn.addEventListener('click', () => {
         trainingHeader[i].classList.remove('active');
         trainingBodyOpen[i].classList.remove('active');
-        trainingImg[i].classList.add('active'); // додаємо  клас active
+        trainingImg[i].classList.add('active');
         trainingBodyClosed[i].classList.add('active');
         trainingBoxImg[i].classList.add('active');
-        /* тут вже не треба нічого рахувати – scale-змінні задані */
     });
 });
 
-// ===================== встановлення CSS-змінних =====================
+// ===== встановлення CSS-змінних =====
 function setScaleVars(index, force = false) {
     const img = trainingImg[index];
     if (!force && img.dataset.scaleReady === 'true') return;
@@ -78,7 +89,6 @@ function setScaleVars(index, force = false) {
         const scaleX = boxRect.width / nH;
         const scaleY = boxRect.height / nW;
 
-        // Візьмемо максимальне, щоб покрити контейнер повністю
         const scale = Math.max(scaleX, scaleY);
 
         img.style.setProperty('--scale-x', scale);

@@ -79,10 +79,11 @@
         background: inherit;
         text-align: start;
         border-bottom: 2px solid var(--color-beige);
-        transition: all 0.8s ease;
+        transition: border-bottom 0.8s ease;
         cursor: pointer;
         @include font-fluid-full (15);
         &:hover {
+            font-weight: bold;
             color: var(--color-black);
             border-bottom: 2px solid var(--color-black);
         }
@@ -92,9 +93,31 @@
         top: 100%;
         display: flex;
         column-gap: 20px;
+        @include mobile {
+            margin-top: 20px;
+            justify-content: center;
+        }
     }
+    
     &__btn {
+        width: 52px;
+        height: 16px;
+        background-color: inherit;
         border: none;
         cursor: pointer;
+        transition: all 0.8s ease;
+    }
+    &__btn--prev {
+        background-image: url("/assets/img/svg/arrow_left_black.svg");
+        &:hover {
+            background-image: url("/assets/img/svg/arrow_left_gray.svg");
+
+        }
+    }
+    &__btn--next {
+        background-image: url("/assets/img/svg/arrow_right_black.svg");
+        &:hover {
+            background-image: url("/assets/img/svg/arrow_right_gray.svg");
+        }
     }
 }

@@ -39,15 +39,17 @@
             align-items: center;
             li {
                 flex: 0 1 183px;
-                padding: 20px 0;
+                padding: 30px 0;
                 transition: all 0.8s;
                 @include tablet {
                     flex: 1 1 auto;
+                    padding: 24px 0;
                 }
                 @include mobile {
-                    padding: 10px 4px;
+                    padding: 15px 4px;
                 }
                 &:hover {
+                    font-weight: 600;
                     transform: scale(1.1);
                 }
             }
@@ -72,8 +74,9 @@
         @include font-fluid-full (70, 70, 70, 40);
     }
     & p {
+        max-width: 635px;
         margin-bottom: 35px;
-        font-family: var(--font-family-TenorSans-Regular);
+        font-family: var(--font-family-Montserrat-ExtraLight);
         @include font-fluid-full (24, 24, 24, 14);
         @include mobile {
             margin-bottom: 30px;

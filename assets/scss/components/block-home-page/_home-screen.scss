@@ -6,22 +6,22 @@
     overflow: hidden;
     background-color: #625952;
     min-height: 792px;
-    background-image: url(../img/photos/photos-main/main_photo.jpg);
+    background-image: url("assets/img/photos/photos-main/main_photo.jpg");
     background: image-set(
-        url(../img/photos/photos-main/main_photo.jpg) 1x,
-        url(../img/photos/photos-main/main_photo@2x.jpg) 2x
+        url("assets/img/photos/photos-main/main_photo.jpg") 1x,
+        url("assets/img/photos/photos-main/main_photo@2x.jpg") 2x
     );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
         @include laptop {
-            background-image: url(../img/photos/photos-main/main_photo_small.jpg);
+            background-image: url("assets/img/photos/photos-main/main_photo_small.jpg");
         }
         @include tablet {
             min-height: 470px;
         }
         @include mobile {
-            background-image: url(../img/photos/photos-main/main_photo_mobile.jpg);
+            background-image: url("assets/img/photos/photos-main/main_photo_mobile.jpg");
         }
     // &__main-block {
     // }
@@ -113,40 +113,28 @@
         font-family: var(--font-family-Montserrat-ExtraLight);
         color: var(--color-white);
         @include font-fluid-full (24, 18, 14);
-    }
-    
-    &__contact-item.contact--phone{
-        align-items: center;
-        &:hover {
-            color: var(--color-mint);
+                    &:hover {
+                color: var(--color-mint);
         }
     }
-    &__contact-item.contact--phone::before {
-        content: "";
-        display: inline-block;
-        background: url(../img/svg/icon_phone.svg) no-repeat center;
-        background-size: contain;
-        margin-right: 5px;
-        @include square (30px);
-    }
-    &__contacts .contact--address {
-        display: flex;
-        align-items: flex-start;
-        padding: 5px 0;
-        @include mobile {
-            padding: 0;
+    &__contact-item.contact--phone {
+        margin-bottom: 10px;
+        &::before {
+        content: url("/assets/img/svg/icon_phone.svg");
+        @include square (30px)
         }
-        &:hover {
-            color: var(--color-mint);
+        &:hover::before {
+        content: url("/assets/img/svg/icon_phone_mint.svg");
         }
     }
-    &__contact-item.contact--address::before {
-        content: "";
-        background: url(../img/svg/icon_map.svg) no-repeat center;
-        background-size: contain;
-        margin-right: 5px;
-        @include square(30px);
-        flex-shrink: 0;
+    &__contact-item.contact--address {
+        &::before {
+        content: url("/assets/img/svg/icon_map.svg");
+        @include square (44px)
+        }
+        &:hover::before {
+        content: url("/assets/img/svg/icon_map_mint.svg");
+        }
     }
     &__link {
         display: flex;

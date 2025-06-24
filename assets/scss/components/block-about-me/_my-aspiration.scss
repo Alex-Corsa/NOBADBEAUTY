@@ -32,6 +32,7 @@
         @include mobile {
             order: 2;
             margin-bottom: 10px;
+            flex: none;
         }
     }
     &__box-photo img {
@@ -127,11 +128,16 @@
             order: 3;
         }
         img {
+            border-radius: 5px;
             width: 100%;
             min-width: 206px;
             @include mobile {
                 min-width: 107px;
             }
         }
+    }
+    &__wrapper {
+        border-radius: 5px;
+        overflow: hidden;
     }
 }

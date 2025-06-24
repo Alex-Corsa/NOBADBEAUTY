@@ -23,6 +23,9 @@
         @include mobile {
             max-width: 100%;
         }
+        @include mobile {
+            flex: none;
+        }
     }
     &__box-photo img {
         width: 100%;

@@ -13,7 +13,6 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        // padding: 100px 20px;
         margin: 100px auto;
         row-gap: 50px;
         @include laptop {
@@ -38,11 +37,14 @@
             flex-direction: column;
         }
     }
+    &__main-photo-box {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        transition: 0.5s ease;
+    }
     &__main-photo {
         padding: 10px;
-        min-width: 314px;
-        height: 100%;
-        border-radius: 5px;
         border: 1px solid transparent;
         display: flex;
         flex-direction: column;
@@ -64,6 +66,7 @@
         }
     }
     &__main-photo img {
+        border-radius: 5px;
         width: 100%;
         height: 100%;
         @include laptop {
@@ -140,6 +143,7 @@
         @include font-fluid-full (40, 22, 18);
     }
     &__text-slogan {
+        max-width: 650px;
         font-family: var(--font-family-Montserrat-Regular);
         color: var(--color-black);
         @include font-fluid-full (24, 18, 14);

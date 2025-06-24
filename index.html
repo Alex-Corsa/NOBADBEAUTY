@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NOBADBEAUTY</title>
+    <title>NOBADBEAUTY | Макіяж, Зачіски, Брови, Вії в Пясочне Польща</title>
+    <meta name="description" content="NOBADBEAUTY - професійні послуги макіяжу, зачісок, ламінування брів та вій у Пясечно, Польща. Майстер Олександра з понад 5-річним досвідом створить ваш ідеальний образ.">
+
+    <link rel="canonical" href="https://yourwebsite.com/index.html">
+
+    <meta property="og:url" content="https://yourwebsite.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NOBADBEAUTY | Професійний Макіяж, Зачіски, Брови та Вії у Пясечно">
+    <meta property="og:description" content="Майстер Олександра пропонує повний спектр послуг краси: макіяж, зачіски, ламінування брів та вій у Пясечно, Польща. Слідкуйте за нами в Instagram, Facebook, Telegram, TikTok!">
+    <meta property="og:image" content="https://yourwebsite.com/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="uk_UA">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NOBADBEAUTY | Макіяж, Зачіски, Брови, Вії">
+    <meta name="twitter:description" content="Професійні послуги краси для вашого ідеального образу.">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/img/twitter-share.jpg">
+
+    
     <link rel="icon" href="./assets/img/faviconblack.jpg">
-    <link rel="stylesheet" href="./assets/scss/main.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
     <script src="./assets/js/burger.js" defer></script>
@@ -26,7 +46,7 @@
 
                 <div class="header__box-logo box-logo" data-box-logo>
                     <a href="./index.html">
-                        <img src="./assets/img/svg/logo.svg" alt="NOBADBEAUTY">
+                        <img src="./assets/img/svg/logo.svg" alt="NOBADBEAUTY" loading="lazy" >
                     </a>
                 </div>
 
@@ -84,15 +104,18 @@
                     </div>
 
                     <div class="header__language" data-header-language>
-                        <a href="#" class="lang lang--ua active">UA</a>
+                        <a href="#" class="lang lang--ua active--page-link">UA</a>
                         <a href="#" class="lang lang--pl">PL</a>
                     </div>
 
                     <div class="header__record">
-                        <a href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="header__record-link btn-link--dark-light">Записатися</a>
+                        <a 
+                            href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="header__record-link btn-link--dark-light">
+                            Записатися
+                        </a>
                     </div>
 
                 </div>
@@ -110,22 +133,28 @@
                             href="tel:+48570790975"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="header-only-burger__contact-item contact--phone">+48570790975
+                            class="header-only-burger__contact-item contact--phone">
+                            +48570790975
                         </a>
                         <a 
                             href="https://maps.app.goo.gl/ksM3zsmos2LTwcDo8" 
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="header-only-burger__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
+                            class="header-only-burger__contact-item contact--address">
+                            Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
                         </a>
                     </div>
                     <div class="header-only-burger__social not-for-mobile-version" data-burger-social>
                         <div class="social-icon social--instagram">
                             <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.instagram.com/nobadbeauty">
-                                <img class="header-only-burger__social--svg" src="./assets/img/svg/instagram.svg" alt="instagram">
+                                href="https://www.instagram.com/nobadbeauty"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img 
+                                    src="./assets/img/svg/instagram.svg" 
+                                    alt="instagram" 
+                                    loading="lazy" 
+                                    class="header-only-burger__social--svg">
                             </a>
                         </div>
                         <div class="social-icon social--facebook">
@@ -133,7 +162,11 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://www.facebook.com/nobadbeautyx">
-                                <img class="header-only-burger__social--svg" src="./assets/img/svg/facebook.svg" alt="facebook">
+                                <img 
+                                    src="./assets/img/svg/facebook.svg" 
+                                    alt="facebook" 
+                                    loading="lazy" 
+                                    class="header-only-burger__social--svg">
                             </a>
                         </div>
                         <div class="social-icon social--tik-tok">
@@ -141,7 +174,11 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://www.tiktok.com/@nobadbeauty">
-                                <img class="header-only-burger__social--svg" src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                <img    
+                                    src="./assets/img/svg/tik_tok.svg" 
+                                    alt="tik_tok" 
+                                    loading="lazy" 
+                                    class="header-only-burger__social--svg" >
                             </a>
                         </div>
                     </div>
@@ -165,10 +202,12 @@
                         <p class="home-screen__slogan-small">Натурально чи сміливо? 
                             <br>Вибір за тобою.</p>
                         <a 
-                        href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1" 
-                        target="_blank"
-                        rel="noopener noreferrer" 
-                        class="home-screen__btn-link btn-link--dark btn-link-hover--dark">Записатися</a>
+                            href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1" 
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            class="home-screen__btn-link btn-link--dark btn-link-hover--dark">
+                            Записатися
+                        </a>
                     </div>
                     <div class="home-screen__link">
                         <div class="home-screen__contacts">
@@ -176,20 +215,23 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="tel:+48570790975"
-                                class="home-screen__contact-item contact--phone">+48570790975
+                                class="home-screen__contact-item contact--phone">
+                                +48570790975
                             </a>
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://maps.app.goo.gl/ksM3zsmos2LTwcDo8"
-                                class="home-screen__contact-item contact--address">Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
+                                class="home-screen__contact-item contact--address">
+                                Wojska Polskiego 58/U6, 05-500, Piaseczno (salon BeautyNatalia)
                             </a>
                         </div>
                         <div class="home-screen__record-mobile for-mobile-version">
                             <a 
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 ">Записатися
+                                href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 ">
+                                Записатися
                             </a>
                         </div>
                         <div class="home-screen__social not-for-mobile-version">
@@ -198,7 +240,11 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="https://www.instagram.com/nobadbeauty">
-                                    <img class="home-screen__social--svg" src="./assets/img/svg/instagram.svg" alt="instagram">
+                                    <img 
+                                        src="./assets/img/svg/instagram.svg" 
+                                        alt="instagram" 
+                                        loading="lazy" 
+                                        class="home-screen__social--svg">
                                 </a>
                             </div>
                             <div class="social-icon social--facebook">
@@ -206,7 +252,11 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="https://www.facebook.com/nobadbeautyx">
-                                    <img class="home-screen__social--svg" src="./assets/img/svg/facebook.svg" alt="facebook">
+                                    <img 
+                                        src="./assets/img/svg/facebook.svg" 
+                                        alt="facebook" 
+                                        loading="lazy" 
+                                        class="home-screen__social--svg" >
                                 </a>
                             </div>
                             <div class="social-icon social--tik-tok">
@@ -214,7 +264,11 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="https://www.tiktok.com/@nobadbeauty">
-                                    <img class="home-screen__social--svg" src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                    <img 
+                                        src="./assets/img/svg/tik_tok.svg" 
+                                        alt="tik_tok" 
+                                        loading="lazy" 
+                                        class="home-screen__social--svg" >
                                 </a>
                             </div>
                         </div>
@@ -250,9 +304,11 @@
             <section class="presentation">
                 <div class="presentation__box container">
                     <div class="presentation__box-photo">
-                        <img class="boxing-with-photo-effect"
+                        <img
                             src="./assets/img/photos/photos-main/photo_2.jpg" 
-                            alt="my photo">
+                            alt="my photo"
+                            loading="lazy" 
+                            class="boxing-with-photo-effect">
                     </div>
                     <div class="presentation__box-text">
                         <div class="presentation__box-slogans">
@@ -264,14 +320,14 @@
                             <h3 class="presentation__presented">Мене звати Олександра,</h3>
                             <p class="presentation__biography">Я бровист, візажист-стиліст і ламімейкер з досвідом у б'юті-індустрії з 2021 року. Мій стиль роботи — це гармонія між натуральністю та виразним характером.</p>
                             <p class="presentation__about-me">Я створюю образи, які підкреслюють вашу індивідуальність, адже кожна деталь важлива.</p>
-                            <a class="presentation__more-details btn-link--dark" href="./pages/about-me.html">Детальніше</a>
+                            <a href="./pages/about-me.html" class="presentation__more-details btn-link--dark" >Детальніше</a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="portfolio" id="portfolio">
-                <img src="./assets/img/Texturelabs.png" alt="Texturelabs" class="portfolio__bg">
+                <img loading="lazy" src="./assets/img/Texturelabs.png" alt="Texturelabs" class="portfolio__bg">
                 <div class="portfolio__wrap container">
                     <div class="portfolio__main-text">
                         <h2 class="portfolio__main-heading">Все, що потрібно </h2>
@@ -281,35 +337,53 @@
                         Обирай, що підкреслить твою бездоганність.</p>
                     <div class="portfolio__box-photo">
                         <div class="portfolio__main-photo-box">
-                            <a class="portfolio__main-photo"
-                            href="./pages/portfolio-wedding-proposal.html">
-                                <img src="./assets/img/photos/photos-main/wedding.jpg" alt="wedding">
+                            <a
+                            href="./pages/portfolio-wedding-proposal.html"
+                            class="portfolio__main-photo">
+                                <img 
+                                    src="./assets/img/photos/photos-main/wedding.jpg" 
+                                    alt="wedding" 
+                                    loading="lazy" >
                                 <p class="portfolio__text-category">Весільна пропозиція</p>
                             </a>
-                            
                         </div>
+                        
                         <div class="portfolio__photos">
-                            <a class="portfolio__small-photo"
-                            href="./pages/portfolio-hairstyles.html">
-                                <img src="./assets/img/photos/photos-main/hairs.jpg" alt="hairs">
+                            <a
+                                href="./pages/portfolio-hairstyles.html" 
+                                class="portfolio__small-photo">
+                                <img 
+                                    src="./assets/img/photos/photos-main/hairs.jpg" 
+                                    alt="hairs" 
+                                    loading="lazy">
                                 <p class="portfolio__text-category">Зачіски  
                                     <br>на будь-яку подію</p>
                             </a>
                             <a class="portfolio__small-photo"
                             href="./pages/portfolio-makeup.html">
-                                <img src="./assets/img/photos/photos-main/make_up.jpg" alt="make_up">
+                                <img
+                                    src="./assets/img/photos/photos-main/make_up.jpg"
+                                    alt="make_up"
+                                    loading="lazy" >
                                 <p class="portfolio__text-category">Професійний 
                                     <br> макіяж</p>
                             </a>
                             <a class="portfolio__small-photo"
                             href="./pages/portfolio-eyebrows.html">
-                                <img src="./assets/img/photos/photos-main/brows.jpg" alt="brows">
+                                <img
+                                    src="./assets/img/photos/photos-main/brows.jpg" 
+                                    alt="brows" 
+                                    loading="lazy" >
                                 <p class="portfolio__text-category">Оформлення 
                                     <br> брів</p>
                             </a>
-                            <a class="portfolio__small-photo"
-                            href="./pages/portfolio-eyelashes.html">
-                                <img src="./assets/img/photos/photos-main/eyes.jpg" alt="eyes">
+                            <a
+                            href="./pages/portfolio-eyelashes.html" 
+                            class="portfolio__small-photo">
+                                <img 
+                                    src="./assets/img/photos/photos-main/eyes.jpg" 
+                                    alt="eyes"
+                                    loading="lazy" >
                                 <p class="portfolio__text-category">Ламінування 
                                     <br> вій</p>
                             </a>
@@ -330,9 +404,12 @@
                             </div>
                             
                             <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 " class="reviews__leave-a-review btn-link--dark">Залишити відгук</a>
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1" 
+                                class="reviews__leave-a-review btn-link--dark">
+                                Залишити відгук
+                            </a>
                         </div>
                         <div class="carousel">
                             <div class="carousel__track-container">
@@ -341,15 +418,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                            class="carousel__booksy"
-                                            href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
-                                            target="_blank"
-                                            rel="noopener noreferrer" >
-                                                <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img 
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Zuzanna</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg" 
+                                                    alt="stars" 
+                                                    loading="lazy" 
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Laminacja brwi</h6>
                                         </div>
@@ -360,15 +444,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Katarzyna</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img
+                                                    src="./assets/img/svg/stars.svg" 
+                                                    alt="stars" 
+                                                    loading="lazy" 
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Stylizacja brwi (regulacja + henna brwi)</h6>
                                         </div>
@@ -379,15 +470,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Anastasiya</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg" 
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Stylizacja brwi (regulacja + henna brwi), Laminacja rzęs</h6>
                                         </div>
@@ -398,15 +496,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Kamila</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg"
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Ekspres makijaż</h6>
                                         </div>
@@ -417,15 +522,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img 
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy" 
+                                                        loading="lazy" >
                                             </a>
                                             <h4 class="carousel__card-h4">Martyna</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img
+                                                    src="./assets/img/svg/stars.svg" 
+                                                    alt="stars" 
+                                                    loading="lazy" 
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Laminacja rzęs</h6>
                                         </div>
@@ -436,15 +548,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy" >
                                             </a>
                                             <h4 class="carousel__card-h4">Karolina</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img
+                                                    src="./assets/img/svg/stars.svg" 
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Stylizacja brwi (regulacja + henna brwi)</h6>
                                         </div>
@@ -455,15 +574,18 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Jola</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img loading="lazy" src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Laminacja rzęs, Laminacja brwi</h6>
                                         </div>
@@ -474,15 +596,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Svitlana</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg"
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Laminacja rzęs</h6>
                                         </div>
@@ -493,15 +622,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Ala</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg"
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Makijaż okolicznościowy</h6>
                                         </div>
@@ -513,15 +649,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Ola</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg"
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Makijaż okolicznościowy</h6>
                                         </div>
@@ -532,15 +675,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Maria</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg"
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Makijaż okolicznościowy</h6>
                                         </div>
@@ -551,15 +701,22 @@
                                     <li class="carousel__card">
                                         <div class="carousel__card-header">
                                             <a
-                                                class="carousel__booksy"
                                                 href="https://booksy.com/pl-pl/219660_nobadbeauty_brwi-i-rzesy_4353_piaseczno#ba_s=sh_1 "
                                                 target="_blank"
-                                                rel="noopener noreferrer" >
-                                                    <img src="./assets/img/svg/booksy.svg" alt="booksy">
+                                                rel="noopener noreferrer"
+                                                class="carousel__booksy">
+                                                    <img
+                                                        src="./assets/img/svg/booksy.svg" 
+                                                        alt="booksy"
+                                                        loading="lazy">
                                             </a>
                                             <h4 class="carousel__card-h4">Paulina</h4>
                                             <div class="carousel__card-raiting">
-                                                <img src="./assets/img/svg/stars.svg" alt="stars" class="carousel__card-svg">
+                                                <img 
+                                                    src="./assets/img/svg/stars.svg"
+                                                    alt="stars"
+                                                    loading="lazy"
+                                                    class="carousel__card-svg">
                                             </div>
                                             <h6 class="carousel__card-h6">Makijaż okolicznościowy</h6>
                                         </div>
@@ -570,10 +727,16 @@
                             </div>
                             <div class="carousel__box-btn">
                                 <button class="carousel__btn carousel__btn--prev">
-                                    <img src="./assets/img/svg/arrow_left_black.svg" alt="prev">
+                                    <!-- <img 
+                                        src="./assets/img/svg/arrow_left_black.svg" 
+                                        lt="prev"
+                                        loading="lazy"> -->
                                 </button>
                                 <button class="carousel__btn carousel__btn--next">
-                                    <img src="./assets/img/svg/arrow_right_black.svg" alt="next">
+                                    <!-- <img 
+                                        src="./assets/img/svg/arrow_right_black.svg"
+                                        alt="next"
+                                        loading="lazy"> -->
                                 </button>
                             </div>
                         </div>
@@ -597,8 +760,11 @@
                     </div>
 
                     <div class="recording__image">
-                        <img class="recording__photo boxing-with-photo-effect"
-                        src="./assets/img/photos/photos-main/photo_8.jpg" alt="photo" >
+                        <img
+                            src="./assets/img/photos/photos-main/photo_8.jpg" 
+                            alt="photo"
+                            loading="lazy"
+                            class="recording__photo boxing-with-photo-effect">
                     </div>
 
                     <div class="recording__social">
@@ -610,7 +776,11 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="https://www.instagram.com/nobadbeauty">
-                                        <img class="recording__social--svg recording__social-hover-instagram" src="./assets/img/svg/instagram_mint.svg" alt="instagram">
+                                        <img
+                                            src="./assets/img/svg/instagram_mint.svg" 
+                                            alt="instagram"
+                                            loading="lazy"
+                                            class="recording__social--svg recording__social-hover-instagram">
                                 </a>
                             </div>
                             <div class="social-icon recording__social--facebook">
@@ -618,7 +788,11 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="https://www.facebook.com/nobadbeautyx">
-                                        <img class="recording__social--svg recording__social-hover-facebook" src="./assets/img/svg/facebook_mint.svg" alt="facebook">
+                                        <img
+                                            src="./assets/img/svg/facebook_mint.svg"
+                                            alt="facebook"
+                                            loading="lazy"
+                                            class="recording__social--svg recording__social-hover-facebook">
                                 </a>
                             </div>
                             <div class="social-icon recording__social--tik-tok">
@@ -626,7 +800,11 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://www.tiktok.com/@nobadbeauty">
-                                    <img class="recording__social--svg recording__social-hover-tik-tok" src="./assets/img/svg/tik_tok_mint.svg" alt="tik_tok">
+                                    <img
+                                        src="./assets/img/svg/tik_tok_mint.svg" 
+                                        alt="tik_tok"
+                                        loading="lazy"
+                                        class="recording__social--svg recording__social-hover-tik-tok">
                                 </a>
                             </div>
                         </div>
@@ -644,7 +822,10 @@
                     <div class="footer__content ">
                         <div class="footer__box-logo box-logo">
                             <a href="./index.html">
-                                <img src="./assets/img/svg/logo.svg" alt="NOBADBEAUTY">
+                                <img
+                                src="./assets/img/svg/logo.svg"
+                                alt="NOBADBEAUTY"
+                                loading="lazy">
                             </a>
                         </div>
                         <!-- For large screens  -->
@@ -655,27 +836,39 @@
                             </div>
                             <div class="footer__social">
                                 <div class="social-icon social--instagram">
-                                    <a                                     
+                                    <a
+                                    href="https://www.instagram.com/nobadbeauty"
                                     target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://www.instagram.com/nobadbeauty">
-                                        <img class="footer__social--svg" src="./assets/img/svg/instagram.svg" alt="instagram">
+                                    rel="noopener noreferrer">
+                                        <img
+                                            src="./assets/img/svg/instagram.svg"
+                                            alt="instagram"
+                                            loading="lazy"
+                                            class="footer__social--svg">
                                     </a>
                                 </div>
                                 <div class="social-icon social--facebook">
                                     <a 
+                                    href="https://www.facebook.com/nobadbeautyx"
                                     target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://www.facebook.com/nobadbeautyx">
-                                        <img class="footer__social--svg" src="./assets/img/svg/facebook.svg" alt="facebook">
+                                    rel="noopener noreferrer">
+                                        <img
+                                            src="./assets/img/svg/facebook.svg"
+                                            alt="facebook"
+                                            loading="lazy"
+                                            class="footer__social--svg">
                                     </a>
                                 </div>
                                 <div class="social-icon social--tik-tok">
-                                    <a 
+                                    <a
+                                    href="https://www.tiktok.com/@nobadbeauty"
                                     target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="https://www.tiktok.com/@nobadbeauty">
-                                        <img class="footer__social--svg" src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                    rel="noopener noreferrer">
+                                        <img
+                                            src="./assets/img/svg/tik_tok.svg"
+                                            alt="tik_tok"
+                                            loading="lazy"
+                                            class="footer__social--svg">
                                     </a>
                                 </div>
                             </div>
@@ -733,26 +926,32 @@
                                 <div class="footer__social">
                                     <div class="social-icon social--instagram">
                                         <a
+                                            href="https://www.instagram.com/nobadbeauty"
                                             target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="https://www.instagram.com/nobadbeauty">
-                                                <img src="./assets/img/svg/instagram.svg" alt="instagram">
+                                            rel="noopener noreferrer">
+                                                <img loading="lazy" src="./assets/img/svg/instagram.svg" alt="instagram">
                                         </a>
                                     </div>
                                     <div class="social-icon social--facebook">
-                                        <a 
+                                        <a
+                                            href="https://www.facebook.com/nobadbeautyx"
                                             target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="https://www.facebook.com/nobadbeautyx">
-                                                <img src="./assets/img/svg/facebook.svg" alt="facebook">
+                                            rel="noopener noreferrer">
+                                                <img
+                                                    src="./assets/img/svg/facebook.svg"
+                                                    alt="facebook"
+                                                    loading="lazy" >
                                         </a>
                                     </div>
                                     <div class="social-icon social--tik-tok">
                                         <a
+                                            href="https://www.tiktok.com/@nobadbeauty"
                                             target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="https://www.tiktok.com/@nobadbeauty">
-                                                <img src="./assets/img/svg/tik_tok.svg" alt="tik_tok">
+                                            rel="noopener noreferrer">
+                                                <img
+                                                    src="./assets/img/svg/tik_tok.svg"
+                                                    alt="tik_tok"
+                                                    loading="lazy">
                                         </a>
                                     </div>
                                 </div>
@@ -792,15 +991,19 @@
                     <div class="footer__basement-link">
                         <div class="footer__basement-link">
                             <a
-                            target="_blank"
-                            rel="noopener noreferrer" 
-                            class="design--link" 
-                            href="https://www.instagram.com/tarna.design/">Design by Yulia Tarna</a>
+                                href="https://www.instagram.com/tarna.design/"
+                                target="_blank"
+                                rel="noopener noreferrer" 
+                                class="design--link">
+                                Design by Yulia Tarna
+                            </a>
                             <a
-                            target="_blank"
-                            rel="noopener noreferrer" 
-                            class="developed--link" 
-                            href="https://t.me/Corsa91">Developed by Alex Corsa</a>
+                                href="https://t.me/Corsa91"
+                                target="_blank"
+                                rel="noopener noreferrer" 
+                                class="developed--link">
+                                Developed by Alex Corsa
+                            </a>
                         </div>
                     </div>
                     <p>© 2025. All rights reserved.</p>

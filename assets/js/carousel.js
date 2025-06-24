@@ -110,3 +110,17 @@ window.addEventListener('resize', () => {
     visibleCount = Math.floor(container.offsetWidth / cardWidth);
     updateTransform(false);
 });
+
+
+document.querySelectorAll('.carousel__card-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.carousel__card');
+    const text = card.querySelector('.carousel__card-text');
+
+    if (text.style.overflow === 'overlay') {
+      text.style.overflow = 'hidden';
+    } else {
+      text.style.overflow = 'overlay';
+    }
+  });
+});
