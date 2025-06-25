@@ -64,13 +64,21 @@
     &__link {
         color: var(--color-black);
         font-family: var(--font-family-Montserrat-ExtraLight);
+        transition: all 0.6s ease; 
         @include font-fluid-full (24,22,18,18);
         @include tablet {
             font-family: var(--font-family-Montserrat-Light);
         }
         &:hover {
-            font-weight: 800;
-            color: var(--color-mint);
+            font-weight: 900;
+        }
+        @include tablet {
+            &:hover {
+                font-weight: var(--font-family-Montserrat-Light);
+            }
+            &:active {
+                font-weight: 900;
+            }
         }
     }
     &__box-map {

@@ -7,17 +7,29 @@
     &__wrap {
         position: relative;
         margin: 100px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        column-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "photo body"
+            "photo gallery";
+        gap: 20px;
+
         @include tablet {
-            margin: 70px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
             column-gap: 10px;
+            margin: 70px auto;
         }
-        @include mobile {
-            margin: 40px auto 30px;
-            flex-direction: column;
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "photo"
+            "body"
+            "gallery";
+        margin: 40px auto 30px;
         }
     }
     &__box-photo {
@@ -37,7 +49,7 @@
     }
     &__box-photo img {
         width: 696px;
-        max-height: 1028px;
+        height: 100%;
         position: absolute;
         right: 0;
         @include laptop {
@@ -48,6 +60,14 @@
             &:hover {
                 transform: scale(1.05);
             }
+            @include tablet {
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+        @include tablet {
+            height: auto;
         }
     }
     &__body {
@@ -60,7 +80,7 @@
             flex: 0 0 420px;
         }
         @include tablet {
-            flex: 1 1 367px;
+            flex: 1 1 349px;
             margin-bottom: 30px;
         }
         @include mobile {
@@ -113,6 +133,7 @@
     }
     &__box-photos {
         display: flex;
+        justify-content: space-between;
         column-gap: 25px;
         overflow: hidden;
         @include laptop {
@@ -130,7 +151,7 @@
         img {
             border-radius: 5px;
             width: 100%;
-            min-width: 206px;
+            height: 100%;
             @include mobile {
                 min-width: 107px;
             }
@@ -140,4 +161,16 @@
         border-radius: 5px;
         overflow: hidden;
     }
+}
+
+.my-aspiration__box-photo {
+    grid-area: photo;
+}
+
+.my-aspiration__body {
+    grid-area: body;
+}
+
+.my-aspiration__box-photos {
+    grid-area: gallery;
 }

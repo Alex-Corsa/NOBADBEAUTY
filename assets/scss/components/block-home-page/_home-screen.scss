@@ -113,8 +113,15 @@
         font-family: var(--font-family-Montserrat-ExtraLight);
         color: var(--color-white);
         @include font-fluid-full (24, 18, 14);
-                    &:hover {
+        @include laptop-above {
+            &:hover {
                 color: var(--color-mint);
+            }
+        }
+        @include tablet {
+            &:active {
+                color: var(--color-mint);
+            }
         }
     }
     &__contact-item.contact--phone {
@@ -123,8 +130,15 @@
         content: url("/assets/img/svg/icon_phone.svg");
         @include square (30px)
         }
-        &:hover::before {
-        content: url("/assets/img/svg/icon_phone_mint.svg");
+        @include laptop-above {
+            &:hover::before {
+            content: url("/assets/img/svg/icon_phone_mint.svg");
+            }
+        }
+        @include tablet {
+            &:active::before {
+                content: url("/assets/img/svg/icon_phone_mint.svg");
+            }
         }
     }
     &__contact-item.contact--address {
@@ -132,8 +146,15 @@
         content: url("/assets/img/svg/icon_map.svg");
         @include square (44px)
         }
-        &:hover::before {
-        content: url("/assets/img/svg/icon_map_mint.svg");
+        @include laptop-above {
+            &:hover::before {
+                content: url("/assets/img/svg/icon_map_mint.svg");
+            }
+        }
+        @include tablet {
+            &:active::before {
+                content: url("/assets/img/svg/icon_map_mint.svg");
+            }
         }
     }
     &__link {

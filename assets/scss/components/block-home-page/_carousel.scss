@@ -31,8 +31,10 @@
         @include mobile {
             flex: 0 0 285px;
         }
-        &:hover {
-            border: 1px solid var(--color-beige);
+        @include laptop-above {
+            &:hover {
+                border: 1px solid var(--color-beige);
+            }
         }
     }
     &__card-header {
@@ -82,10 +84,19 @@
         transition: border-bottom 0.8s ease;
         cursor: pointer;
         @include font-fluid-full (15);
-        &:hover {
-            font-weight: bold;
-            color: var(--color-black);
-            border-bottom: 2px solid var(--color-black);
+        @include laptop-above {
+            &:hover {
+                font-weight: bold;
+                color: var(--color-black);
+                border-bottom: 2px solid var(--color-black);
+            }
+        }
+        @include tablet {
+            &:active {
+                font-weight: bold;
+                color: var(--color-black);
+                border-bottom: 2px solid var(--color-black);
+            }
         }
     }
     &__box-btn {
@@ -109,15 +120,28 @@
     }
     &__btn--prev {
         background-image: url("/assets/img/svg/arrow_left_black.svg");
-        &:hover {
-            background-image: url("/assets/img/svg/arrow_left_gray.svg");
-
+        @include laptop-above {
+            &:hover {
+                background-image: url("/assets/img/svg/arrow_left_gray.svg");
+            }
+        }
+        @include tablet {
+            &:active {
+                background-image: url("/assets/img/svg/arrow_left_gray.svg");
+            }
         }
     }
     &__btn--next {
         background-image: url("/assets/img/svg/arrow_right_black.svg");
-        &:hover {
-            background-image: url("/assets/img/svg/arrow_right_gray.svg");
+        @include laptop-above {
+            &:hover {
+                background-image: url("/assets/img/svg/arrow_right_gray.svg");
+            }
+        }        
+        @include tablet {
+            &:active {
+                background-image: url("/assets/img/svg/arrow_right_gray.svg");
+            }
         }
     }
 }

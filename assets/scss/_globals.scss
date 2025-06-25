@@ -42,10 +42,12 @@ body {
     color: var(--color-mint);
 }
 .header__menu-item:hover .btn-submenu-icon {
-    background-image: url('/assets/img/svg/icon_nav_arrow_down_mint.svg');
+    // background-image: url('../img/svg/icon_nav_arrow_down_mint.svg');
+    background-image: url('../assets/img//svg/icon_nav_arrow_down_mint.svg');
     background-size: auto;
     background-position: center;
 }
+
 // Посилання у вигляді кнопок
 .btn-link--dark, .btn-link--light, .btn-link--dark-light, .btn-link--light-dark {
     position: relative;
@@ -144,7 +146,8 @@ body {
 }
 .btn-submenu-icon {
     display: inline-block;
-    background-image: url('/assets/img/svg/icon_nav_arrow_down.svg');
+    // background-image: url('../img/svg/icon_nav_arrow_down.svg');
+    background-image: url('../assets/img/svg/icon_nav_arrow_down.svg');
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
@@ -177,7 +180,6 @@ body {
         position: absolute;
         top: 100%;
         left: 0;
-        // background: #AFA6A1;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); /* для Safari */
         background: rgba(175, 166, 161, 0.5); /* прозорий білий */
@@ -188,6 +190,9 @@ body {
 
         li {
         margin-bottom: 10px;
+        &:hover {
+            font-weight: bold;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -198,10 +203,6 @@ body {
             color: var(--color-black);
             text-decoration: none;
             @include font-fluid-full(18);
-
-            &:hover {
-            text-decoration: underline;
-            }
         }
         }
     }

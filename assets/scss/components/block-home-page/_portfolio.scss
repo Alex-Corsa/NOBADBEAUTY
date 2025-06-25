@@ -51,19 +51,28 @@
         align-items: center;
         flex: 1;
         transition: 0.5s ease;
+        @include laptop-above {
+            &:hover {
+                border: 1px solid black;
+                background-color: rgba(249, 249, 249, 0.1); /* F9F9F9 з прозорістю 10% */
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px); /* для Safari */
+            }
+        }
         @include tablet {
             padding: 0px;
+            &:active {
+                border: 1px solid black;
+                background-color: rgba(249, 249, 249, 0.1); /* F9F9F9 з прозорістю 10% */
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px); /* для Safari */
+            }
         }
         @include mobile {
             min-width: 320px;
             margin-bottom: 20px;
         }
-        &:hover {
-            border: 1px solid black;
-            background-color: rgba(249, 249, 249, 0.1); /* F9F9F9 з прозорістю 10% */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); /* для Safari */
-        }
+
     }
     &__main-photo img {
         border-radius: 5px;
@@ -110,10 +119,10 @@
             padding: 0px;
         }
         &:hover {
-            border: 1px solid black;
-            background-color: rgba(249, 249, 249, 0.1); /* F9F9F9 з прозорістю 10% */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); /* для Safari */
+                border: 1px solid black;
+                background-color: rgba(249, 249, 249, 0.1); /* F9F9F9 з прозорістю 10% */
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px); /* для Safari */
             @include tablet {
                 padding: 0px;
             }

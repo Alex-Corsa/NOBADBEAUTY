@@ -41,17 +41,24 @@
                 flex: 0 1 183px;
                 padding: 30px 0;
                 transition: all 0.8s;
+                @include laptop-above {
+                    &:hover {
+                        font-weight: 600;
+                        transform: scale(1.1);
+                    }
+                }
                 @include tablet {
                     flex: 1 1 auto;
                     padding: 24px 0;
+                    &:active {
+                        font-weight: 600;
+                        transform: scale(1.1);
+                    }
                 }
                 @include mobile {
                     padding: 15px 4px;
                 }
-                &:hover {
-                    font-weight: 600;
-                    transform: scale(1.1);
-                }
+
             }
             a {
                 color: var(--color-black);
@@ -65,6 +72,7 @@
         padding: 5px;
     }
     &__img-nav {
+        border-radius: 5px;
         @include square (48px)
     }
     &__subtitle {
@@ -119,11 +127,11 @@
             "photo_4 photo_4"
             "photo_5 photo_5";
         }
-        & .photo_1 { grid-area: photo_1; } // маленьке
-        & .photo_2 { grid-area: photo_2; } // маленьке
-        & .photo_3 { grid-area: photo_3; } // велике (2x2)
-        & .photo_4 { grid-area: photo_4; } // велике (2x2)
-        & .photo_5 { grid-area: photo_5; } // більше ніж середне
+        & .photo_1 { grid-area: photo_1; }
+        & .photo_2 { grid-area: photo_2; }
+        & .photo_3 { grid-area: photo_3; }
+        & .photo_4 { grid-area: photo_4; }
+        & .photo_5 { grid-area: photo_5; }
     }
     &__photo {
         overflow: hidden;

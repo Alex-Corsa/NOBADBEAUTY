@@ -20,8 +20,15 @@
         padding: 0 50px;
         display: flex;
         justify-content: space-between;
-        &:hover {
-            background: var(--color-beige_light);
+        @include laptop-above {
+            &:hover {
+                background: var(--color-beige_light);
+            }
+        }
+        @include tablet {
+            &:active {
+                background: var(--color-beige_light);
+            } 
         }
         @include mobile {
             padding: 0 10px;

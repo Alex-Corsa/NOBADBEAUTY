@@ -20,8 +20,16 @@
         text-transform: uppercase;
         transition: color 0.3s ease;
         @include font-fluid-full (18, 14);
+        @include laptop-above {
+            &:hover {
+                color: var(--color-mint);
+            }
+        }
+        @include tablet {
+            &:active {
+                color: var(--color-mint);
+            }
+        }
     }
-    &__li a:hover {
-        color: var(--color-mint);
-    }
+    
 }

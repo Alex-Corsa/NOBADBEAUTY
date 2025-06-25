@@ -31,7 +31,7 @@
         margin: 40px 0;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: stretch;
         column-gap: 20px;
         overflow: hidden;
         @include laptop {
@@ -87,7 +87,7 @@
         display: inline-block;
         width: 48px;
         height: 48px;
-        background-image: url('../img/svg/icon_nav_arrow_down_black.svg');
+        background-image: url('../assets/img/svg/icon_nav_arrow_down_black.svg');
         background-size: contain;
         background-repeat: no-repeat;
         transition: transform 0.3s ease;
@@ -103,19 +103,19 @@
         @include font-fluid-full (40, 26);
     };
     &__box-img--nobad-brows {
-        background: url('assets/img/photos/teaching/nobad_brows_basic_small.jpg') center center / cover no-repeat;
+        background: url('../assets/img/photos/teaching/nobad_brows_basic_small.jpg') center center / cover no-repeat;
     }
     &__box-img--nobad-brows-pro {
-        background: url('assets/img/photos/teaching/nobad_brows_pro_small.jpg') center center / cover no-repeat;
+        background: url('../assets/img/photos/teaching/nobad_brows_pro_small.jpg') center center / cover no-repeat;
     }
     &__box-img--nobad-lamilashes {
-        background: url('assets/img/photos/teaching/nobad_lamilashes_small.jpg') center center / cover no-repeat;
+        background: url('../assets/img/photos/teaching/nobad_lamilashes_small.jpg') center center / cover no-repeat;
     }
     &__box-img--nobad-lamilashes-pro {
-        background: url('assets/img/photos/teaching/nobad_lamilashes_pro_small.jpg') center center / cover no-repeat;
+        background: url('../assets/img/photos/teaching/nobad_lamilashes_pro_small.jpg') center center / cover no-repeat;
     }
     &__box-img--self-makeup {
-        background: url('assets/img/photos/teaching/self_makeup_small.jpg') center center / cover no-repeat;
+        background: url('../assets/img/photos/teaching/self_makeup_small.jpg') center center / cover no-repeat;
     }
     &__box-img {
         flex: 0 1 auto;
@@ -139,6 +139,7 @@
         }
     }
     &__img {
+        height: 100%;
         position: relative;
         opacity: 0;
         object-fit: cover;
@@ -162,7 +163,10 @@
         display: none
     }
     &__body-open.active {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
     }
     &__btn-closing {
         display: none;
@@ -180,16 +184,18 @@
         display: inline-block;
         width: 48px;
         height: 48px;
-        background-image: url('../img/svg/icon_close.svg');
+        background-image: url('../assets/img/svg/icon_close.svg');
         background-size: contain;
         background-repeat: no-repeat;
         transition: transform 0.8s ease;
-        &:hover {
-            background-image: url('../img/svg/icon_close_hover.svg');
+        @include laptop-above {
+            &:hover {
+                background-image: url('../assets/img/svg/icon_close_hover.svg');
+            }
         }
     }
     &__box-text {
-        margin-bottom: 25px;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         row-gap: 20px
