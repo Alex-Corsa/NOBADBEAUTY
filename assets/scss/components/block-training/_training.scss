@@ -184,13 +184,13 @@
         display: inline-block;
         width: 48px;
         height: 48px;
-        background-image: url('../assets/img/svg/icon_close.svg');
+        background-image: url('./assets/img/svg/icon_close.svg');
         background-size: contain;
         background-repeat: no-repeat;
         transition: transform 0.8s ease;
         @include laptop-above {
             &:hover {
-                background-image: url('../assets/img/svg/icon_close_hover.svg');
+                background-image: url('./assets/img/svg/icon_close_hover.svg');
             }
         }
     }

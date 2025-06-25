@@ -6,22 +6,22 @@
     overflow: hidden;
     background-color: #625952;
     min-height: 792px;
-    background-image: url("assets/img/photos/photos-main/main_photo.jpg");
+    background-image: url("./assets/img/photos/photos-main/main_photo.jpg");
     background: image-set(
-        url("assets/img/photos/photos-main/main_photo.jpg") 1x,
-        url("assets/img/photos/photos-main/main_photo@2x.jpg") 2x
+        url("./assets/img/photos/photos-main/main_photo.jpg") 1x,
+        url("./assets/img/photos/photos-main/main_photo@2x.jpg") 2x
     );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
         @include laptop {
-            background-image: url("assets/img/photos/photos-main/main_photo_small.jpg");
+            background-image: url("./assets/img/photos/photos-main/main_photo_small.jpg");
         }
         @include tablet {
             min-height: 470px;
         }
         @include mobile {
-            background-image: url("assets/img/photos/photos-main/main_photo_mobile.jpg");
+            background-image: url("./assets/img/photos/photos-main/main_photo_mobile.jpg");
         }
     // &__main-block {
     // }
@@ -127,33 +127,33 @@
     &__contact-item.contact--phone {
         margin-bottom: 10px;
         &::before {
-        content: url("/assets/img/svg/icon_phone.svg");
+        content: url("./assets/img/svg/icon_phone.svg");
         @include square (30px)
         }
         @include laptop-above {
             &:hover::before {
-            content: url("/assets/img/svg/icon_phone_mint.svg");
+            content: url("./assets/img/svg/icon_phone_mint.svg");
             }
         }
         @include tablet {
             &:active::before {
-                content: url("/assets/img/svg/icon_phone_mint.svg");
+                content: url("./assets/img/svg/icon_phone_mint.svg");
             }
         }
     }
     &__contact-item.contact--address {
         &::before {
-        content: url("/assets/img/svg/icon_map.svg");
+        content: url("./assets/img/svg/icon_map.svg");
         @include square (44px)
         }
         @include laptop-above {
             &:hover::before {
-                content: url("/assets/img/svg/icon_map_mint.svg");
+                content: url("./assets/img/svg/icon_map_mint.svg");
             }
         }
         @include tablet {
             &:active::before {
-                content: url("/assets/img/svg/icon_map_mint.svg");
+                content: url("./assets/img/svg/icon_map_mint.svg");
             }
         }
     }

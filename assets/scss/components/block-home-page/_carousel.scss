@@ -119,28 +119,28 @@
         transition: all 0.8s ease;
     }
     &__btn--prev {
-        background-image: url("/assets/img/svg/arrow_left_black.svg");
+        background-image: url("./assets/img/svg/arrow_left_black.svg");
         @include laptop-above {
             &:hover {
-                background-image: url("/assets/img/svg/arrow_left_gray.svg");
+                background-image: url("./assets/img/svg/arrow_left_gray.svg");
             }
         }
         @include tablet {
             &:active {
-                background-image: url("/assets/img/svg/arrow_left_gray.svg");
+                background-image: url("./assets/img/svg/arrow_left_gray.svg");
             }
         }
     }
     &__btn--next {
-        background-image: url("/assets/img/svg/arrow_right_black.svg");
+        background-image: url("./assets/img/svg/arrow_right_black.svg");
         @include laptop-above {
             &:hover {
-                background-image: url("/assets/img/svg/arrow_right_gray.svg");
+                background-image: url("./assets/img/svg/arrow_right_gray.svg");
             }
         }        
         @include tablet {
             &:active {
-                background-image: url("/assets/img/svg/arrow_right_gray.svg");
+                background-image: url("./assets/img/svg/arrow_right_gray.svg");
             }
         }
     }
