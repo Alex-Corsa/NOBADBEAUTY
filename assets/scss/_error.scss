@@ -2,7 +2,7 @@
 
 .section-error {
     background: black;
-    background: url(../img/error404.jpg) center / cover;
+    background: url('./assets/img/error404.jpg') center / cover;
     height: 942px;
     @include tablet {
         height: 509px;
