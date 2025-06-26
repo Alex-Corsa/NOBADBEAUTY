@@ -132,7 +132,7 @@
         }
         @include laptop-above {
             &:hover::before {
-            content: url("./assets/img/svg/icon_phone_mint.svg");
+                content: url("./assets/img/svg/icon_phone_mint.svg");
             }
         }
         @include tablet {
@@ -154,7 +154,7 @@
     }
     &__contact-item.contact--address {
         &::before {
-        content: url("./assets/img/svg/icon_map.svg");
+            content: url("./assets/img/svg/icon_map.svg");
         @include square (44px)
         }
         @include laptop-above {

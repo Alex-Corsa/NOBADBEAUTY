@@ -101,23 +101,57 @@ footer {
     }
     &__contact-item.contact--phone {
         margin-bottom: 10px;
-        font-size: 18px;
         &::before {
         content: url("./assets/img/svg/icon_phone.svg");
-        @include square (30px)
+        @include square (30px);
         }
-        &:hover::before {
-        content: url("./assets/img/svg/icon_phone_mint.svg");
+        @include laptop-above {
+            &:hover::before {
+                content: url("./assets/img/svg/icon_phone_mint.svg");
+            }
+        }
+        @include tablet {
+            &:active::before {
+                content: url("./assets/img/svg/icon_phone_mint.svg");
+            }
+        }
+        @include mobile {
+            &::before {
+                content: url("./assets/img/svg/icon_phone_mob.svg");
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+            &:active::before {
+                content: url("./assets/img/svg/icon_phone_mob_mint.svg");
+            }
         }
     }
     &__contact-item.contact--address {
-        font-size: 18px;
         &::before {
-        content: url("./assets/img/svg/icon_map.svg");
+            content: url("./assets/img/svg/icon_map.svg");
         @include square (44px)
         }
-        &:hover::before {
-        content: url("./assets/img/svg/icon_map_mint.svg");
+        @include laptop-above {
+            &:hover::before {
+                content: url("./assets/img/svg/icon_map_mint.svg");
+            }
+        }
+        @include tablet {
+            &:active::before {
+                content: url("./assets/img/svg/icon_map_mint.svg");
+            }
+        }
+        @include mobile {
+            &::before {
+                content: url("./assets/img/svg/icon_map_mob.svg");
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+            &:active::before {
+                content: url("./assets/img/svg/icon_map_mob_mint.svg");
+            }
         }
     }
     &__record-link {

@@ -117,10 +117,10 @@ document.querySelectorAll('.carousel__card-btn').forEach(button => {
         const card = button.closest('.carousel__card');
         const text = card.querySelector('.carousel__card-text');
 
-        if (text.style.overflow === 'hidden') {
-        text.style.overflow = 'auto';
-        } else {
+        if (text.style.overflow === 'auto') {
         text.style.overflow = 'hidden';
+        } else {
+        text.style.overflow = 'auto';
         }
     });
 });
