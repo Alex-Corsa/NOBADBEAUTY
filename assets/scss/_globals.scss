@@ -186,12 +186,11 @@ body {
         padding: 25px 30px;
         border-radius: 5px;
         z-index: 100;
-        min-width: 260px;
-
+        min-width: 270px;
         li {
         margin-bottom: 10px;
         &:hover {
-            font-weight: bold;
+            font-weight: 700;
         }
 
         &:last-child {

@@ -43,7 +43,6 @@
                 transition: all 0.8s;
                 @include laptop-above {
                     &:hover {
-                        font-weight: 600;
                         transform: scale(1.1);
                     }
                 }

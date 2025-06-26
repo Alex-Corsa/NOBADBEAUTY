@@ -127,6 +127,7 @@
     &__contact-item.contact--phone {
         margin-bottom: 10px;
         &::before {
+        margin-right: 5px;
         content: url("./assets/img/svg/icon_phone.svg");
         @include square (30px);
         }
@@ -140,12 +141,11 @@
                 content: url("./assets/img/svg/icon_phone_mint.svg");
             }
         }
-        @include mobile {
+        @include tablet {
             &::before {
                 content: url("./assets/img/svg/icon_phone_mob.svg");
                 width: 16px;
                 height: 16px;
-                margin-right: 5px;
             }
             &:active::before {
                 content: url("./assets/img/svg/icon_phone_mob_mint.svg");
@@ -154,7 +154,8 @@
     }
     &__contact-item.contact--address {
         &::before {
-            content: url("./assets/img/svg/icon_map.svg");
+        margin-right: 5px;
+        content: url("./assets/img/svg/icon_map.svg");
         @include square (44px)
         }
         @include laptop-above {
@@ -167,12 +168,11 @@
                 content: url("./assets/img/svg/icon_map_mint.svg");
             }
         }
-        @include mobile {
+        @include tablet {
             &::before {
                 content: url("./assets/img/svg/icon_map_mob.svg");
                 width: 16px;
                 height: 16px;
-                margin-right: 5px;
             }
             &:active::before {
                 content: url("./assets/img/svg/icon_map_mob_mint.svg");
