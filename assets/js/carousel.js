@@ -113,14 +113,14 @@ window.addEventListener('resize', () => {
 
 
 document.querySelectorAll('.carousel__card-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    const card = button.closest('.carousel__card');
-    const text = card.querySelector('.carousel__card-text');
+    button.addEventListener('click', () => {
+        const card = button.closest('.carousel__card');
+        const text = card.querySelector('.carousel__card-text');
 
-    if (text.style.overflow === 'overlay') {
-      text.style.overflow = 'hidden';
-    } else {
-      text.style.overflow = 'overlay';
-    }
-  });
+        if (text.style.overflow === 'auto') {
+        text.style.overflow = 'hidden';
+        } else {
+        text.style.overflow = 'auto';
+        }
+    });
 });

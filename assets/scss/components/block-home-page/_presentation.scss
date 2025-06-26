@@ -1,22 +1,21 @@
 @use '../../helpers' as *;
 
 .presentation {
+    overflow: hidden;
     background: var(--color-gray_light);
     @include mobile {
         flex-direction: column-reverse;
     }
     &__box {
-        padding-top: 150px;
-        padding-bottom: 150px;
+        margin: 150px auto;
         display: flex;
         justify-content: center;
         column-gap: 20px;
         @include tablet {
-            padding-top: 100px;
-            padding-bottom: 100px;
+        margin: 100px auto;
         }
         @include mobile {
-            margin-bottom: 50px;
+            margin: 50px auto;
             padding: 0 10px;
             flex-direction: column-reverse;;
             align-items: center;
@@ -47,7 +46,6 @@
         flex-direction: column;
         justify-content: space-between;
         @include mobile {
-            margin-top: 50px;
             row-gap: 30px;
         }
     }
@@ -85,7 +83,7 @@
         @include font-fluid-full (22, 18);
     }
     &__biography {
-        font-family: var(--font-family-Montserrat-Regular);
+        font-family: var(--font-family-Montserrat-Light);
         margin-bottom: 68px;
         @include font-fluid-full (18, 16);
         @include tablet {
@@ -96,8 +94,8 @@
         }
     }
     &__about-me {
-        font-family: var(--font-family-Montserrat-Regular);
-        font-size: 18px;
+        font-family: var(--font-family-Montserrat-Light);
+        @include font-fluid-full (18, 16);
     }
     &__more-details {
         margin-top: 40px;

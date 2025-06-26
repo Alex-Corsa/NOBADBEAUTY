@@ -128,7 +128,7 @@
         margin-bottom: 10px;
         &::before {
         content: url("./assets/img/svg/icon_phone.svg");
-        @include square (30px)
+        @include square (30px);
         }
         @include laptop-above {
             &:hover::before {
@@ -138,6 +138,17 @@
         @include tablet {
             &:active::before {
                 content: url("./assets/img/svg/icon_phone_mint.svg");
+            }
+        }
+        @include mobile {
+            &::before {
+                content: url("./assets/img/svg/icon_phone_mob.svg");
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+            &:active::before {
+                content: url("./assets/img/svg/icon_phone_mob_mint.svg");
             }
         }
     }
@@ -154,6 +165,17 @@
         @include tablet {
             &:active::before {
                 content: url("./assets/img/svg/icon_map_mint.svg");
+            }
+        }
+        @include mobile {
+            &::before {
+                content: url("./assets/img/svg/icon_map_mob.svg");
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+            &:active::before {
+                content: url("./assets/img/svg/icon_map_mob_mint.svg");
             }
         }
     }

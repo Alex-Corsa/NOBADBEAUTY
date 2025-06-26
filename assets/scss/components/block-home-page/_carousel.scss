@@ -63,7 +63,7 @@
     &__card-text {
         height: 160px;
         margin-bottom: 20px;
-        line-height: 22px;
+        line-height: 23px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -74,21 +74,22 @@
         @include font-fluid-full (16)
     }
     &__card-btn {
-        width: 93px;
-        color: var(--color-beige);
-        font-family: var(--font-family-TenorSans-Regular);
         border: none;
         background: inherit;
         text-align: start;
-        border-bottom: 2px solid var(--color-beige);
-        transition: border-bottom 0.8s ease;
         cursor: pointer;
         @include font-fluid-full (15);
+    }
+    &__card-span {
+        color: var(--color-beige);
+        font-family: var(--font-family-TenorSans-Regular);
+        border-bottom: 1px solid var(--color-beige);
+        transition: border-bottom 0.8s ease;
         @include laptop-above {
             &:hover {
                 font-weight: bold;
                 color: var(--color-black);
-                border-bottom: 2px solid var(--color-black);
+                border-bottom: 1px solid var(--color-black);
             }
         }
         @include tablet {

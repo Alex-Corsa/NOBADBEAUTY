@@ -19,8 +19,11 @@
             row-gap: 35px;
         }
         @include tablet {
-            margin: 70px 0;
+            margin: 70px auto;
             row-gap: 20px;
+        }
+        @include mobile {
+            margin: 50px auto;
         }
     }
     &__main-text {
