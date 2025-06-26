@@ -682,7 +682,7 @@ body {
 }
 @media (width <= 47.99875rem) {
   .header-only-burger.active {
-    margin: 560px 0 45px;
+    margin: 320px 0 40px;
   }
 }
 .header-only-burger__down {
@@ -1767,7 +1767,7 @@ header.active {
 }
 @media (width <= 47.99875rem) {
   .portfolio__small-photo img {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 .portfolio__main-heading {
@@ -4387,7 +4387,7 @@ header.active {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-image: url("../assets/img/svg/icon_nav_arrow_down_black.svg");
+  background-image: url("./assets/img/svg/icon_nav_arrow_down_black.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 0.3s ease;
@@ -4457,19 +4457,19 @@ header.active {
   }
 }
 .training__box-img--nobad-brows {
-  background: url("../assets/img/photos/teaching/nobad_brows_basic_small.jpg") center center/cover no-repeat;
+  background: url("./assets/img/photos/teaching/nobad_brows_basic_small.jpg") center center/cover no-repeat;
 }
 .training__box-img--nobad-brows-pro {
-  background: url("../assets/img/photos/teaching/nobad_brows_pro_small.jpg") center center/cover no-repeat;
+  background: url("./assets/img/photos/teaching/nobad_brows_pro_small.jpg") center center/cover no-repeat;
 }
 .training__box-img--nobad-lamilashes {
-  background: url("../assets/img/photos/teaching/nobad_lamilashes_small.jpg") center center/cover no-repeat;
+  background: url("./assets/img/photos/teaching/nobad_lamilashes_small.jpg") center center/cover no-repeat;
 }
 .training__box-img--nobad-lamilashes-pro {
-  background: url("../assets/img/photos/teaching/nobad_lamilashes_pro_small.jpg") center center/cover no-repeat;
+  background: url("./assets/img/photos/teaching/nobad_lamilashes_pro_small.jpg") center center/cover no-repeat;
 }
 .training__box-img--self-makeup {
-  background: url("../assets/img/photos/teaching/self_makeup_small.jpg") center center/cover no-repeat;
+  background: url("./assets/img/photos/teaching/self_makeup_small.jpg") center center/cover no-repeat;
 }
 .training__box-img {
   flex: 0 1 auto;
