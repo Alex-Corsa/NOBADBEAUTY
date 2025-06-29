@@ -1,7 +1,6 @@
 @use '../../helpers' as *;
 
 .training {
-    background-color: var(--color-beige_light);
     overflow: hidden;
     // &__wrap {};
     &__title {
@@ -22,6 +21,9 @@
     &__box {
         background: white;
         padding: 0 20px;
+        &:has(.training__body-closet.active):hover {
+            background-color: var(--color-beige_light);
+        }
         @include laptop {
             padding: 0 10px;
         }
@@ -54,6 +56,9 @@
         font-family: var(--font-family-TenorSans-Regular);
         @include font-fluid-full (40, 26, 26, 18);
     };
+    &__subtitle--pl {
+        @include font-fluid-full (35, 26, 26, 18);
+    }
     &__advertising {
         font-family: var(--font-family-Montserrat-ExtraLight);
         @include font-fluid-full (24, 20, 18, 14);
@@ -182,16 +187,20 @@
     }
     &__icon-closing {
         display: inline-block;
-        width: 48px;
-        height: 48px;
+        // width: 48px;
+        // height: 48px;
         background-image: url('./assets/img/svg/icon_close.svg');
         background-size: contain;
         background-repeat: no-repeat;
         transition: transform 0.8s ease;
+        @include square (48px);
         @include laptop-above {
             &:hover {
                 background-image: url('./assets/img/svg/icon_close_hover.svg');
             }
+        }
+        @include mobile {
+        @include square (30px);
         }
     }
     &__box-text {

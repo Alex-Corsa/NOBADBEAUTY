@@ -95,6 +95,7 @@ footer {
     &__contact-item {
         font-family: var(--font-family-Montserrat-Regular);
         color: var(--color-white);
+        @include font-fluid-full (18);
             &:hover {
                 color: var(--color-mint);
         }
@@ -102,35 +103,46 @@ footer {
     &__contact-item.contact--phone {
         margin-bottom: 10px;
         &::before {
-        content: url("./assets/img/svg/icon_phone.svg");
-        @include square (30px);
+            content: '';
+            background-image: url("./assets/img/svg/icon_phone.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+            @include square (24px);
         }
         @include laptop-above {
             &:hover::before {
-                content: url("./assets/img/svg/icon_phone_mint.svg");
+                content: '';
+                background-image: url("./assets/img/svg/icon_phone_mint.svg");
             }
         }
         @include tablet {
             &:active::before {
-                content: url("./assets/img/svg/icon_phone_mint.svg");
+                content: '';
+                background-image: url("./assets/img/svg/icon_phone_mint.svg");
             }
         }
         @include mobile {
             &::before {
-                content: url("./assets/img/svg/icon_phone_mob.svg");
-                width: 16px;
-                height: 16px;
-                margin-right: 5px;
+                content: '';
+                background-image: url("./assets/img/svg/icon_phone_mob.svg");
             }
             &:active::before {
-                content: url("./assets/img/svg/icon_phone_mob_mint.svg");
+                content: '';
+                background-image: url("./assets/img/svg/icon_phone_mob.svg");
             }
         }
     }
     &__contact-item.contact--address {
+        display: inline-flex;
         &::before {
-            content: url("./assets/img/svg/icon_map.svg");
-        @include square (44px)
+            flex: 0 0 auto;
+            content: '';
+            background-image: url("./assets/img/svg/icon_map.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+            @include square (30px);
         }
         @include laptop-above {
             &:hover::before {
@@ -143,14 +155,8 @@ footer {
             }
         }
         @include mobile {
-            &::before {
-                content: url("./assets/img/svg/icon_map_mob.svg");
-                width: 16px;
-                height: 16px;
-                margin-right: 5px;
-            }
             &:active::before {
-                content: url("./assets/img/svg/icon_map_mob_mint.svg");
+                content: url("./assets/img/svg/icon_map_mint.svg");
             }
         }
     }
