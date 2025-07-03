@@ -43,7 +43,6 @@ body {
     color: var(--color-mint);
 }
 .header__menu-item:hover .btn-submenu-icon {
-    // background-image: url('../img/svg/icon_nav_arrow_down_mint.svg');
     background-image: url('./assets/img//svg/icon_nav_arrow_down_mint.svg');
     background-size: auto;
     background-position: center;
@@ -147,7 +146,6 @@ body {
 }
 .btn-submenu-icon {
     display: inline-block;
-    // background-image: url('../img/svg/icon_nav_arrow_down.svg');
     background-image: url('./assets/img/svg/icon_nav_arrow_down.svg');
     background-size: contain;
     background-repeat: no-repeat;
