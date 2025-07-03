@@ -176,42 +176,60 @@ svg * {
 }
 @font-face {
   font-family: "Montserrat-ExtraLight";
-  src: url("/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  src: url("NOBADBEAUTY/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  src: url("./assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Light";
-  src: url("/assets/fonts/Montserrat-Light.woff2") format("woff2");
+  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-Light.woff2") format("woff2");
+  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-Light.woff2") format("woff2");
+  src: url("NOBADBEAUTY/assets/fonts/Montserrat-Light.woff2") format("woff2");
+  src: url("./assets/fonts/Montserrat-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url("/assets/fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("NOBADBEAUTY/assets/fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("/assets/fonts/Montserrat-Medium.woff2") format("woff2");
+  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-Medium.woff2") format("woff2");
+  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-Medium.woff2") format("woff2");
+  src: url("NOBADBEAUTY/assets/fonts/Montserrat-Medium.woff2") format("woff2");
+  src: url("./assets/fonts/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto-ExtraLight";
-  src: url("/assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
+  src: url("./NOBADBEAUTY/assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
+  src: url("/NOBADBEAUTY/assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
+  src: url("NOBADBEAUTY/assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
+  src: url("./assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TenorSans-Regular";
-  src: url("/assets/fonts/TenorSans-Regular.woff2") format("woff2");
+  src: url("./NOBADBEAUTY/assets/fonts/TenorSans-Regular.woff2") format("woff2");
+  src: url("/NOBADBEAUTY/assets/fonts/TenorSans-Regular.woff2") format("woff2");
+  src: url("NOBADBEAUTY/assets/fonts/TenorSans-Regular.woff2") format("woff2");
+  src: url("./assets/fonts/TenorSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1690,12 +1708,7 @@ header.active {
   height: 100%;
 }
 .portfolio__main-photo p {
-  max-width: 50%;
-}
-@media (width <= 74.99875rem) {
-  .portfolio__main-photo p {
-    max-width: 33%;
-  }
+  max-width: 270px;
 }
 .portfolio__photos {
   flex: 1;
