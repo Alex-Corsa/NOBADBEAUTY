@@ -175,28 +175,7 @@ svg * {
   }
 }
 @font-face {
-  font-family: "Montserrat-ExtraLight-1";
-  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat-ExtraLight-2";
-  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat-ExtraLight-3";
-  src: url("NOBADBEAUTY/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat-ExtraLight-4";
+  font-family: "Montserrat-ExtraLight";
   src: url("./assets/fonts/Montserrat-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
@@ -204,9 +183,6 @@ svg * {
 }
 @font-face {
   font-family: "Montserrat-Light";
-  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-Light.woff2") format("woff2");
-  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-Light.woff2") format("woff2");
-  src: url("NOBADBEAUTY/assets/fonts/Montserrat-Light.woff2") format("woff2");
   src: url("./assets/fonts/Montserrat-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
@@ -214,9 +190,6 @@ svg * {
 }
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-Regular.woff2") format("woff2");
-  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-Regular.woff2") format("woff2");
-  src: url("NOBADBEAUTY/assets/fonts/Montserrat-Regular.woff2") format("woff2");
   src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -224,9 +197,6 @@ svg * {
 }
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("./NOBADBEAUTY/assets/fonts/Montserrat-Medium.woff2") format("woff2");
-  src: url("/NOBADBEAUTY/assets/fonts/Montserrat-Medium.woff2") format("woff2");
-  src: url("NOBADBEAUTY/assets/fonts/Montserrat-Medium.woff2") format("woff2");
   src: url("./assets/fonts/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -234,9 +204,6 @@ svg * {
 }
 @font-face {
   font-family: "Roboto-ExtraLight";
-  src: url("./NOBADBEAUTY/assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
-  src: url("/NOBADBEAUTY/assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
-  src: url("NOBADBEAUTY/assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
   src: url("./assets/fonts/Roboto-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
@@ -244,9 +211,6 @@ svg * {
 }
 @font-face {
   font-family: "TenorSans-Regular";
-  src: url("./NOBADBEAUTY/assets/fonts/TenorSans-Regular.woff2") format("woff2");
-  src: url("/NOBADBEAUTY/assets/fonts/TenorSans-Regular.woff2") format("woff2");
-  src: url("NOBADBEAUTY/assets/fonts/TenorSans-Regular.woff2") format("woff2");
   src: url("./assets/fonts/TenorSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
