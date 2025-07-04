@@ -84,9 +84,6 @@
     }
     &__main-photo p {
         max-width: 270px;
-        // @include laptop {
-        //     max-width: 33%;
-        // }
     }
     &__photos {
         flex: 1;
@@ -120,15 +117,12 @@
         }
         &:hover {
                 border: 1px solid black;
-                background-color: rgba(249, 249, 249, 0.1); /* F9F9F9 з прозорістю 10% */
+                background-color: rgba(249, 249, 249, 0.1);
                 backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px); /* для Safari */
+                -webkit-backdrop-filter: blur(10px);
             @include tablet {
                 padding: 0px;
             }
-            // @include mobile {
-            //     padding-bottom: 10px;
-            // }
         }
     }
     &__small-photo img {
@@ -153,7 +147,7 @@
     }
     &__text-slogan {
         max-width: 650px;
-        font-family: var(--font-family-Montserrat-Regular);
+        font-family: var(--font-family-Montserrat-ExtraLight);
         color: var(--color-black);
         @include font-fluid-full (24, 18, 14);
         @include laptop {

@@ -181,7 +181,7 @@ body {
         left: 0;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); /* для Safari */
-        background: rgba(175, 166, 161, 0.5); /* прозорий білий */
+        background: rgba(175, 166, 161, 0.6); /* прозорий білий */
         padding: 25px 30px;
         border-radius: 5px;
         z-index: 100;
@@ -255,4 +255,8 @@ body {
 .active--page-link {
     font-family: var(--font-family-Montserrat-Medium);
     color: var(--color-mint);
+}
+
+.active--page-category {
+    font-weight: 600;
 }

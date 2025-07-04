@@ -564,7 +564,7 @@ body {
   left: 0;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* для Safari */
-  background: rgba(175, 166, 161, 0.5); /* прозорий білий */
+  background: rgba(175, 166, 161, 0.6); /* прозорий білий */
   padding: 25px 30px;
   border-radius: 5px;
   z-index: 100;
@@ -670,6 +670,10 @@ body {
 .active--page-link {
   font-family: var(--font-family-Montserrat-Medium);
   color: var(--color-mint);
+}
+
+.active--page-category {
+  font-weight: 600;
 }
 
 .header-only-burger {
@@ -1733,9 +1737,9 @@ header.active {
 }
 .portfolio__small-photo:hover {
   border: 1px solid black;
-  background-color: rgba(249, 249, 249, 0.1); /* F9F9F9 з прозорістю 10% */
+  background-color: rgba(249, 249, 249, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* для Safari */
+  -webkit-backdrop-filter: blur(10px);
 }
 @media (width <= 63.99875rem) {
   .portfolio__small-photo:hover {
@@ -1822,7 +1826,7 @@ header.active {
 }
 .portfolio__text-slogan {
   max-width: 650px;
-  font-family: var(--font-family-Montserrat-Regular);
+  font-family: var(--font-family-Montserrat-ExtraLight);
   color: var(--color-black);
   font-size: clamp(
     0.875rem,
@@ -4406,6 +4410,36 @@ header.active {
 @media (width <= 63.99875rem) {
   .training__advertising {
     font-family: var(--font-family-Montserrat-Light);
+  }
+}
+.training__advertising--pl {
+  font-size: clamp(
+    0.875rem,
+    0.9828009828vw + 0.6538697789rem,
+    1.125rem
+  );
+}
+@media (width > 47.99875rem) {
+  .training__advertising--pl {
+    font-size: clamp(
+    1.125rem,
+    0.7843137255vw + 0.7485294118rem,
+    1.25rem
+  );
+  }
+}
+@media (width > 63.99875rem) {
+  .training__advertising--pl {
+    font-size: clamp(
+    1.25rem,
+    2.2857142857vw + -0.2128571429rem,
+    1.5rem
+  );
+  }
+}
+@media (width > 74.99875rem) {
+  .training__advertising--pl {
+    font-size: 1.5rem;
   }
 }
 .training__body-closet {

@@ -66,6 +66,9 @@
             font-family: var(--font-family-Montserrat-Light);
         }
     };
+        &__advertising--pl {
+        @include font-fluid-full (24, 20, 18, 14);
+    };
 
     &__body-closet {
         display: none;
@@ -187,8 +190,6 @@
     }
     &__icon-closing {
         display: inline-block;
-        // width: 48px;
-        // height: 48px;
         background-image: url('./assets/img/svg/icon_close.svg');
         background-size: contain;
         background-repeat: no-repeat;

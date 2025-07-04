@@ -54,16 +54,35 @@ gsap.from([
 
 gsap.registerPlugin(ScrollTrigger);
 
+// gsap.from(".home-screen__hero span", {
+//     scrollTrigger: {
+//         trigger: ".home-screen",
+//         start: "top 80%",
+//         toggleActions: "restart none none none"
+//     },
+//     y: -100, // падіння зверху
+//     opacity: 0,
+//     duration: 1.5,
+//     delay: 0.8,
+//     // ease: "bounce.out",  // ефект "відскоку"
+//     // stagger: 0.1         // з’являються одна за одною
+//     stagger: (index, target, list) => {
+//     const middle = (list.length - 1) / 2;
+//     return Math.abs(index - middle) * 0.1;
+//     }
+// });
+
 gsap.from(".home-screen__hero span", {
-    scrollTrigger: {
-        trigger: ".home-screen",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    },
-    y: -100,             // падіння зверху
-    opacity: 0,
-    duration: 1.5,
-    delay: 0.8,
-    // ease: "bounce.out",  // ефект "відскоку"
-    stagger: 0.1         // з’являються одна за одною
+  scrollTrigger: {
+    trigger: ".home-screen",
+    start: "top 80%",
+    toggleActions: "restart none none none"
+  },
+  rotationX: -90,
+  opacity: 0,
+  transformOrigin: "top center",
+  duration: 1.5,
+  delay: 0.8,
+  stagger: 0.1, // 🔄 звичайна послідовність зліва направо
+  ease: "back.out(1.7)"
 });
