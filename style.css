@@ -327,10 +327,6 @@ svg * {
   --color-gradient_light: linear-gradient(90deg, #A8F1F8 0%, #FEFEFE 100%);
   --color-gradient_dark: linear-gradient(90deg, #131312 0%, #70A2A6 100%);
   --font-family-Montserrat-ExtraLight: "Montserrat-ExtraLight", sans-serif;
-  --font-family-Montserrat-ExtraLight-1: "Montserrat-ExtraLight-1", sans-serif;
-  --font-family-Montserrat-ExtraLight-2: "Montserrat-ExtraLight-2", sans-serif;
-  --font-family-Montserrat-ExtraLight-3: "Montserrat-ExtraLight-3", sans-serif;
-  --font-family-Montserrat-ExtraLight-4: "Montserrat-ExtraLight-4", sans-serif;
   --font-family-Montserrat-Light: "Montserrat-Light", sans-serif;
   --font-family-Montserrat-Regular: "Montserrat-Regular", sans-serif;
   --font-family-Montserrat-Medium: "Montserrat-Medium", sans-serif;
@@ -674,22 +670,6 @@ body {
 .active--page-link {
   font-family: var(--font-family-Montserrat-Medium);
   color: var(--color-mint);
-}
-
-.fonts_1 {
-  font-family: var(--font-family-Montserrat-ExtraLight-1);
-}
-
-.fonts_2 {
-  font-family: var(--font-family-Montserrat-ExtraLight-2);
-}
-
-.fonts_3 {
-  font-family: var(--font-family-Montserrat-ExtraLight-3);
-}
-
-.fonts_4 {
-  font-family: var(--font-family-Montserrat-ExtraLight-4);
 }
 
 .header-only-burger {
