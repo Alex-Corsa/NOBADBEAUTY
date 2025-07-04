@@ -4217,6 +4217,36 @@ header.active {
     font-size: 2.5rem;
   }
 }
+.price__plus {
+  font-size: clamp(
+    0.875rem,
+    0vw + 0.875rem,
+    0.875rem
+  );
+}
+@media (width > 47.99875rem) {
+  .price__plus {
+    font-size: clamp(
+    0.875rem,
+    1.568627451vw + 0.1220588235rem,
+    1.125rem
+  );
+  }
+}
+@media (width > 63.99875rem) {
+  .price__plus {
+    font-size: clamp(
+    1.125rem,
+    6.8571428571vw + -3.2635714286rem,
+    1.875rem
+  );
+  }
+}
+@media (width > 74.99875rem) {
+  .price__plus {
+    font-size: 1.875rem;
+  }
+}
 .price__cost-addition {
   display: block;
   text-align: end;

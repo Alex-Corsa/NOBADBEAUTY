@@ -143,6 +143,9 @@
         font-family: var(--font-family-TenorSans-Regular);
         @include font-fluid-full (40, 26, 18);
     }
+    &__plus {
+        @include font-fluid-full (30, 18, 14);
+    }
     &__cost-addition {
         display: block;
         text-align: end;
