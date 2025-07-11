@@ -26,6 +26,7 @@
             text-transform: uppercase;
             margin-bottom: 40px;
             font-family: var(--font-family-TenorSans-Regular);
+            font-weight: 400;
             @include font-fluid-full (70, 40);
             @include mobile {
                 margin-bottom: 20px;

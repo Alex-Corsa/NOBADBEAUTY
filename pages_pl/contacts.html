@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../style.css">
     <script src="../assets/js/burger.js" defer></script>
     <script src="../assets/js/dropdown-menu.js" defer></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script> -->
+    <script src="../assets/js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_1lFbC6bYsDAFSvxXOol9UgarrDMciCE&callback=initMap" async></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA91sLc-wwByFNFzN2q0tRCzNX-spyhxN8&callback=initMap" async></script> -->
     <script src="../assets/js/main.js" type="module" defer></script>
 </head>
 <body>
@@ -191,15 +193,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="contacts__box-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1762.815411372674!2d21.0234559!3d52.0685733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192e488084bd91%3A0x3c875266e9a447c6!2zV29qc2thIFBvbHNraWVnbyA1OC9VNiwgMDUtNTAwIFBpYXNlY3pubywg0J_QvtC70YzRidCw!5e1!3m2!1suk!2sua!4v1746298998130!5m2!1suk!2sua"
-                                title="Салон краси на карті"
-                                allowfullscreen
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade"
-                                class="map-iframe">
-                            </iframe>
+                        <div class="contacts__box-map" id="map">
                         </div>
                     </div>
                     <div class="contacts__footer">
