@@ -63,11 +63,11 @@
                 max-width: none;
                 row-gap: 15px;
             }
-            p {
+        }
+        &-h6 {
                 font-family: var(--font-family-Montserrat-Light);
                 @include font-fluid-full (18, 14)
             }
-        }
     }
     &__get {
         // overflow: hidden;
