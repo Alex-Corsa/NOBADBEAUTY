@@ -1,43 +1,21 @@
 @use 'sass:math';
 
-// @function rem($pixel) {
-//     @if math.is-unitless($pixel) {
-//         @return math.div($pixel, 16) + rem;
-//     } @else {
-//         @error 'Не используйте единицы измерения при работе с функцией rem()! Передавайте аргументом только числа.'
-//     }
-// };
-
-// @function fluid($max: 100, $min: 10) {
-//     $maxViewportWidth: 1200;
-//     $minViewportWidth: 360;
-
-//     $maxSize: math.div($max, 16);
-//     $minSize: math.div($min, 16);
-//     $maxWidth: math.div($maxViewportWidth, 16);
-//     $minWidth: math.div($minViewportWidth, 16);
-
-//     $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
-//     $yAxisIntersection: -$minWidth * $slope + $minSize;
-
-//     @return clamp(
-//         #{$minSize * 1rem},
-//         #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
-//         #{$maxSize * 1rem}
-//     );
-// };
-
 @function rem($px, $base: 16) {
   @return #{math.div($px, $base)}rem;
 }
 
 @function fluid($max, $min, $max-vw: 1200, $min-vw: 360) {
+  // Додаємо перевірку, якщо максимальне та мінімальне значення однакові
+  @if $max == $min {
+    @return rem($max); // Якщо однакові, повертаємо просто rem-значення, без clamp та vw
+  }
+
   $slope: math.div(($max - $min), ($max-vw - $min-vw));
   $y-intercept: $min - $slope * $min-vw;
 
   @return clamp(
     #{rem($min)},
-    #{$slope * 100}vw + #{rem($y-intercept)},
+    #{$slope * 100}vw + #{rem($y-intercept)}, // Цей вираз залишиться для адаптивного масштабування
     #{rem($max)}
   );
 }

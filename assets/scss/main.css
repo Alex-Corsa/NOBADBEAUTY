@@ -583,28 +583,16 @@ body {
   font-family: var(--font-family-TenorSans-Regular);
   color: var(--color-black);
   text-decoration: none;
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .has-submenu .submenu li a {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .has-submenu .submenu li a {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -732,17 +720,13 @@ body {
 .header-only-burger__contacts a {
   font-family: var(--font-family-Montserrat-ExtraLight);
   color: var(--color-white);
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .header-only-burger__contacts a {
     font-size: clamp(
     0.875rem,
-    1.568627451vw + 0.1220588235rem,
+    1.568627451vw + 0.1220588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -751,7 +735,7 @@ body {
   .header-only-burger__contacts a {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -1016,7 +1000,7 @@ header.active {
   margin-bottom: 12px;
   font-size: clamp(
     1.875rem,
-    2.457002457vw + 1.3221744472rem,
+    2.457002457vw + 1.3221744472rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
 }
@@ -1024,7 +1008,7 @@ header.active {
   .home-screen__hero {
     font-size: clamp(
     2.5rem,
-    11.7647058824vw + -3.1470588235rem,
+    11.7647058824vw + -3.1470588235rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -1033,7 +1017,7 @@ header.active {
   .home-screen__hero {
     font-size: clamp(
     4.375rem,
-    5.7142857143vw + 0.7178571429rem,
+    5.7142857143vw + 0.7178571429rem, // Цей вираз залишиться для адаптивного масштабування
     5rem
   );
   }
@@ -1054,17 +1038,13 @@ header.active {
 .home-screen__slogan {
   font-family: var(--font-family-Montserrat-ExtraLight);
   padding: 8px 0;
-  font-size: clamp(
-    1.375rem,
-    0vw + 1.375rem,
-    1.375rem
-  );
+  font-size: 1.375rem;
 }
 @media (width > 47.99875rem) {
   .home-screen__slogan {
     font-size: clamp(
     1.375rem,
-    3.137254902vw + -0.1308823529rem,
+    3.137254902vw + -0.1308823529rem, // Цей вираз залишиться для адаптивного масштабування
     1.875rem
   );
   }
@@ -1073,7 +1053,7 @@ header.active {
   .home-screen__slogan {
     font-size: clamp(
     1.875rem,
-    3.4285714286vw + -0.3192857143rem,
+    3.4285714286vw + -0.3192857143rem, // Цей вираз залишиться для адаптивного масштабування
     2.25rem
   );
   }
@@ -1106,7 +1086,7 @@ header.active {
   padding: 3px 0;
   font-size: clamp(
     0.875rem,
-    0.9828009828vw + 0.6538697789rem,
+    0.9828009828vw + 0.6538697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
 }
@@ -1114,7 +1094,7 @@ header.active {
   .home-screen__slogan-small {
     font-size: clamp(
     1.125rem,
-    0.7843137255vw + 0.7485294118rem,
+    0.7843137255vw + 0.7485294118rem, // Цей вираз залишиться для адаптивного масштабування
     1.25rem
   );
   }
@@ -1123,7 +1103,7 @@ header.active {
   .home-screen__slogan-small {
     font-size: clamp(
     1.25rem,
-    2.2857142857vw + -0.2128571429rem,
+    2.2857142857vw + -0.2128571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -1177,17 +1157,13 @@ header.active {
 .home-screen__contacts a {
   font-family: var(--font-family-Montserrat-ExtraLight);
   color: var(--color-white);
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .home-screen__contacts a {
     font-size: clamp(
     0.875rem,
-    1.568627451vw + 0.1220588235rem,
+    1.568627451vw + 0.1220588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -1196,7 +1172,7 @@ header.active {
   .home-screen__contacts a {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -1316,26 +1292,18 @@ header.active {
   color: var(--color-white);
   text-transform: uppercase;
   transition: color 0.3s ease;
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .navigation__li a {
-    font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+    font-size: 0.875rem;
   }
 }
 @media (width > 63.99875rem) {
   .navigation__li a {
     font-size: clamp(
     0.875rem,
-    2.2857142857vw + -0.5878571429rem,
+    2.2857142857vw + -0.5878571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -1427,26 +1395,18 @@ header.active {
 }
 .presentation__hero-skill, .presentation__hero-style, .presentation__hero-nobadbeauty {
   font-size: 70px;
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .presentation__hero-skill, .presentation__hero-style, .presentation__hero-nobadbeauty {
-    font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+    font-size: 1.625rem;
   }
 }
 @media (width > 63.99875rem) {
   .presentation__hero-skill, .presentation__hero-style, .presentation__hero-nobadbeauty {
     font-size: clamp(
     1.625rem,
-    25.1428571429vw + -14.4664285714rem,
+    25.1428571429vw + -14.4664285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -1484,26 +1444,18 @@ header.active {
   font-family: var(--font-family-TenorSans-Regular);
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .presentation__presented {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .presentation__presented {
     font-size: clamp(
     1.125rem,
-    2.2857142857vw + -0.3378571429rem,
+    2.2857142857vw + -0.3378571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -1516,26 +1468,18 @@ header.active {
 .presentation__biography {
   font-family: var(--font-family-Montserrat-Light);
   margin-bottom: 68px;
-  font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+  font-size: 1rem;
 }
 @media (width > 47.99875rem) {
   .presentation__biography {
-    font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+    font-size: 1rem;
   }
 }
 @media (width > 63.99875rem) {
   .presentation__biography {
     font-size: clamp(
     1rem,
-    1.1428571429vw + 0.2685714286rem,
+    1.1428571429vw + 0.2685714286rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -1557,26 +1501,18 @@ header.active {
 }
 .presentation__about-me {
   font-family: var(--font-family-Montserrat-Light);
-  font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+  font-size: 1rem;
 }
 @media (width > 47.99875rem) {
   .presentation__about-me {
-    font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+    font-size: 1rem;
   }
 }
 @media (width > 63.99875rem) {
   .presentation__about-me {
     font-size: clamp(
     1rem,
-    1.1428571429vw + 0.2685714286rem,
+    1.1428571429vw + 0.2685714286rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -1771,17 +1707,13 @@ header.active {
 .portfolio__main-heading {
   font-family: var(--font-family-TenorSans-Regular);
   color: var(--color-black);
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .portfolio__main-heading {
     font-size: clamp(
     1.625rem,
-    5.4901960784vw + -1.0102941176rem,
+    5.4901960784vw + -1.0102941176rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -1790,7 +1722,7 @@ header.active {
   .portfolio__main-heading {
     font-size: clamp(
     2.5rem,
-    17.1428571429vw + -8.4714285714rem,
+    17.1428571429vw + -8.4714285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -1803,17 +1735,13 @@ header.active {
 .portfolio__secondary-heading {
   font-family: var(--font-family-TenorSans-Regular);
   color: var(--color-black);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .portfolio__secondary-heading {
     font-size: clamp(
     1.125rem,
-    1.568627451vw + 0.3720588235rem,
+    1.568627451vw + 0.3720588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -1822,7 +1750,7 @@ header.active {
   .portfolio__secondary-heading {
     font-size: clamp(
     1.375rem,
-    10.2857142857vw + -5.2078571429rem,
+    10.2857142857vw + -5.2078571429rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -1836,17 +1764,13 @@ header.active {
   max-width: 650px;
   font-family: var(--font-family-Montserrat-ExtraLight);
   color: var(--color-black);
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .portfolio__text-slogan {
     font-size: clamp(
     0.875rem,
-    1.568627451vw + 0.1220588235rem,
+    1.568627451vw + 0.1220588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -1855,7 +1779,7 @@ header.active {
   .portfolio__text-slogan {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -1886,26 +1810,18 @@ header.active {
   text-transform: uppercase;
   font-family: var(--font-family-TenorSans-Regular);
   color: var(--color-black);
-  font-size: clamp(
-    0.8125rem,
-    0vw + 0.8125rem,
-    0.8125rem
-  );
+  font-size: 0.8125rem;
 }
 @media (width > 47.99875rem) {
   .portfolio__text-category {
-    font-size: clamp(
-    0.8125rem,
-    0vw + 0.8125rem,
-    0.8125rem
-  );
+    font-size: 0.8125rem;
   }
 }
 @media (width > 63.99875rem) {
   .portfolio__text-category {
     font-size: clamp(
     0.8125rem,
-    5.1428571429vw + -2.4789285714rem,
+    5.1428571429vw + -2.4789285714rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -1947,7 +1863,7 @@ header.active {
   color: var(--color-black);
   font-size: clamp(
     1.625rem,
-    2.457002457vw + 1.0721744472rem,
+    2.457002457vw + 1.0721744472rem, // Цей вираз залишиться для адаптивного масштабування
     2.25rem
   );
 }
@@ -1955,7 +1871,7 @@ header.active {
   .reviews__h2 {
     font-size: clamp(
     2.25rem,
-    1.568627451vw + 1.4970588235rem,
+    1.568627451vw + 1.4970588235rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -1964,7 +1880,7 @@ header.active {
   .reviews__h2 {
     font-size: clamp(
     2.5rem,
-    17.1428571429vw + -8.4714285714rem,
+    17.1428571429vw + -8.4714285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -1984,17 +1900,13 @@ header.active {
   max-width: 935px;
   font-family: var(--font-family-Montserrat-ExtraLight);
   color: var(--color-black);
-  font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+  font-size: 1rem;
 }
 @media (width > 47.99875rem) {
   .reviews__h3 {
     font-size: clamp(
     1rem,
-    3.137254902vw + -0.5058823529rem,
+    3.137254902vw + -0.5058823529rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -2003,7 +1915,7 @@ header.active {
   .reviews__h3 {
     font-size: clamp(
     1.5rem,
-    6.8571428571vw + -2.8885714286rem,
+    6.8571428571vw + -2.8885714286rem, // Цей вираз залишиться для адаптивного масштабування
     2.25rem
   );
   }
@@ -2056,26 +1968,18 @@ header.active {
 }
 .reviews__set-h6 {
   font-family: var(--font-family-Montserrat-Light);
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .reviews__set-h6 {
-    font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+    font-size: 0.875rem;
   }
 }
 @media (width > 63.99875rem) {
   .reviews__set-h6 {
     font-size: clamp(
     0.875rem,
-    2.2857142857vw + -0.5878571429rem,
+    2.2857142857vw + -0.5878571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -2143,24 +2047,20 @@ header.active {
   text-transform: uppercase;
   font-size: clamp(
     1.375rem,
-    0.9828009828vw + 1.1538697789rem,
+    0.9828009828vw + 1.1538697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.625rem
   );
 }
 @media (width > 47.99875rem) {
   .recording__title {
-    font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+    font-size: 1.625rem;
   }
 }
 @media (width > 63.99875rem) {
   .recording__title {
     font-size: clamp(
     1.625rem,
-    8vw + -3.495rem,
+    8vw + -3.495rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -2183,26 +2083,18 @@ header.active {
 .recording__text {
   margin-bottom: 50px;
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .recording__text {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .recording__text {
     font-size: clamp(
     1.125rem,
-    10.2857142857vw + -5.4578571429rem,
+    10.2857142857vw + -5.4578571429rem, // Цей вираз залишиться для адаптивного масштабування
     2.25rem
   );
   }
@@ -2269,26 +2161,18 @@ header.active {
   margin-bottom: 20px;
   font-family: var(--font-family-TenorSans-Regular);
   text-transform: uppercase;
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .recording__subtitle {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .recording__subtitle {
     font-size: clamp(
     1.125rem,
-    2.2857142857vw + -0.3378571429rem,
+    2.2857142857vw + -0.3378571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -2307,26 +2191,18 @@ header.active {
 .recording__note {
   margin-bottom: 40px;
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .recording__note {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .recording__note {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -2435,28 +2311,16 @@ header.active {
   text-transform: uppercase;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+  font-size: 1.5rem;
 }
 @media (width > 47.99875rem) {
   .carousel__card-h4 {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .carousel__card-h4 {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -2470,28 +2334,16 @@ header.active {
 .carousel__card-h6 {
   height: 29px;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    0.75rem,
-    0vw + 0.75rem,
-    0.75rem
-  );
+  font-size: 0.75rem;
 }
 @media (width > 47.99875rem) {
   .carousel__card-h6 {
-    font-size: clamp(
-    0.75rem,
-    0vw + 0.75rem,
-    0.75rem
-  );
+    font-size: 0.75rem;
   }
 }
 @media (width > 63.99875rem) {
   .carousel__card-h6 {
-    font-size: clamp(
-    0.75rem,
-    0vw + 0.75rem,
-    0.75rem
-  );
+    font-size: 0.75rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -2510,28 +2362,16 @@ header.active {
   -webkit-line-clamp: 5;
   line-clamp: 6;
   font-family: var(--font-family-Roboto-ExtraLight);
-  font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+  font-size: 1rem;
 }
 @media (width > 47.99875rem) {
   .carousel__card-text {
-    font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+    font-size: 1rem;
   }
 }
 @media (width > 63.99875rem) {
   .carousel__card-text {
-    font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+    font-size: 1rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -2544,28 +2384,16 @@ header.active {
   background: inherit;
   text-align: start;
   cursor: pointer;
-  font-size: clamp(
-    0.9375rem,
-    0vw + 0.9375rem,
-    0.9375rem
-  );
+  font-size: 0.9375rem;
 }
 @media (width > 47.99875rem) {
   .carousel__card-btn {
-    font-size: clamp(
-    0.9375rem,
-    0vw + 0.9375rem,
-    0.9375rem
-  );
+    font-size: 0.9375rem;
   }
 }
 @media (width > 63.99875rem) {
   .carousel__card-btn {
-    font-size: clamp(
-    0.9375rem,
-    0vw + 0.9375rem,
-    0.9375rem
-  );
+    font-size: 0.9375rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -2705,17 +2533,13 @@ header.active {
   text-transform: uppercase;
   color: var(--color-beige);
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .about-me__title {
     font-size: clamp(
     1.625rem,
-    2.3529411765vw + 0.4955882353rem,
+    2.3529411765vw + 0.4955882353rem, // Цей вираз залишиться для адаптивного масштабування
     2rem
   );
   }
@@ -2724,7 +2548,7 @@ header.active {
   .about-me__title {
     font-size: clamp(
     2rem,
-    4.5714285714vw + -0.9257142857rem,
+    4.5714285714vw + -0.9257142857rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -2743,17 +2567,13 @@ header.active {
   text-transform: uppercase;
   color: var(--color-beige);
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+  font-size: 2.5rem;
 }
 @media (width > 47.99875rem) {
   .about-me__name {
     font-size: clamp(
     2.5rem,
-    3.9215686275vw + 0.6176470588rem,
+    3.9215686275vw + 0.6176470588rem, // Цей вираз залишиться для адаптивного масштабування
     3.125rem
   );
   }
@@ -2762,7 +2582,7 @@ header.active {
   .about-me__name {
     font-size: clamp(
     3.125rem,
-    11.4285714286vw + -4.1892857143rem,
+    11.4285714286vw + -4.1892857143rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -2775,17 +2595,13 @@ header.active {
 .about-me__description {
   color: var(--color-black);
   font-family: var(--font-family-Montserrat-Regular);
-  font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+  font-size: 1.25rem;
 }
 @media (width > 47.99875rem) {
   .about-me__description {
     font-size: clamp(
     1.25rem,
-    0.7843137255vw + 0.8735294118rem,
+    0.7843137255vw + 0.8735294118rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -2794,7 +2610,7 @@ header.active {
   .about-me__description {
     font-size: clamp(
     1.375rem,
-    1.1428571429vw + 0.6435714286rem,
+    1.1428571429vw + 0.6435714286rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -2817,17 +2633,13 @@ header.active {
 .about-me__box-acquaintance p {
   color: var(--color-black);
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .about-me__box-acquaintance p {
     font-size: clamp(
     1.125rem,
-    0.7843137255vw + 0.7485294118rem,
+    0.7843137255vw + 0.7485294118rem, // Цей вираз залишиться для адаптивного масштабування
     1.25rem
   );
   }
@@ -2836,7 +2648,7 @@ header.active {
   .about-me__box-acquaintance p {
     font-size: clamp(
     1.25rem,
-    2.2857142857vw + -0.2128571429rem,
+    2.2857142857vw + -0.2128571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -2959,17 +2771,13 @@ header.active {
   text-transform: uppercase;
   font-family: var(--font-family-TenorSans-Regular);
   font-weight: 400;
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .my-aspiration__body h2 {
     font-size: clamp(
     1.625rem,
-    2.3529411765vw + 0.4955882353rem,
+    2.3529411765vw + 0.4955882353rem, // Цей вираз залишиться для адаптивного масштабування
     2rem
   );
   }
@@ -2978,7 +2786,7 @@ header.active {
   .my-aspiration__body h2 {
     font-size: clamp(
     2rem,
-    4.5714285714vw + -0.9257142857rem,
+    4.5714285714vw + -0.9257142857rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -2997,17 +2805,13 @@ header.active {
   margin-bottom: 60px;
   font-family: var(--font-family-Montserrat-ExtraLight);
   font-weight: 200;
-  font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+  font-size: 1rem;
 }
 @media (width > 47.99875rem) {
   .my-aspiration__body h3 {
     font-size: clamp(
     1rem,
-    1.568627451vw + 0.2470588235rem,
+    1.568627451vw + 0.2470588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.25rem
   );
   }
@@ -3016,7 +2820,7 @@ header.active {
   .my-aspiration__body h3 {
     font-size: clamp(
     1.25rem,
-    2.2857142857vw + -0.2128571429rem,
+    2.2857142857vw + -0.2128571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -3034,26 +2838,18 @@ header.active {
 .my-aspiration__body p {
   margin-bottom: 30px;
   font-family: var(--font-family-Montserrat-Light);
-  font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+  font-size: 1rem;
 }
 @media (width > 47.99875rem) {
   .my-aspiration__body p {
-    font-size: clamp(
-    1rem,
-    0vw + 1rem,
-    1rem
-  );
+    font-size: 1rem;
   }
 }
 @media (width > 63.99875rem) {
   .my-aspiration__body p {
     font-size: clamp(
     1rem,
-    1.1428571429vw + 0.2685714286rem,
+    1.1428571429vw + 0.2685714286rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -3088,26 +2884,18 @@ header.active {
 .my-aspiration__body li {
   font-family: var(--font-family-Montserrat-Light);
   line-height: 1.25;
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .my-aspiration__body li {
-    font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+    font-size: 0.875rem;
   }
 }
 @media (width > 63.99875rem) {
   .my-aspiration__body li {
     font-size: clamp(
     0.875rem,
-    1.1428571429vw + 0.1435714286rem,
+    1.1428571429vw + 0.1435714286rem, // Цей вираз залишиться для адаптивного масштабування
     1rem
   );
   }
@@ -3199,26 +2987,18 @@ header.active {
   margin-bottom: 40px;
   font-family: var(--font-family-TenorSans-Regular);
   font-weight: 400;
-  font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+  font-size: 2.5rem;
 }
 @media (width > 47.99875rem) {
   .my-goal__body h2 {
-    font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+    font-size: 2.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .my-goal__body h2 {
     font-size: clamp(
     2.5rem,
-    17.1428571429vw + -8.4714285714rem,
+    17.1428571429vw + -8.4714285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -3236,26 +3016,18 @@ header.active {
 .my-goal__body p {
   margin-bottom: 60px;
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .my-goal__body p {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .my-goal__body p {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -3272,28 +3044,16 @@ header.active {
 }
 .my-goal__body a {
   font-family: var(--font-family-Montserrat-Regular);
-  font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+  font-size: 1.25rem;
 }
 @media (width > 47.99875rem) {
   .my-goal__body a {
-    font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+    font-size: 1.25rem;
   }
 }
 @media (width > 63.99875rem) {
   .my-goal__body a {
-    font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+    font-size: 1.25rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -3336,17 +3096,13 @@ header.active {
   margin-bottom: 20px;
   max-width: 750px;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .principles__slogan {
     font-size: clamp(
     1.625rem,
-    2.3529411765vw + 0.4955882353rem,
+    2.3529411765vw + 0.4955882353rem, // Цей вираз залишиться для адаптивного масштабування
     2rem
   );
   }
@@ -3355,7 +3111,7 @@ header.active {
   .principles__slogan {
     font-size: clamp(
     2rem,
-    4.5714285714vw + -0.9257142857rem,
+    4.5714285714vw + -0.9257142857rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -3389,26 +3145,18 @@ header.active {
 .principles__title {
   color: var(--color-beige);
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .principles__title {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .principles__title {
     font-size: clamp(
     1.125rem,
-    2.2857142857vw + -0.3378571429rem,
+    2.2857142857vw + -0.3378571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -3422,26 +3170,18 @@ header.active {
   margin-top: 20px;
   font-family: var(--font-family-Montserrat-Regular);
   line-height: 1.2;
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .principles__description {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .principles__description {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -3485,26 +3225,18 @@ header.active {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     1.625rem,
-    3.4398034398vw + 0.851044226rem,
+    3.4398034398vw + 0.851044226rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
 }
 @media (width > 47.99875rem) {
   .portfolio-page__hero {
-    font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+    font-size: 2.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .portfolio-page__hero {
-    font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+    font-size: 2.5rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -3574,26 +3306,18 @@ header.active {
   border-radius: 10px;
   color: var(--color-black);
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    0.9375rem,
-    0vw + 0.9375rem,
-    0.9375rem
-  );
+  font-size: 0.9375rem;
 }
 @media (width > 47.99875rem) {
   .portfolio-page__nav ul a {
-    font-size: clamp(
-    0.9375rem,
-    0vw + 0.9375rem,
-    0.9375rem
-  );
+    font-size: 0.9375rem;
   }
 }
 @media (width > 63.99875rem) {
   .portfolio-page__nav ul a {
     font-size: clamp(
     0.9375rem,
-    1.7142857143vw + -0.1596428571rem,
+    1.7142857143vw + -0.1596428571rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -3618,26 +3342,18 @@ header.active {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     2.5rem,
-    7.371007371vw + 0.8415233415rem,
+    7.371007371vw + 0.8415233415rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
 }
 @media (width > 47.99875rem) {
   .portfolio-page__subtitle {
-    font-size: clamp(
-    4.375rem,
-    0vw + 4.375rem,
-    4.375rem
-  );
+    font-size: 4.375rem;
   }
 }
 @media (width > 63.99875rem) {
   .portfolio-page__subtitle {
-    font-size: clamp(
-    4.375rem,
-    0vw + 4.375rem,
-    4.375rem
-  );
+    font-size: 4.375rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -3651,26 +3367,18 @@ header.active {
   font-family: var(--font-family-Montserrat-ExtraLight);
   font-size: clamp(
     0.875rem,
-    2.457002457vw + 0.3221744472rem,
+    2.457002457vw + 0.3221744472rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
 }
 @media (width > 47.99875rem) {
   .portfolio-page p {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .portfolio-page p {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -3768,28 +3476,16 @@ header.active {
 }
 .portfolio-page__booking-info p {
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+  font-size: 1.5rem;
 }
 @media (width > 47.99875rem) {
   .portfolio-page__booking-info p {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .portfolio-page__booking-info p {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -3816,28 +3512,16 @@ header.active {
   text-align: center;
   border-radius: 5px;
   font-family: var(--font-family-Montserrat-Regular);
-  font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+  font-size: 1.25rem;
 }
 @media (width > 47.99875rem) {
   .portfolio-page__link-reservation, .portfolio-page__link-price {
-    font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+    font-size: 1.25rem;
   }
 }
 @media (width > 63.99875rem) {
   .portfolio-page__link-reservation, .portfolio-page__link-price {
-    font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+    font-size: 1.25rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -3916,17 +3600,13 @@ header.active {
   cursor: pointer;
   padding: 35px 0;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .price__btn {
     font-size: clamp(
     1.125rem,
-    3.137254902vw + -0.3808823529rem,
+    3.137254902vw + -0.3808823529rem, // Цей вираз залишиться для адаптивного масштабування
     1.625rem
   );
   }
@@ -3935,7 +3615,7 @@ header.active {
   .price__btn {
     font-size: clamp(
     1.625rem,
-    8vw + -3.495rem,
+    8vw + -3.495rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -3974,17 +3654,13 @@ header.active {
   margin-bottom: 70px;
   text-align: center;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .price__tittle {
     font-size: clamp(
     1.625rem,
-    5.4901960784vw + -1.0102941176rem,
+    5.4901960784vw + -1.0102941176rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -3993,7 +3669,7 @@ header.active {
   .price__tittle {
     font-size: clamp(
     2.5rem,
-    17.1428571429vw + -8.4714285714rem,
+    17.1428571429vw + -8.4714285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -4018,17 +3694,13 @@ header.active {
 }
 .price__subtitle, .price__course {
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .price__subtitle, .price__course {
     font-size: clamp(
     1.125rem,
-    3.137254902vw + -0.3808823529rem,
+    3.137254902vw + -0.3808823529rem, // Цей вираз залишиться для адаптивного масштабування
     1.625rem
   );
   }
@@ -4037,7 +3709,7 @@ header.active {
   .price__subtitle, .price__course {
     font-size: clamp(
     1.625rem,
-    8vw + -3.495rem,
+    8vw + -3.495rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -4088,17 +3760,13 @@ header.active {
 }
 .price__service {
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .price__service {
     font-size: clamp(
     1.125rem,
-    2.3529411765vw + -0.0044117647rem,
+    2.3529411765vw + -0.0044117647rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -4107,7 +3775,7 @@ header.active {
   .price__service {
     font-size: clamp(
     1.5rem,
-    6.8571428571vw + -2.8885714286rem,
+    6.8571428571vw + -2.8885714286rem, // Цей вираз залишиться для адаптивного масштабування
     2.25rem
   );
   }
@@ -4121,17 +3789,13 @@ header.active {
   display: block;
   width: 80%;
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .price__service-addition {
     font-size: clamp(
     0.875rem,
-    1.568627451vw + 0.1220588235rem,
+    1.568627451vw + 0.1220588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -4140,7 +3804,7 @@ header.active {
   .price__service-addition {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -4152,17 +3816,13 @@ header.active {
 }
 .price__cost {
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .price__cost {
     font-size: clamp(
     1.125rem,
-    3.137254902vw + -0.3808823529rem,
+    3.137254902vw + -0.3808823529rem, // Цей вираз залишиться для адаптивного масштабування
     1.625rem
   );
   }
@@ -4171,7 +3831,7 @@ header.active {
   .price__cost {
     font-size: clamp(
     1.625rem,
-    8vw + -3.495rem,
+    8vw + -3.495rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -4182,17 +3842,13 @@ header.active {
   }
 }
 .price__plus {
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .price__plus {
     font-size: clamp(
     0.875rem,
-    1.568627451vw + 0.1220588235rem,
+    1.568627451vw + 0.1220588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -4201,7 +3857,7 @@ header.active {
   .price__plus {
     font-size: clamp(
     1.125rem,
-    6.8571428571vw + -3.2635714286rem,
+    6.8571428571vw + -3.2635714286rem, // Цей вираз залишиться для адаптивного масштабування
     1.875rem
   );
   }
@@ -4215,17 +3871,13 @@ header.active {
   display: block;
   text-align: end;
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    0.875rem,
-    0vw + 0.875rem,
-    0.875rem
-  );
+  font-size: 0.875rem;
 }
 @media (width > 47.99875rem) {
   .price__cost-addition {
     font-size: clamp(
     0.875rem,
-    1.568627451vw + 0.1220588235rem,
+    1.568627451vw + 0.1220588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
   }
@@ -4234,7 +3886,7 @@ header.active {
   .price__cost-addition {
     font-size: clamp(
     1.125rem,
-    3.4285714286vw + -1.0692857143rem,
+    3.4285714286vw + -1.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -4253,26 +3905,18 @@ header.active {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+  font-size: 2.5rem;
 }
 @media (width > 47.99875rem) {
   .training__title {
-    font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+    font-size: 2.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__title {
     font-size: clamp(
     2.5rem,
-    17.1428571429vw + -8.4714285714rem,
+    17.1428571429vw + -8.4714285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -4335,24 +3979,20 @@ header.active {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     1.125rem,
-    1.9656019656vw + 0.6827395577rem,
+    1.9656019656vw + 0.6827395577rem, // Цей вираз залишиться для адаптивного масштабування
     1.625rem
   );
 }
 @media (width > 47.99875rem) {
   .training__subtitle {
-    font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+    font-size: 1.625rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__subtitle {
     font-size: clamp(
     1.625rem,
-    8vw + -3.495rem,
+    8vw + -3.495rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -4365,24 +4005,20 @@ header.active {
 .training__subtitle--pl {
   font-size: clamp(
     1.125rem,
-    1.9656019656vw + 0.6827395577rem,
+    1.9656019656vw + 0.6827395577rem, // Цей вираз залишиться для адаптивного масштабування
     1.625rem
   );
 }
 @media (width > 47.99875rem) {
   .training__subtitle--pl {
-    font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+    font-size: 1.625rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__subtitle--pl {
     font-size: clamp(
     1.625rem,
-    5.1428571429vw + -1.6664285714rem,
+    5.1428571429vw + -1.6664285714rem, // Цей вираз залишиться для адаптивного масштабування
     2.1875rem
   );
   }
@@ -4396,7 +4032,7 @@ header.active {
   font-family: var(--font-family-Montserrat-ExtraLight);
   font-size: clamp(
     0.875rem,
-    0.9828009828vw + 0.6538697789rem,
+    0.9828009828vw + 0.6538697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
 }
@@ -4404,7 +4040,7 @@ header.active {
   .training__advertising {
     font-size: clamp(
     1.125rem,
-    0.7843137255vw + 0.7485294118rem,
+    0.7843137255vw + 0.7485294118rem, // Цей вираз залишиться для адаптивного масштабування
     1.25rem
   );
   }
@@ -4413,7 +4049,7 @@ header.active {
   .training__advertising {
     font-size: clamp(
     1.25rem,
-    2.2857142857vw + -0.2128571429rem,
+    2.2857142857vw + -0.2128571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -4431,7 +4067,7 @@ header.active {
 .training__advertising--pl {
   font-size: clamp(
     0.875rem,
-    0.9828009828vw + 0.6538697789rem,
+    0.9828009828vw + 0.6538697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
 }
@@ -4439,7 +4075,7 @@ header.active {
   .training__advertising--pl {
     font-size: clamp(
     1.125rem,
-    0.7843137255vw + 0.7485294118rem,
+    0.7843137255vw + 0.7485294118rem, // Цей вираз залишиться для адаптивного масштабування
     1.25rem
   );
   }
@@ -4448,7 +4084,7 @@ header.active {
   .training__advertising--pl {
     font-size: clamp(
     1.25rem,
-    2.2857142857vw + -0.2128571429rem,
+    2.2857142857vw + -0.2128571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -4493,17 +4129,13 @@ header.active {
 .training__course-name {
   text-transform: uppercase;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .training__course-name {
     font-size: clamp(
     1.625rem,
-    5.4901960784vw + -1.0102941176rem,
+    5.4901960784vw + -1.0102941176rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -4512,7 +4144,7 @@ header.active {
   .training__course-name {
     font-size: clamp(
     2.5rem,
-    17.1428571429vw + -8.4714285714rem,
+    17.1428571429vw + -8.4714285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -4525,26 +4157,18 @@ header.active {
 .training__tariff {
   text-transform: uppercase;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .training__tariff {
-    font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+    font-size: 1.625rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__tariff {
     font-size: clamp(
     1.625rem,
-    8vw + -3.495rem,
+    8vw + -3.495rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -4667,28 +4291,16 @@ header.active {
 }
 .training__box-text p {
   font-family: var(--font-family-Montserrat-Light);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .training__box-text p {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__box-text p {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -4702,26 +4314,18 @@ header.active {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     1.625rem,
-    3.4398034398vw + 0.851044226rem,
+    3.4398034398vw + 0.851044226rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
 }
 @media (width > 47.99875rem) {
   .training__presentation {
-    font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+    font-size: 2.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__presentation {
-    font-size: clamp(
-    2.5rem,
-    0vw + 2.5rem,
-    2.5rem
-  );
+    font-size: 2.5rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -4740,26 +4344,18 @@ header.active {
   font-family: var(--font-family-Montserrat-Regular);
   font-size: clamp(
     0.875rem,
-    0.9828009828vw + 0.6538697789rem,
+    0.9828009828vw + 0.6538697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
 }
 @media (width > 47.99875rem) {
   .training__item {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__item {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -4791,28 +4387,16 @@ header.active {
 }
 .training__duration, .training__term, .training__cost {
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.375rem,
-    0vw + 1.375rem,
-    1.375rem
-  );
+  font-size: 1.375rem;
 }
 @media (width > 47.99875rem) {
   .training__duration, .training__term, .training__cost {
-    font-size: clamp(
-    1.375rem,
-    0vw + 1.375rem,
-    1.375rem
-  );
+    font-size: 1.375rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__duration, .training__term, .training__cost {
-    font-size: clamp(
-    1.375rem,
-    0vw + 1.375rem,
-    1.375rem
-  );
+    font-size: 1.375rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -4822,28 +4406,16 @@ header.active {
 }
 .training__price {
   font-family: var(--font-family-Montserrat-Regular);
-  font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+  font-size: 1.5rem;
 }
 @media (width > 47.99875rem) {
   .training__price {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 63.99875rem) {
   .training__price {
-    font-size: clamp(
-    1.5rem,
-    0vw + 1.5rem,
-    1.5rem
-  );
+    font-size: 1.5rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -4871,17 +4443,13 @@ header.active {
 .training__record-text {
   width: 590px;
   font-family: var(--font-family-Montserrat-ExtraLight);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .training__record-text {
     font-size: clamp(
     1.125rem,
-    0.7843137255vw + 0.7485294118rem,
+    0.7843137255vw + 0.7485294118rem, // Цей вираз залишиться для адаптивного масштабування
     1.25rem
   );
   }
@@ -4890,7 +4458,7 @@ header.active {
   .training__record-text {
     font-size: clamp(
     1.25rem,
-    2.2857142857vw + -0.2128571429rem,
+    2.2857142857vw + -0.2128571429rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -4924,17 +4492,13 @@ header.active {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.625rem,
-    0vw + 1.625rem,
-    1.625rem
-  );
+  font-size: 1.625rem;
 }
 @media (width > 47.99875rem) {
   .contacts__title {
     font-size: clamp(
     1.625rem,
-    5.4901960784vw + -1.0102941176rem,
+    5.4901960784vw + -1.0102941176rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -4943,7 +4507,7 @@ header.active {
   .contacts__title {
     font-size: clamp(
     2.5rem,
-    17.1428571429vw + -8.4714285714rem,
+    17.1428571429vw + -8.4714285714rem, // Цей вираз залишиться для адаптивного масштабування
     4.375rem
   );
   }
@@ -5005,28 +4569,20 @@ header.active {
   color: var(--color-beige_light);
   text-transform: uppercase;
   font-family: var(--font-family-TenorSans-Regular);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .contacts__label {
     font-size: clamp(
     1.125rem,
-    1.568627451vw + 0.3720588235rem,
+    1.568627451vw + 0.3720588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
 }
 @media (width > 63.99875rem) {
   .contacts__label {
-    font-size: clamp(
-    1.375rem,
-    0vw + 1.375rem,
-    1.375rem
-  );
+    font-size: 1.375rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -5038,28 +4594,16 @@ header.active {
   color: var(--color-black);
   text-transform: none;
   font-family: var(--font-family-Montserrat-Regular);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .contacts__label--video {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .contacts__label--video {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -5076,17 +4620,13 @@ header.active {
   color: var(--color-black);
   font-family: var(--font-family-Montserrat-ExtraLight);
   transition: all 0.6s ease;
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .contacts__link {
     font-size: clamp(
     1.125rem,
-    1.568627451vw + 0.3720588235rem,
+    1.568627451vw + 0.3720588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -5095,7 +4635,7 @@ header.active {
   .contacts__link {
     font-size: clamp(
     1.375rem,
-    1.1428571429vw + 0.6435714286rem,
+    1.1428571429vw + 0.6435714286rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -5150,26 +4690,18 @@ header.active {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     1.125rem,
-    0.9828009828vw + 0.9038697789rem,
+    0.9828009828vw + 0.9038697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
 }
 @media (width > 47.99875rem) {
   .contacts__subtitle {
-    font-size: clamp(
-    1.375rem,
-    0vw + 1.375rem,
-    1.375rem
-  );
+    font-size: 1.375rem;
   }
 }
 @media (width > 63.99875rem) {
   .contacts__subtitle {
-    font-size: clamp(
-    1.375rem,
-    0vw + 1.375rem,
-    1.375rem
-  );
+    font-size: 1.375rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -5184,7 +4716,7 @@ header.active {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     0.875rem,
-    0.9828009828vw + 0.6538697789rem,
+    0.9828009828vw + 0.6538697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
 }
@@ -5192,7 +4724,7 @@ header.active {
   .contacts__text {
     font-size: clamp(
     1.125rem,
-    1.568627451vw + 0.3720588235rem,
+    1.568627451vw + 0.3720588235rem, // Цей вираз залишиться для адаптивного масштабування
     1.375rem
   );
   }
@@ -5201,7 +4733,7 @@ header.active {
   .contacts__text {
     font-size: clamp(
     1.375rem,
-    1.1428571429vw + 0.6435714286rem,
+    1.1428571429vw + 0.6435714286rem, // Цей вираз залишиться для адаптивного масштабування
     1.5rem
   );
   }
@@ -5342,28 +4874,16 @@ footer {
 .footer__contact-item {
   font-family: var(--font-family-Montserrat-Regular);
   color: var(--color-white);
-  font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+  font-size: 1.125rem;
 }
 @media (width > 47.99875rem) {
   .footer__contact-item {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 63.99875rem) {
   .footer__contact-item {
-    font-size: clamp(
-    1.125rem,
-    0vw + 1.125rem,
-    1.125rem
-  );
+    font-size: 1.125rem;
   }
 }
 @media (width > 74.99875rem) {
@@ -5523,7 +5043,7 @@ footer {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     5rem,
-    17.199017199vw + 1.1302211302rem,
+    17.199017199vw + 1.1302211302rem, // Цей вираз залишиться для адаптивного масштабування
     9.375rem
   );
 }
@@ -5531,7 +5051,7 @@ footer {
   .section-error__404 {
     font-size: clamp(
     9.375rem,
-    58.8235294118vw + -18.8602941176rem,
+    58.8235294118vw + -18.8602941176rem, // Цей вираз залишиться для адаптивного масштабування
     18.75rem
   );
   }
@@ -5540,7 +5060,7 @@ footer {
   .section-error__404 {
     font-size: clamp(
     18.75rem,
-    57.1428571429vw + -17.8214285714rem,
+    57.1428571429vw + -17.8214285714rem, // Цей вираз залишиться для адаптивного масштабування
     25rem
   );
   }
@@ -5556,7 +5076,7 @@ footer {
   font-family: var(--font-family-TenorSans-Regular);
   font-size: clamp(
     1.375rem,
-    1.4742014742vw + 1.0433046683rem,
+    1.4742014742vw + 1.0433046683rem, // Цей вираз залишиться для адаптивного масштабування
     1.75rem
   );
 }
@@ -5564,7 +5084,7 @@ footer {
   .section-error__title {
     font-size: clamp(
     1.75rem,
-    2.3529411765vw + 0.6205882353rem,
+    2.3529411765vw + 0.6205882353rem, // Цей вираз залишиться для адаптивного масштабування
     2.125rem
   );
   }
@@ -5573,7 +5093,7 @@ footer {
   .section-error__title {
     font-size: clamp(
     2.125rem,
-    3.4285714286vw + -0.0692857143rem,
+    3.4285714286vw + -0.0692857143rem, // Цей вираз залишиться для адаптивного масштабування
     2.5rem
   );
   }
@@ -5589,7 +5109,7 @@ footer {
   font-family: var(--font-family-Montserrat-ExtraLight);
   font-size: clamp(
     0.875rem,
-    0.9828009828vw + 0.6538697789rem,
+    0.9828009828vw + 0.6538697789rem, // Цей вираз залишиться для адаптивного масштабування
     1.125rem
   );
 }
@@ -5597,7 +5117,7 @@ footer {
   .section-error__subtitle {
     font-size: clamp(
     1.125rem,
-    3.9215686275vw + -0.7573529412rem,
+    3.9215686275vw + -0.7573529412rem, // Цей вираз залишиться для адаптивного масштабування
     1.75rem
   );
   }
@@ -5606,7 +5126,7 @@ footer {
   .section-error__subtitle {
     font-size: clamp(
     1.75rem,
-    4.5714285714vw + -1.1757142857rem,
+    4.5714285714vw + -1.1757142857rem, // Цей вираз залишиться для адаптивного масштабування
     2.25rem
   );
   }
@@ -5630,28 +5150,16 @@ footer {
   justify-content: center;
   border-radius: 5px;
   transition: color 0.8s ease;
-  font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+  font-size: 1.25rem;
 }
 @media (width > 47.99875rem) {
   .section-error__link {
-    font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+    font-size: 1.25rem;
   }
 }
 @media (width > 63.99875rem) {
   .section-error__link {
-    font-size: clamp(
-    1.25rem,
-    0vw + 1.25rem,
-    1.25rem
-  );
+    font-size: 1.25rem;
   }
 }
 @media (width > 74.99875rem) {
