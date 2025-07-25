@@ -3460,6 +3460,10 @@ header.active {
     gap: 10px;
   }
 }
+.portfolio-page__box-photos--flex div {
+  max-width: 386px;
+  max-height: 510px;
+}
 .portfolio-page__box-photos--flex img {
   width: 100%;
   height: 100%;

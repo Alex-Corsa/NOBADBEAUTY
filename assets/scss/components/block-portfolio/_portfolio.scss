@@ -150,6 +150,10 @@
         @include tablet {
             gap: 10px;
         }
+        div {
+            max-width: 386px;
+            max-height: 510px;
+        }
         img {
             width: 100%;
             height: 100%;
