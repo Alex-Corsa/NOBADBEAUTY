@@ -832,8 +832,12 @@ header.active {
   }
 }
 .header__box-logo {
+  max-width: 182px;
   position: relative;
   z-index: 3;
+}
+.header__box-logo img {
+  width: 100%;
 }
 .header__body {
   display: flex;
